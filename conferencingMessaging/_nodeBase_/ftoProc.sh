@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos-apps/ftoProc.sh 
+*  /This File/ :: /bisos/panels/bisos-apps/conferencingMessaging/_nodeBase_/ftoProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
@@ -53,13 +53,6 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-roInvofier
-conferencingMessaging
-lcnt
-_nodeBase_
-marmee
-multimedia
-browsers
 "
 # }}} DBLOCK-nodesList
 ####+END:
