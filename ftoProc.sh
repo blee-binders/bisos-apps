@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedFtoCommon.sh]] | 
 "
 FILE="
-*  /This File/ :: /bisos/panels/bisos-apps/ftoProc.sh 
+*  /This File/ :: /bisos/git/bxRepos/blee-binders/bisos-apps/ftoProc.sh 
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedFtoCommon.sh -l $0 "$@" 
@@ -54,8 +54,9 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 roInvofier
-conferencingMessaging
 lcnt
+keyboard
+remoteAccess
 _nodeBase_
 marmee
 multimedia
