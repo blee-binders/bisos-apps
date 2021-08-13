@@ -35,9 +35,48 @@
 ** 
 ** Overview Comes Here.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "ICMs Design And Overview" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _ICMs Design And Overview_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bisosLcntSetup.sh" :comment "Transition" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -i examples")][bisosLcntSetup.sh]]  [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -i describe")][describe]] *|*  =Transition= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bpoLcntManage.sh" :comment "Transition" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bpoLcntManage.sh -i examples")][bpoLcntManage.sh]]  [[elisp:(lsip-local-run-command "bpoLcntManage.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bpoLcntManage.sh -i describe")][describe]] *|*  =Transition= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "LCNT Foundation Setup" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _LCNT Foundation Setup_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bisosLcntSetup.sh -h -v -n showRun -i bisosLcntBinsPrep" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -h -v -n showRun -i bisosLcntBinsPrep")][bisosLcntSetup.sh -h -v -n showRun -i bisosLcntBinsPrep]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bisosLcntSetup.sh -h -v -n showRun -i lcntBasesFullSetup" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -h -v -n showRun -i lcntBasesFullSetup")][bisosLcntSetup.sh -h -v -n showRun -i lcntBasesFullSetup]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bisosLcntSetup.sh -h -v -n showRun -i lcntBaseVcGet" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -h -v -n showRun -i lcntBaseVcGet")][bisosLcntSetup.sh -h -v -n showRun -i lcntBaseVcGet]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bisosLcntSetup.sh -p uid=root -h -v -n showRun -i lcntBasesSetup" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -p uid=root -h -v -n showRun -i lcntBasesSetup")][bisosLcntSetup.sh -p uid=root -h -v -n showRun -i lcntBasesSetup]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bisosLcntSetup.sh -h -v -n showRun -i usgBposLcntBasesSetup" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -h -v -n showRun -i usgBposLcntBasesSetup")][bisosLcntSetup.sh -h -v -n showRun -i usgBposLcntBasesSetup]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Usg And Site Selections" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _Usg And Site Selections_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bpoLcntManage.sh -i lcntBposAvailable" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bpoLcntManage.sh -i lcntBposAvailable")][bpoLcntManage.sh -i lcntBposAvailable]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bpoLcntManage.sh -i lcntBposAvailable | bxoActivate.sh -i bpoActivate" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bpoLcntManage.sh -i lcntBposAvailable | bxoActivate.sh -i bpoActivate")][bpoLcntManage.sh -i lcntBposAvailable | bxoActivate.sh -i bpoActivate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:evolution
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
