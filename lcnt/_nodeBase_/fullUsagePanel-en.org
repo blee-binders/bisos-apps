@@ -33,7 +33,16 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
-** Overview Comes Here.
+** Usual set up involves:
+** 1) bisosLcntSetup.sh -i bisosLcntBinsPrep
+** 2) bisosLcntSetup.sh -i lcntBasesBpoActivate  -- public pip_lcntBases BPO
+** 3) bisosLcntSetup.sh -i lcntBasesSetup --  Using pip_lcntBases links to /de/sys/lcnt and /lcnt
+** 4) usgBpos.sh -i usgBpos_lcntBases_bpoId -- Specifies users lcntBases
+** 4) bisosLcntSetup.sh -i usgBposLcntBasesSetup -- Uses usgLcntBpo and links it to /de/sys/lcnt/lgpc
+** 5) You then need to maintain usgLcntBpo to link to individual pip_lcnt-s of interest.
+**
+** A) bpoLcntManage.sh is used to activate lcnt BPOs and to Realize new BPOs
+**
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "ICMs Design And Overview" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
@@ -55,11 +64,14 @@
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bisosLcntSetup.sh -h -v -n showRun -i lcntBasesFullSetup" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -h -v -n showRun -i lcntBasesFullSetup")][bisosLcntSetup.sh -h -v -n showRun -i lcntBasesFullSetup]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bisosLcntSetup.sh -h -v -n showRun -i lcntBaseVcGet" :comment "" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -h -v -n showRun -i lcntBaseVcGet")][bisosLcntSetup.sh -h -v -n showRun -i lcntBaseVcGet]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bisosLcntSetup.sh -h -v -n showRun -i lcntBaseBpoActivate" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -h -v -n showRun -i lcntBaseBpoActivate")][bisosLcntSetup.sh -h -v -n showRun -i lcntBaseBpoActivate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bisosLcntSetup.sh -p uid=root -h -v -n showRun -i lcntBasesSetup" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -p uid=root -h -v -n showRun -i lcntBasesSetup")][bisosLcntSetup.sh -p uid=root -h -v -n showRun -i lcntBasesSetup]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "usgBpos.sh -i usgBpos_lcntBases_bpoId" :comment "User's links" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "usgBpos.sh -i usgBpos_lcntBases_bpoId")][usgBpos.sh -i usgBpos_lcntBases_bpoId]] *|*  =User's links= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bisosLcntSetup.sh -h -v -n showRun -i usgBposLcntBasesSetup" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -h -v -n showRun -i usgBposLcntBasesSetup")][bisosLcntSetup.sh -h -v -n showRun -i usgBposLcntBasesSetup]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
