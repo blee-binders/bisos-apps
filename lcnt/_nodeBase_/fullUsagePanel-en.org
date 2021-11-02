@@ -40,10 +40,26 @@
 ** 4) usgBpos.sh -i usgBpos_lcntBases_bpoId -- Specifies users lcntBases
 ** 5) bisosLcntSetup.sh -i usgBposLcntBasesSetup -- Uses usgLcntBpo and links it to /de/sys/lcnt/lgpc
 ** 6) You then need to maintain usgLcntBpo to link to individual pip_lcnt-s of interest.
-**
+** --
 ** A) bpoLcntManage.sh is used to activate lcnt BPOs and to Realize new BPOs
-**
+*** And manage the lcnt repo.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "How To Create A New LCNT-BPO" :anchor "Panel"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /How To Create A New LCNT-BPO:/ |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** +
+*** Realize a new lcnt-bpo -- bxieProvision.sh below
+*** Create the new lcnt-bpo/lcnt base dir -- bpoLcntManage.sh  -i repoBaseCreate_lcnt
+*** Mimic an exisiting one and make sure you have the SOURCE-INFO
+*** Create an empty dir as baseDir of the new lcnt.
+*** Go to //de/sys/lcnt/lgpc/ and create the symlinks to lcnt-bpo/lcnt
+*** From the //de/sys/lcnt/lgpc/ get to the created baseDir -- This is needed because of previous bad decisions
+*** In baseDir run lcnLcntGens.sh pres+art en-fa
+*** In baseDir run lcnLcntGens.sh -i lcntBuildInfoGens
+*** Then do a lcntProc.sh build all
+*** Then lcntProc.sh -i fullClean
+*** Then bpoLcntManage.sh -i repoBasePush_lcnt -- as below
+*** |
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "ICMs Design And Overview" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/ 
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _ICMs Design And Overview_: |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -79,15 +95,28 @@
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "LCNT BPOs Management -- Realize, Activate" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "LCNT BPOs Management -- Activate (Existing LCNT-BPO)" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _LCNT BPOs Management -- Realize, Activate_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _LCNT BPOs Management -- Activate (Existing LCNT-BPO)_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bpoLcntManage.sh -i lcntBposAvailable" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bpoLcntManage.sh -i lcntBposAvailable")][bpoLcntManage.sh -i lcntBposAvailable]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bpoLcntManage.sh -i lcntBposAvailable | bxoActivate.sh -i bpoActivate" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bpoLcntManage.sh -i lcntBposAvailable | bxoActivate.sh -i bpoActivate")][bpoLcntManage.sh -i lcntBposAvailable | bxoActivate.sh -i bpoActivate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "LCNT BPOs Realize (New LCNT-BPO) And Repos Manage" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _LCNT BPOs Realize (New LCNT-BPO) And Repos Manage_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "echo bxieProvision.sh -p privacy=priv -p kind=info -p type=project -p parent=pip_bystar -p name=lcnt_newName  -i startToPrivRealize" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "echo bxieProvision.sh -p privacy=priv -p kind=info -p type=project -p parent=pip_bystar -p name=lcnt_newName  -i startToPrivRealize")][echo bxieProvision.sh -p privacy=priv -p kind=info -p type=project -p parent=pip_bystar -p name=lcnt_newName  -i startToPrivRealize]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "echo bpoLcntManage.sh -p bpoId=pip_lcnt_nameHere -i repoBaseCreate_lcnt lgpc/bystarOrName/permanent" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "echo bpoLcntManage.sh -p bpoId=pip_lcnt_nameHere -i repoBaseCreate_lcnt lgpc/bystarOrName/permanent")][echo bpoLcntManage.sh -p bpoId=pip_lcnt_nameHere -i repoBaseCreate_lcnt lgpc/bystarOrName/permanent]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "echo bpoLcntManage.sh -p bpoId=pip_lcnt_nameHere -i repoBasePush_lcnt" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "echo bpoLcntManage.sh -p bpoId=pip_lcnt_nameHere -i repoBasePush_lcnt")][echo bpoLcntManage.sh -p bpoId=pip_lcnt_nameHere -i repoBasePush_lcnt]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:evolution
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
