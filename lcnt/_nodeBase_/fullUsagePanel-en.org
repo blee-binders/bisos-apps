@@ -34,7 +34,7 @@
 ####+END
 ** 
 ** Usual set up involves:
-** 1) bisosLcntSetup.sh -i bisosLcntBinsPrep
+** 1) bisosLcntSetup.sh -i bisosLcntBinsPrep  -- Not needed for recent sysProvision
 ** 2) bisosLcntSetup.sh -i lcntBasesBpoActivate  -- public pip_lcntBases BPO
 ** 3) bisosLcntSetup.sh -i lcntBasesSetup --  Using pip_lcntBases links to /de/sys/lcnt and /lcnt
 ** 4) usgBpos.sh -i usgBpos_lcntBases_bpoId -- Specifies users lcntBases
@@ -102,8 +102,8 @@
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bpoLcntManage.sh -i lcntBposAvailable" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bpoLcntManage.sh -i lcntBposAvailable")][bpoLcntManage.sh -i lcntBposAvailable]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bpoLcntManage.sh -i lcntBposAvailable | bxoActivate.sh -i bpoActivate" :comment "" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bpoLcntManage.sh -i lcntBposAvailable | bxoActivate.sh -i bpoActivate")][bpoLcntManage.sh -i lcntBposAvailable | bxoActivate.sh -i bpoActivate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bpoLcntManage.sh -i lcntBposAvailable | bpoActivate.sh -i bpoActivate" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bpoLcntManage.sh -i lcntBposAvailable | bpoActivate.sh -i bpoActivate")][bpoLcntManage.sh -i lcntBposAvailable | bpoActivate.sh -i bpoActivate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "LCNT BPOs Realize (New LCNT-BPO) And Repos Manage" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
