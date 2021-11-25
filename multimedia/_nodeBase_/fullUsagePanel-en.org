@@ -39,6 +39,7 @@
 ** capture https://sachachua.com/blog/2020/12/editing-subtitles-in-emacs-with-subed-with-synchronized-video-playback-through-mpv/
 ** capture http://composition.al/blog/2021/07/14/how-to-create-an-srt-caption-file-for-a-video/
 ** capture https://bernd.dev/2020/04/adding-subtitles/#creating-a-caption-file-automatically-optional
+** No of open files for imagemagic needs to be increased for gifcasting to work. Search the web.
 ** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
