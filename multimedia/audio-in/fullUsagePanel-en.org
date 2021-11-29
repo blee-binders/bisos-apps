@@ -64,8 +64,12 @@
 *  [[elisp:(beginning-of-buffer)][Top]] =pnlDblock-Ends=   ::
 *  [[elisp:(org-cycle)][| ]]  =pnlDblock-Begins= ::  [[elisp:(org-cycle)][| ]]
 ####+BEGIN: bx:dblock:global:file-insert :file "/libre/ByStar/InitialTemplates/activeDocs/blee/multimedia/audioProc/insert-loopback.org"
+*
+*    pulseAudioManage.sh -h -v -n showRun -i userConfigReset  -- Resets $HOME/.config/pulse
+*    pulseAudioInfo.sh
+*
 *  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]                 *<<<Audio Loopback>>>*           /Info: Instructions/
-*  [[elisp:(org-cycle)][| ]]  Audio Loopback      ::   ReDirecting Speaker To Mic  --  [[elisp:(lsip-local-run-command "/usr/bin/pavucontrol &")][Audio Volume Control --pavucontrol (bg)]] | paman  [[elisp:(org-cycle)][| ]]
+*  [[elisp:(org-cycle)][| ]]  Audio Loopback      ::   ReDirecting Speaker To Mic  --  [[elisp:(lsip-local-run-command "/usr/bin/pavucontrol &")][Audio Volume Control --- pavucontrol (bg)]] | paman  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  Audio        ::  Make sure cvlc is running -- Not Paused [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  Audio        ::  In pavucontrol go into "Recording" control  [[elisp:(org-cycle)][| ]]
 **  [[elisp:(org-cycle)][| ]]  Audio        ::   - select mirror of input (Monito of built-in Audio Anaolog Stereo) [[elisp:(org-cycle)][| ]]
