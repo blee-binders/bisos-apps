@@ -49,6 +49,13 @@
 ** +
 ** What else needs to be built?
 ** B|
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "BinsPrep ICM" :icmName "lcaJekyllBinsPrep.sh" :comment "Upstream DebPkg" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BinsPrep ICM/ :: [[elisp:(lsip-local-run-command "lcaJekyllBinsPrep.sh -i examples")][lcaJekyllBinsPrep.sh]]  [[elisp:(lsip-local-run-command "lcaJekyllBinsPrep.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "lcaJekyllBinsPrep.sh -i describe")][describe]] *|*  =Upstream DebPkg= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 2 :sep nil :folding? nil :label "BinsPrep Cmnd" :icmName "lcaJekyllBinsPrep.sh -v -n showRun -i fullUpdate" :comment "" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /BinsPrep Cmnd/ :: [[elisp:(lsip-local-run-command "lcaJekyllBinsPrep.sh -v -n showRun -i fullUpdate")][lcaJekyllBinsPrep.sh -v -n showRun -i fullUpdate]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "emacs-easy-jekyll" :anchor "" :extraInfo "Pointers For Now"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *emacs-easy-jekyll:* |]]  Pointers For Now  [[elisp:(org-shifttab)][<)]] E|
