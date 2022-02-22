@@ -26,13 +26,12 @@
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
 *   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/jekyll/_nodeBase_")][ =jekyll= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/browsers/_nodeBase_")][ =browsers= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/keyboard/_nodeBase_")][ =keyboard= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/_nodeBase_")][ =marmee= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/multimedia/_nodeBase_")][ =multimedia= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/remoteAccess/_nodeBase_")][ =remoteAccess= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/roInvofier/_nodeBase_")][ =roInvofier= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/_nodeBase_")][ =marmee= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/remoteAccess/_nodeBase_")][ =remoteAccess= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/roInvofier/_nodeBase_")][ =roInvofier= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** 
 ** Usual set up involves:
@@ -48,7 +47,7 @@
 *** And manage the lcnt repo.
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "How To Create A New LCNT-BPO" :anchor "Panel"
-** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /How To Create A New LCNT-BPO:/ |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /How To Create A New LCNT-BPO:/ |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 *** +
 *** Realize a new lcnt-bpo -- bxieProvision.sh below
@@ -65,7 +64,7 @@
 *** |
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "ICMs Design And Overview" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _ICMs Design And Overview_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _ICMs Design And Overview_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? nil :label "ShIcm" :icmName "bisosLcntSetup.sh" :comment "Transition" :afterComment ""
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ShIcm/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -i examples")][bisosLcntSetup.sh]]  [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -i describe")][describe]] *|*  =Transition= *|*   [[elisp:(org-shifttab)][<)]] E|
@@ -75,7 +74,7 @@
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "LCNT Foundation Setup -- /de/sys/lcnt" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _LCNT Foundation Setup -- /de/sys/lcnt_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _LCNT Foundation Setup -- /de/sys/lcnt_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bisosLcntSetup.sh -h -v -n showRun -i bisosLcntBinsPrep" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bisosLcntSetup.sh -h -v -n showRun -i bisosLcntBinsPrep")][bisosLcntSetup.sh -h -v -n showRun -i bisosLcntBinsPrep]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
@@ -100,7 +99,7 @@
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "LCNT BPOs Management -- Activate (Existing LCNT-BPO)" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _LCNT BPOs Management -- Activate (Existing LCNT-BPO)_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _LCNT BPOs Management -- Activate (Existing LCNT-BPO)_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "bpoLcntManage.sh -i lcntBposAvailable" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "bpoLcntManage.sh -i lcntBposAvailable")][bpoLcntManage.sh -i lcntBposAvailable]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
@@ -110,7 +109,7 @@
 ####+END:
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "LCNT BPOs Realize (New LCNT-BPO) And Repos Manage" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| _LCNT BPOs Realize (New LCNT-BPO) And Repos Manage_: |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _LCNT BPOs Realize (New LCNT-BPO) And Repos Manage_: |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "Cmd" :icmName "echo bxieProvision.sh -p privacy=priv -p kind=info -p type=project -p parent=pip_bystar -p name=lcnt_newName  -i startToPrivRealize" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /Cmd/ :: [[elisp:(lsip-local-run-command "echo bxieProvision.sh -p privacy=priv -p kind=info -p type=project -p parent=pip_bystar -p name=lcnt_newName  -i startToPrivRealize")][echo bxieProvision.sh -p privacy=priv -p kind=info -p type=project -p parent=pip_bystar -p name=lcnt_newName  -i startToPrivRealize]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
@@ -127,7 +126,7 @@
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
-** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 *** TODO Some Idea
 ####+BEGIN: blee:bxPanel:evolutionMaintainers

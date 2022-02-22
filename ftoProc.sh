@@ -57,13 +57,10 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-multimedia
-_nodeBase_
+roInvofier
 lcnt
 remoteAccess
-keyboard
-roInvofier
-browsers
+_nodeBase_
 marmee
 "
 # }}} DBLOCK-nodesList
