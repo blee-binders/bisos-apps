@@ -26,170 +26,18 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/config/aasMarmeeManage.cs")][aasMarmeeManage.cs]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/config/_nodeBase_")][ =config= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/daemonization/_nodeBase_")][ =daemonization= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/dsnProc/_nodeBase_")][ =dsnProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/inComingMail/_nodeBase_")][ =inComingMail= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/install/_nodeBase_")][ =install= ]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/mailCreds/_nodeBase_")][ =mailCreds= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/outGoingMail/_nodeBase_")][ =outGoingMail= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/pyApi/_nodeBase_")][ =pyApi= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/_nodeBase_")][ =marmee= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview -- Installs unisos.marme and config files" :anchor "Panel"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview -- Installs unisos.marme and config files:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview -- bisos.marmee configuration" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview -- bisos.marmee configuration:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Assumes a Linux distro with python 2.7 -- Install /bisos and configures marme based on that.
-** BISOS model for python  feature-area icms-pkgs involves the following environments:
-** ----
-** icms-pkg (Binaries) -- /bisos/venv/py2-bisos-3 -- pip install unisos.marme
-** icms-pkg Control Environment -- Either as a Native-BxSo or a Foreign-BxSo
-*** Native-BxSo  -- /bxo/so/bxso-Id
-*** Foreign-BxSo -- ~/foreignBxSo/bxso-id  -- ~/foreignBxSo/mcm/so/r3/sr/marme/dsnProc/control
-** icms-pkg Adaptation Environment  -- 
-*** ~/foreignBxSo/mcm/so/r3/sr/marme/dsnProc/adapt
-**** CONFIG: ~/foreignBxSo/mcm/so/r3/sr/marme/dsnProc/adapt/config -- pointers to control, tmp, log, etc
-**** ADMIN: ~/foreignBxSo/mcm/so/r3/sr/marme/dsnProc/adapt/admin
-** icms-pkg Run-Time Environment 
-***  BASE: ~bxoId/runEnv -> /de/run/bx/bx/so/bxoId
-***  BASE: /de/run/bx -> /var/bx
-***  BASE: /de/run/bx/so/bxoId 
-***  BASE: /de/run/bx/fso/bxoId 
-***  ICMS-PKG-BASE: /de/run/bx/so/bxoId/r3/sr/marme/dsnProc -- NOT /de/run/bisos/r3/pkgs/marmee
-**** LOG: /de/run/bx/so/bxoId/r3/sr/marme/dsnProc/log 
-**** TMP: /de/run/bx/so/bxoId/r3/sr/marme/dsnProc/tmp
-**** BUILD: /de/run/bx/so/bxoId/r3/sr/marme/dsnProc/build   -- Base for code-generation andexecution
+** Scope of this panel is initial and re-configuration of marmee.
 ** B|
-* +
-*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Distro Pip Installs And BISOS Virtenv Setup: =* | ]]  |
-** 
-**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Install Base Distro :: Disposable (Reproducible) VMs (Vagrant): =/ | ]]  |
-***
-***  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Ubuntu: =/ | ]]  |
-****
-****  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  vagrant up /bisos/vc/bxRepos/bxGenesis/vagrants/ubuntu/18.04/desktop/bxDistro/Vagrantfile  [[elisp:(org-cycle)][| ]]
-**** 
-*** 
-***  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Fedora: =/ | ]]  |
-****
-****  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  vagrant up /bisos/vc/bxRepos/bxGenesis/vagrants/ubuntu/18.04/desktop/bxDistro/Vagrantfile  [[elisp:(org-cycle)][| ]]
-**** 
-*** 
-***  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Suse: =/ | ]]  |
-****
-****  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  vagrant up /bisos/vc/bxRepos/bxGenesis/vagrants/ubuntu/18.04/desktop/bxDistro/Vagrantfile  [[elisp:(org-cycle)][| ]]
-**** 
-***
-** 
-**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= BISOS Bases And Virtenv Setup: =/ | ]]  |
-***
-***  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  [[elisp:(lsip-local-run-command "sudo -H pip install bisos.platform")][sudo -H pip install bisos.platform]]  [[elisp:(org-cycle)][| ]]
-*** 
-***  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]    [[elisp:(lsip-local-run-command "bx-platformInfoManage.py")][bx-platformInfoManage.py]]   [[elisp:(org-cycle)][| /= Bx Platform Bases Config : =/ | ]]  |
-**** 
-****  [[elisp:(org-cycle)][| ]]  Summary                ::   Specify user/group and bisosPolicy  [[elisp:(org-cycle)][| ]]
-****
-**** 
-****  [[elisp:(org-cycle)][| ]]  Current Param Settings ::  [[elisp:(lsip-local-run-command "bx-platformInfoManage.py  -i pkgInfoParsGet")][bx-platformInfoManage.py  -i pkgInfoParsGet]]  [[elisp:(org-cycle)][| ]]
-**** 
-****  [[elisp:(org-cycle)][| ]]  Set bisosUserName      ::  [[elisp:(lsip-local-run-command "echo bx-platformInfoManage.py -v 20 --bisosUserName=lsipusr -i pkgInfoParsSet")][echo bx-platformInfoManage.py -v 20 --bisosUserName=lsipusr -i pkgInfoParsSet]]  [[elisp:(org-cycle)][| ]]
-**** 
-****  [[elisp:(org-cycle)][| ]]  Set bisosGroupName     ::  [[elisp:(lsip-local-run-command "echo bx-platformInfoManage.py -v 20 --bisosUserName=lsipusr -i pkgInfoParsSet")][echo bx-platformInfoManage.py -v 20 --bisosUserName=lsipusr -i pkgInfoParsSet]]  [[elisp:(org-cycle)][| ]]
-**** 
-****  [[elisp:(org-cycle)][| ]]  Set /bisos baseDir     ::  [[elisp:(lsip-local-run-command "echo bx-platformInfoManage.py -v 20 --bisosUserName=lsipusr -i pkgInfoParsSet")][echo bx-platformInfoManage.py -v 20 --bisosUserName=lsipusr -i pkgInfoParsSet]]  [[elisp:(org-cycle)][| ]]
-**** 
-****  [[elisp:(org-cycle)][| ]]  Set /de/run/bx/ base   ::  [[elisp:(lsip-local-run-command "echo bx-platformInfoManage.py -v 20 --rootDir_deRun=/de/run/bx -i pkgInfoParsSet")][echo bx-platformInfoManage.py -v 20 --rootDir_deRun=/de/run/bx -i pkgInfoParsSet]]  [[elisp:(org-cycle)][| ]]
-**** 
-****  [[elisp:(org-cycle)][| ]]  Set /bxo baseDir       ::  [[elisp:(lsip-local-run-command "echo bx-platformInfoManage.py -v 20 --bisosUserName=lsipusr -i pkgInfoParsSet")][echo bx-platformInfoManage.py -v 20 --bisosUserName=lsipusr -i pkgInfoParsSet]]  [[elisp:(org-cycle)][| ]]
-**** 
-****  [[elisp:(org-cycle)][| ]]  Set ForeignBxo basedir ::  Run this invirtenv  after bx-bases [[elisp:(org-cycle)][| ]]
-**** 
-*** 
-***  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  [[elisp:(lsip-local-run-command "sudo -H pip install bisos.bx-bases")][sudo -H pip install bisos.bx-bases]]  [[elisp:(org-cycle)][| ]]
-*** 
-***  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  [[elisp:(lsip-local-run-command "bx-bases")][bx-bases]]  [[elisp:(org-cycle)][| ]]
-*** 
-** 
-* 
-*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Install Marme In BISOS Virtenv: =* | ]]  |
-** 
-**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Switch to bisos-virtenv and install marme as a bisosPkg: =/ | ]]  |
-***
-***  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  source /bisos/venv/py2-bisos-3/bin/activate  [[elisp:(org-cycle)][| ]]
-*** 
-***  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  pip install --no-cache-dir --upgrade unisos.marme  [[elisp:(org-cycle)][| ]]
-*** 
-** 
-*  [[elisp:(beginning-of-buffer)][|^]] ==================== [[elisp:(delete-other-windows)][|1]] 
-* 
-*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Configure ForeignBxSo Base and Install fBxSo: =* | ]]  |
-** 
-**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Setup ForeignBxSo Base: =/ | ]]  |
-***
-***  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  [[elisp:(lsip-local-run-command "mkdir ~/foreignBxo")][mkdir ~/foreignBxo]]  [[elisp:(org-cycle)][| ]]
-*** 
-***  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  [[elisp:(lsip-local-run-command "bx-platformInfoManage.py --rootDir_foreignBxo=${HOME}/foreignBxo  -i pkgInfoParsSet")][bx-platformInfoManage.py --rootDir_foreignBxo=${HOME}/foreignBxo  -i pkgInfoParsSet]]  [[elisp:(org-cycle)][| ]]
-*** 
-***  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  [[elisp:(lsip-local-run-command "bx-platformInfoManage.py  -i pkgInfoParsGet")][bx-platformInfoManage.py  -i pkgInfoParsGet]] [[elisp:(org-cycle)][| ]]
-*** 
-** 
-**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Obtain MARME-config.tar And Install As A ForeignBxSo : =/ | ]]  |
-***
-***  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  echo scp source:marme-config.tar ~  [[elisp:(org-cycle)][| ]]
-*** 
-***  [[elisp:(org-cycle)][| ]]  Cmnd                   ::  tar xf ~/marme-config.tar -C ~/foreignBxo [[elisp:(org-cycle)][| ]]
-*** 
-** 
-* 
-*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Setup MARME For A Native BxSo: =* | ]]  |
-** 
-** NOTYET
-** 
-* 
-*  [[elisp:(beginning-of-buffer)][|^]] ==================== [[elisp:(delete-other-windows)][|1]]  
-*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Select BxSo As Current: =* | ]]  |
-** 
-**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Setup bx-curentsManage.py: =/ | ]]  |
-*** 
-*** [[elisp:(org-cycle)][| ]]  Cmnd                    ::  [[elisp:(lsip-local-run-command "bx-currentsManage.py")][bx-currentsManage.py]] [[elisp:(org-cycle)][| ]]
-*** 
-**
-** 
-* 
-*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= View pkgMarmeManage -- No Settable Params: =* | ]]  |
-** 
-**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Configure MARME Pkg -- pkgMarameManage.py : =/ | ]]  |
-*** 
-*** [[elisp:(org-cycle)][| ]]  Cmnd                    ::  [[elisp:(lsip-local-run-command "pkgMarmeManage.py")][pkgMarmeManage.py]] [[elisp:(org-cycle)][| ]]
-*** 
-*** [[elisp:(org-cycle)][| ]]  Show CurParam Settings  ::  [[elisp:(lsip-local-run-command "pkgMarmeManage.py -i pkgInfoParsGet")][pkgMarmeManage.py -i pkgInfoParsGet]]  [[elisp:(org-cycle)][| ]]
-*** 
-*** [[elisp:(org-cycle)][| ]]  Set Control Base        ::  [[elisp:(lsip-local-run-command "pkgMarmeManage.py --icmsPkgInfoBaseDir=/bisos/venv/py2-bisos-3/local/lib/python2.7/site-packages/unisos/marme-config  -i pkgInfoParsGet")][pkgMarmeManage.py --icmsPkgInfoBaseDir=/bisos/venv/py2-bisos-3/local/lib/python2.7/site-packages/unisos/marme-config  -i pkgInfoParsGet]]  [[elisp:(org-cycle)][| ]]
-*** 
-** 
-* 
-*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= marmeAcctsManage -- Configure BxSo Marame Accts: =* | ]]  |
-** 
-**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Verify marmeAcctsManage.py : =/ | ]]  |
-*** 
-*** [[elisp:(org-cycle)][| ]]  Cmnd                    ::  [[elisp:(lsip-local-run-command "marmeAcctsManage.py")][marmeAcctsManage.py]] [[elisp:(org-cycle)][| ]]
-*** 
-*** [[elisp:(org-cycle)][| ]]  Cmnd                    ::  [[elisp:(lsip-local-run-command "marmeAcctsManage.py --bxoId=mcm --sr=marme/dsnProc  -i bxoSrPkgInfoParsGet")][marmeAcctsManage.py --bxoId="mcm" --sr="marme/dsnProc"  -i bxoSrPkgInfoParsGet]] [[elisp:(org-cycle)][| ]]
-*** 
-** 
-* 
-*  [[elisp:(beginning-of-buffer)][|^]] ==================== [[elisp:(delete-other-windows)][|1]] 
-*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Run Marme Receive Commands: =* | ]]  |
-** 
-**   [[elisp:(find-file "./inComingMail.org")][Mail Retreival And Search]] || [[elisp:(find-file "./dsnProc.org")][DSN Processing]] || [[elisp:(find-file "./runCmnds.org")][Marme Runs]]
-** 
-* 
-*  [[elisp:(beginning-of-buffer)][|^]] ==================== [[elisp:(delete-other-windows)][|1]] 
-* 
-*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Run Send Commands And X822-Pipeline: =* | ]]  |
-** 
-**   [[elisp:(find-file "./outGoingMail.org")][Marme Send]] || [[elisp:(find-file "./bx822-qmail.org")][Bx822 qmail]]
-** 
-*  [[elisp:(beginning-of-buffer)][|^]] ==================== [[elisp:(delete-other-windows)][|1]]
-####+BEGIN: blee:bxPanel:separator :outLevel 1
-* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-####+END
 ####+BEGIN: blee:bxPanel:evolution
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
