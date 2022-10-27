@@ -1,0 +1,609 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: lcnt/lcntDevelopment
+#+roam_tags: branch
+#+roam_key: bisos-apps/lcnt/lcntDevelopment
+[[roam:bisos-apps/lcnt]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntDevelopment/_nodeBase_/fullUsagePanel-en.org =*
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto" :subTitle "How Tos For ByStar Content Production, Processing And Publication"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: bisos-apps/lcnt -- lcntDevelopment~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+*                         ~How Tos For ByStar Content Production, Processing And Publication~
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
+
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/bookPrintPublishing/_nodeBase_")][ =bookPrintPublishing= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/hardware/_nodeBase_")][ =hardware= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntAuthorship/_nodeBase_")][ =lcntAuthorship= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntBPOs/_nodeBase_")][ =lcntBPOs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntDevelopment/_nodeBase_")][ =lcntDevelopment= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntFoundations/_nodeBase_")][ =lcntFoundations= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntModel/_nodeBase_")][ =lcntModel= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntProc/_nodeBase_")][ =lcntProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntScreencasting/_nodeBase_")][ =lcntScreencasting= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntTemplates/_nodeBase_")][ =lcntTemplates= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/_nodeBase_")][ =productionComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/publicationComponents/_nodeBase_")][ =publicationComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/writersWorkbench/_nodeBase_")][ =writersWorkbench= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Overview Comes Here.
+** B|
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  Find          :: [[elisp:(delete-other-windows)][|1]]   [[elisp:(org-cycle)][| *= Locate A New Do1cument: =* | ]]   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**   [[elisp:(lsip-local-run-command "echo lcnLcntSelect.sh docNumber")][lcnLcntSelect.sh docNumber]]
+**   [[elisp:(find-file-read-only "/lcnt/outputs/all/plpc.bib")][find-file-read-only /lcnt/outputs/all/plpc.bib]]   -- Locate a Document for citation
+**   [[elisp:(find-file-read-only "/lcnt/outputs/all/plpcUrl.bib")][find-file-read-only /lcnt/outputs/all/plpcUrl.bib]]   -- Locate a Document for citation
+**
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  LCNT Setup    :: [[elisp:(delete-other-windows)][|1]]   [[elisp:(org-cycle)][| *= lcnt Base Initial Get, Preapre and Build: =* | ]]   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**
+**  [[elisp:(org-cycle)][| ]]  Setup        ::  [[elisp:(lsip-local-run-command "bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBaseGetPrep")][bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBaseGetPrep]]  (lcnatBaseGet + lcntBasePrep) [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Setup        ::  [[elisp:(lsip-local-run-command "bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBaseFullPrep")][bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBaseFullPrep]] (fullBuild + localContentPrep) [[elisp:(org-cycle)][| ]]
+***     Prompts for a sudo in lcntBasePrep  -- Involves
+***     [[elisp:(lsip-local-run-command "bystarLcntProc.sh")][bystarLcntProc.sh]]
+***     [[elisp:(lsip-local-run-command "bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBaseGetPrep")][bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBaseGetPrep]]  (lcnatBaseGet + lcntBasePrep)
+***     [[elisp:(lsip-local-run-command "bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBaseGet")][bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBaseGet]]           # VC Update or VC Get If not there
+***     [[elisp:(lsip-local-run-command "bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBasePrep")][bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBasePrep]]          # Recreates /lcnt/outputs
+***     [[elisp:(lsip-local-run-command "bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBaseFullUpdate")][bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBaseFullUpdate]]    # fullBuild + localContentPrep (populate /content)
+**
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  Apache Setup  :: [[elisp:(delete-other-windows)][|1]]   [[elisp:(org-cycle)][| *= /rsync  /rsync/node_modules Base Initial Get, Preapre and Build: =* | ]]   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**
+**  [[elisp:(org-cycle)][| ]]  Local Setup  ::  [[elisp:(lsip-local-run-command "bsrWebSvcCommonAdmin.sh -h -v -n showRun -i webSvcRsyncBaseLocalUpdate")][bsrWebSvcCommonAdmin.sh -h -v -n showRun -i webSvcRsyncBaseLocalUpdate]]  # cp /usr/local/lib/node_modules /rsync/node_modules
+**  [[elisp:(org-cycle)][| ]]  Remote Setup ::  [[elisp:(lsip-local-run-command "bystarLcntUpload.sh -h -v -n showRun -p bystarUid=ea-59009 -i rsyncBaseUpload")][bystarLcntUpload.sh -h -v -n showRun -p bystarUid=ea-59009 -i rsyncBaseUpload]]  # node_modules
+**
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  Renumber      :: [[elisp:(delete-other-windows)][|1]]   [[elisp:(org-cycle)][| *= Renumbering A Document: =* | ]]   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**
+** First try not to have to renumber a document
+** Change the lcntNu related files in the replacing LCNT-INFO directory
+** Make sure that you deactivate the replaced document
+*** Either delete/rename the entire replaced directory
+*** Or echo "999999.originalNu" > LCNT-INFO/lcntNu
+** Edit /lcnt/lgpc/mohsen/SOURCE-INFO/permanent.reg
+**     [[elisp:(lsip-local-run-command "bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBasePrep")][bystarLcntProc.sh -p uid=lsipusr -h -v -n showRun -i lcntBasePrep]]          # Recreates /lcnt/outputs
+** pubFormats needs to become pdf+hevea
+** replace-string htmladdnormallink href
+**
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  Add Figures   :: [[elisp:(delete-other-windows)][|1]]   [[elisp:(org-cycle)][| *= Adding A figure to a document: =* | ]]   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**
+** cd /lcnt/lgpc/bystar/permanent/common/figures
+** If applicabe start from a figure that exists cp existing.odg to mine.odg
+** ooffice mine.odg
+** Do your edits
+*** Tricks For Sizes NOTYET
+** Save
+** Export as PDF  -- With figProc.sh -v -n showRun -i odgToPdf polySonSquare.odg
+** figProc.sh -v -n showRun -i srcConvert bystarEcosystemAnatomy.odg
+** figProc.sh -v -n showRun -i genFigTex bystarEcosystemAnatomy
+** figProc.sh -v -n showRun -i genStartFigInfoFiles bystarEcosystemAnatomy
+** Edit  bystarEcosystemAnatomy.caption   bystarEcosystemAnatomy.title
+** Add the figure with a dynamic block
+*** %%%#+BEGIN: bx:dblock:lcnt:body:fig-artpres :sec "none" :fig-file "/lcnt/lgpc/bystar/permanent/common/figures/bystarEcosystemAnatomy.odg"
+**
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  Edit Figures  :: [[elisp:(delete-other-windows)][|1]]   [[elisp:(org-cycle)][| *= Edit An Existing Figure in the document: =* | ]]   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**
+** Edit .odg file
+** Save
+** Export as PDF and overwrite
+** figProc.sh -v -n showRun -i srcConvert bystarEcosystemAnatomy.odg
+** ReRun
+**     ============
+**     Process Overview
+***     1) Producing the Drawings/Images
+****       Do the drawings with libreOffice
+****       For odg images -- Export as .png
+***     1) Process Captured Photos
+**** 	   /libre/ByStar/InitialTemplates/activeDocs/blee/bystarContinuum/photoManage/fullUsagePanel-en.org
+****       Go to the directory of your photos
+****       cp /libre/ByStar/InitialTemplates/lcaPlone/Starts/galleriaBase/srcSet/images/imageProc.sh imageProc.sh
+****       Follow through the steps of imageProc.sh
+***     2) Create -title.html -description.html
+****         echo forProfitNonProprietaryCube.gif | bystarPlone3GalleriaManage.sh  -i imageDescStart
+***     2.1) Edit -title.html -description.html
+***     3) Produce tailored image with gimp -- 750x300
+****       Copy image.png to image-750x300.png
+****       gimp image-750x300.png
+****       Crop the image -- tools-transform tools-crop  -- Cut out un-needed white spaces
+****       Resize the image to 300 height -- tools-transform tools-scale
+*****        Check Keep Aspect
+*****        Make the height be 300px
+*****        Click on Scale
+****       Adjust the Canvas Size -- image-canvas size
+*****        Break the link between Width and Height
+*****        Set Width to 750
+*****        Set Height to 300
+*****        Click on Resize
+****       Move the Figure in canvas -- tools-transform tools-move
+****       Create a new layer -- layer-new layer -- select white for fill type
+****       Reverse Layer Order -- layer-stack-Reverse Layer Order
+****       Save --
+**
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  New Doc Base  :: [[elisp:(delete-other-windows)][|1]]   [[elisp:(org-cycle)][| *= Creating a New Lcnt Document Base: =* | ]]   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**
+**      ############  /Preparations/
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Make Sure That Central Registry Is Up To Date* [[elisp:(org-cycle)][| ]]
+***   cd /lcnt/lgpc/bystar/SOURCE-INFO/
+***   cvs update
+**      ============
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Select Document Location/Language/Format* |  [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]] - Decide on where the document will reside in the /lcnt hierarchy.
+       lgpc,lgcc -- permananet/records/repub
+***  [[elisp:(org-cycle)][| ]] - Decide on what languages you want to include in
+       this doc, en, en+fa,
+***  [[elisp:(org-cycle)][| ]] - Decide on  what formats art+pres you want.
+**      ############  /Permanent/
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Create A New BxLaTeX Permanent Document* [[elisp:(org-cycle)][| ]]
+***    ========
+***    When choosing a directory name, make sure that
+       languages tag EnFa, En, FaEn, Fa is included in the
+       directory name. This a policy/convention and not demanded.
+***    ========
+***    mkdir /lcnt/lgpc/mohsen/permanent/essays/HalaalSoftwareAndServicesFa/
+***    cd /lcnt/lgpc/mohsen/permanent/essays/HalaalSoftwareAndServicesFa/
+***    ========
+***    Run lcnLcntGens.sh to Auto Assign A New Number and Create Initial Templates With That Number
+****    lcnLcntGens.sh  # Prefer en+fa over en
+****    lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms="art+pres" -p srcLangs="fa+en" -i baseFullStart
+****    lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms="art" -p srcLangs="en" -i baseFullStart
+****    lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms="memo" -p srcLangs="en+fa" -i baseFullStart
+****   ====
+****   NOTYET, baseFullStart  should CVS Checkin the assigned number
+****   Or Hand Assign A Number and Create Initial Templates With That Number
+***    ========
+***    Edit/Input Parameters For That Document
+****   (server-start)
+****     lcntProc.sh  -i editLcntInfo mainTitle shortTitle subTitle subSubTitle description
+***    ========
+***    Expand Dynamic Blocks (dblocks) Based on Specified Parameters
+****     lcntProc.sh  -i dblockUpdateFile articleFaEn.ttytex presentationFaEn.ttytex artPresBodyFaEn.tex
+****     lcntProc.sh  -i dblockUpdateFile articleEn.ttytex presentationEn.ttytex artPresBodyEn.tex
+***    ========
+***    Veify the Build - Then Edit and Build
+****     lcntProc.sh  -i  fullBuild
+**      ============
+**  [[elisp:(org-cycle)][| ]]  Existing Doc ::  *Create A New (Existing pdf/html) Permanent or Record Document*  [[elisp:(org-cycle)][| ]]
+***    mkdir /lcnt/lgpc/mohsen/record/presentations/mobileMsgLandscape1999
+***    cd /lcnt/lgpc/mohsen/record/presentations/mobileMsgLandscape1999
+***    cp ~/contentFile.pdf .
+***    lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms="pdf"  -i baseFullStart  contentFile.pdf
+**      ############  /RePub/
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Create A New Republished Document -- (Existing pdf/html) Content* |  [[elisp:(org-cycle)][| ]]
+*** mkdir 4 levels matching
+*** Put content in dir (touch a file of copy content there or run the wget.sh pointing to source of doc)
+*** If a new ttytex document -- touch articleEnFa.ttytex
+
+*** Assign in REGISTRY
+    Edit /lcnt/REGISTRY/repub/repub.reg
+**** By convention For each publisher the repub numbers start at 1xx800 and above.
+
+*** Run [[elisp:(lsip-local-run-command "lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms=art -p srcLangs=en+fa -i lcntInfoGen")][lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms=art -p srcLangs=en+fa -i lcntInfoGen]]
+**** Creates LCNT-INFO
+**** publishable1 will be automatically set to the pdf/html contents of the directory
+*** Run lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms="art" -p srcLangs="en+fa" -i lcntRefresh
+**** Creates lcntProc.sh
+
+*** If a ttytex document also Run:
+***    lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms="art" -p srcLangs="en+fa" -i lcntBaseConfigMulti
+
+*** Edit LCNT-INFO/shortTitle ...
+**** lcntProc.sh  -i editLcntInfo mainTitle shortTitle subTitle subSubTitle description
+
+*** Then in that directory
+      lcntProc.sh -v -n showRun -p bystarUid=ea-59055 -i plone3FullPublish
+
+*** BUGS: for .html republication -- lcntNu does not show up and publishable1 Does not show up
+
+**      ============
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Create A New Republished Document -- lcnt BxLaTeX-Doc* |  [[elisp:(org-cycle)][| ]]
+*** mkdir 4 levels matching
+*** Put content in dir (touch a file of copy content there or run the wget.sh pointing to source of doc)
+
+*** Assign in REGISTRY
+    Edit /lcnt/REGISTRY/repub/repub.reg
+
+*** lcnLcntGens.sh -p cntntRawHome=. -p srcForms="art" -p srcLangs="en+fa" -i lcntRefresh
+
+*** lcnLcntGens.sh -p cntntRawHome=. -p srcForms="art" -p srcLangs="en+fa" -i lcntBaseConfigMulti
+*** The document is now ready for customization in the ./LCNT-INFO Directory
+**      ############
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Add The New Document Base To CVS Tree and objTree* |  [[elisp:(org-cycle)][| ]]
+***   - cd to the parent directory and weave in the new document in its lcntProc.sh
+***   - Run a cleanTree from that parent directory
+***   - Run cvs-update from that parent directory
+***   - Make sure that the registry with the new document assignment is also CVSed
+**
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  Production    :: [[elisp:(delete-other-windows)][|1]]   [[elisp:(org-cycle)][| *= Document Production/Writing and Lcnt Preparation: =* | ]]  <<lcntPreparation>>  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**
+**  [[elisp:(org-cycle)][| ]]  Subject      :: Common Lcnt Preparations [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      :: pres or pres+art  (Use Dblocks to Customize files based on file variables) [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      :: article or art+pres [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Subject      :: memos [[elisp:(org-cycle)][| ]]
+**
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  Roadmap      :: [[elisp:(delete-other-windows)][|1]]    [[elisp:(org-cycle)][| *= Roadmap How-TOs: =* | ]]  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**
+**     - How to setup the /lcnt base?
+
+        - Checkout the /lcnt public branch
+   /usr/mapFiles/doc/lcnt/full/mapVerModules.sh -p cvsRoot=cvsRoot_bySourceCvs1Ssh -s lcntFull -a moduleCheckout
+	    - If in private environment Checkout the private braches
+   /usr/mapFiles/lcntLgcc/mapVerModules.sh2 -p cvsRoot=cvsRoot_bySourceCvs22Ssh -s lgcc -a moduleCheckout
+
+	- Create the master list
+   lcntProc.sh   -i lcntNuUpdate
+
+	- Create other categories.
+
+        lcnLcntOutputs.sh -n showRun -p inListLcntNu=/lcnt/outputs/all/lists/nuBaseDir -p sortByCategory=sw      -p outFile=/lcnt/outputs/all/lists/nuBaseDir.sw -i lcntNuSort
+
+        - cd /lcnt  # NOTYET, TODO, plpc.bib update should use /lcnt/outputs/all/lists/nuBaseDir
+          lcntProc.sh   -i dirsRecurse bibOut > /lcnt/outputs/all/plpc.bib
+
+        - ln -s /lcnt/BIB /usr/local/lib/bib
+
+        - mmaSshAdmin.sh -p localUser=xxx -p remoteUser=xxx -p remoteHost=www.example.org  -i authorizedKeysUpdate
+                --- freeprotocols.org
+                --- libreservices.org
+                --- by-star.net
+                --- mohsen.byname
+                --- andrew.byname
+
+    - How to make preparation for:
+              - plpc/draft/record document
+	      - repub document:
+	             - ttytex repub
+		     - pdf repub
+	      - sw distribution
+
+	1) For plpc/draft/record document , decide between:
+              lgpc=GeneratedPublic lgcc=GeneratedConfidential
+	      i.e. /lcnt/lgpc
+	   This also apply for repub document where we need to process the document
+	   to produce pdf/ps/html from ttytex doc.
+
+	   For repub document which we don't have the ttytex source but only pdf format,
+	   decide between:
+   	      /info/externalConfidential   /info/externalLimited   /info/mohsenConfidential
+              /info/externalLibre          /info/externalPublic
+
+	   For sw, choose /lcnt/sw
+
+	2) Locate the source/owner (base for repub) of the document/sw
+	   For lcnt doc and ttytex repub:
+              neda= /lcnt/lgpc/neda       fpf= /lcnt/lgpc/fpf      mohsen= /lcnt/lgpc/mohsen
+	   For sw:
+	      neda= /lcnt/sw/neda
+
+	   For pdf repub, decide between tech, finance, politics, etc.
+	     /info/externalLimited/technology   /info/externalLimited/finance  /info/externalLimited/politics
+
+	3) Decide between: permanent, record, draft, repub
+	   /lcnt/lgpc/neda/permanent   /lcnt/lgpc/neda/record /lcnt/lgpc/neda/draft  /lcnt/lgpc/neda/repub
+
+	   For pdf repub, there is no definite structure as long as by the time we reach
+	   step 4, we have total of 5 sub directories.
+
+	4) Locate the base directory
+     	     lcnt document: /lcnt/lgpc/neda/permanent/ByStar/ByStarConcept
+	     record       : /lcnt/lgpc/neda/record/byStar/0704281-linuxFest
+	     ttytex repub : /lcnt/lgpc/mohsen/repub/externalPublic/politics/iran/cia/mosadegh -- ask MB
+	     pdf repub    : /info/externalLimited/technology/press/ieee/vcThwatrsInnovation
+	     sw           : /lcnt/sw/neda/leap/emsd/EMSD-MulPub
+
+             For the purpose of publication the base directory is related
+	     to the publication directory in a 6 level hierarchy
+	    ------------------------------------------------------
+	    destPath1/destPath2/destPath3/destPath4/destPath5/destPath6
+
+	    For PLPC, DRAFT, RECORDS, these are number driven and
+            beyond SOURCE/{permanent,records,draft} the
+            hierarchy is not relevant.
+            /content/generated/doc.free/neda/PLPC/110102/current
+                  /    1    /    2   /  3 /  4 /   5  /   6
+
+		  for example:
+             /lcnt/lgpc/neda/permanent/engineering/nedaLibreGenesis
+            /content/generated/doc.free/neda/PLPC/110102/current
+
+           For republish doc: destination path are based on location
+           (below example is for republication which we don't have to generate pdf/ps/html)
+
+           /info/externalLimited            /technology/press/ieee/vcThwatrsInnovation
+           /content/republished/doc.limited/technology/press/ieee/vcThwatrsInnovation
+	   Note how the last  4 levels map
+
+           For republish doc: destination path are based location
+           (below example is for republication which we need to generate
+            pdf/ps/html from ttytex)
+          /lcnt/lgpc/mohsen/repub               /politics/iran/mossadeq/cia-53-iranCoup
+	  /content/republished/doc.public       /politics/iran/mossadeq/cia-53-iranCoup
+
+          For sw: destination path are based location
+          /lcnt/sw                  /neda/leap/emsd/EMSD-MulPub
+	  /content/generated/sw.free/neda/leap/emsd/EMSD-MulPub
+
+       5) Base Start: Create the initial document:
+          (Skip this process for pdf repub and sw)
+          Decide on the document name and format: i.e.  main.ttytex or 0810021.odp
+
+          In the base directory run:
+	    lcnLcntGens.sh -n showRun -p cntntRawHome=.  -i lcntBaseStart ttytex main
+	    lcnLcntGens.sh -n showRun -p cntntRawHome=.  -i lcntBaseStart odp 0810021
+	  This creates a blank main.ttytex
+
+
+       5.1) For existing  document, just create the base directory (step 4)
+            and copy the existing files to that directory.
+	    [ Historic, this used to be done with FullStart, which is now
+              deprecated. ]
+
+       6) Assign the document a PLPC Number (for lcnt document), REPUB Number (for repub),
+          or SW Name.
+
+          Then  add it to:
+	    if permanent: /lcnt/lgpc/neda/SOURCE-INFO/permanent.reg (numbering based on rules)
+	    if record   : /lcnt/lgpc/neda/SOURCE-INFO/record.reg  (e.g. presentation, numbering based on date)
+	    if draft    : /lcnt/lgpc/neda/SOURCE-INFO/draft.reg (numbering based on rules)
+	    if repub    : /lcnt/REGISTRY/repub/repub.reg (numbering based on rules)
+	    if sw       : /lcnt/REGISTRY/sw/sw.reg (numbering based on sw name)
+
+       7) Create the LCNT-INFO directory
+          and lcntProcs.sh
+          In the base directory run:
+	    lcnLcntGens.sh -p cntntRawHome=. -e "Create or Update" -i lcntRefresh    --- This creates the LCNT-INFO directory.
+
+
+       8) Customize the LCNT-INFO driectory
+	  Go to the LCNT-INFO directory and edit what needs to be edited.
+
+               - NOTYET: get rid of README
+               - grep ^ *  # to see all
+               - Edit as needed, in particular
+                   mainTitle
+                   shortTitle
+                   subTitle
+                   description
+
+       9) For an existing document go to next step, skip this step.
+          For a New Document
+          Decide on the type of document and get initial template
+          (Skip this process for pdf repub and sw)
+          Choose between presentation/article/book/memo/...
+
+	    In the base directory run:
+	    lcnLcntGens.sh -p cntntRawHome=.  -i lcntBaseConfig article
+
+          This brings over the initial template.
+          Or get your own preferred starting point document.
+
+       10) Develop your document using lcntProc.sh
+
+       11) Process the Content
+	    -) How to process/publish a ttytex document?
+		Just run lcntProc.sh -i fullPublish
+
+		Just run lcntProc.sh -i fullUpdate to build
+                but not publish.
+
+	    -) How to process/publish an .odp openoffice impress presentation?
+		Call the base directory BaseDirName
+		Call the odp document BaseDocName.odp
+		The following applies to Open Office 2.0
+
+		    For PDF:
+		    - File -> Export PDF
+
+		    TopDir=BaseDirName
+		    Location= BaseDocName.pdf
+		    Filter=PDF
+		    Uncheck  Automatic file name extension
+
+		    Accept defaults then [Export]
+
+		    For HTML:
+
+		    First in BaseDirName
+		    mkdir BaseDocName
+
+		    - File -> Export
+
+			TopDir=BaseDirName
+			Location=BaseDocName/index.html
+			Filter=HTML
+			Uncheck  Automatic file name extension
+
+			Accept defaults then 5 times [Next] then [Create]
+
+	    -) How to make preparations for a republish document?
+		Then run repubProc.sh which will put things on the web. (NOTYET)
+
+	    -) How to make preparations for a sw distribution?
+		Then run swProc.sh which will put things on the web. (NOTYET)
+
+       12) Publish the content using lcntProc.sh
+
+		Just run lcntProc.sh -i fullPublish
+
+**
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  Andrew Notes :: [[elisp:(delete-other-windows)][|1]]    [[elisp:(org-cycle)][| *= Supplementary Notes By Andrew -- Old Leftover Stuff to be Sorted: =* | ]]  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**
+** SUPPLEMENTARY NOTES BY ANDREW   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]
+
+The following are some supplementary notes by Andrew on how to create
+a new document.
+
+1. First navigate to and create the directory where the document files
+will reside and be processed. I.e. start in /lcnt/ and navigate down
+the directory tree as appropriate.
+
+e.g. /lcnt/lgpc/ for Generated Public
+
+Next navigate to the owner
+
+e.g. /lcnt/lgpc/andrew/
+
+Navigate to permanent, draft, etc. as appropriate
+
+e.g. /lcnt/lgpc/andrew/permanent/
+
+Create the new base directory
+
+e.g. /lcnt/lgpc/andrew/permanent/resumes/new_directory
+
+2. Create a blank starting-point document.  run lcnLcntGens.sh, and go
+to the lcntBaseStart command edit the file name as desired, then run
+the command. E.g.
+
+lcnLcntGens.sh -n showRun -p cntntRawHome=. -e "Start Blank" -i lcntBaseStart ttytex new_document
+
+This will create a new blank document called new_document.ttytex
+
+It will also present a number of commands ready to be executed.
+
+3. Run the echo command presented.  This will add a new entry to the
+registration file permanent.reg for the new document.
+
+4. Edit the permanent.reg file to assign a new number to the new
+document.
+
+5. Run the lcntRefresh command presented. This will create the
+LCNT-INFO directory, and a local copy of the lcntProc.sh file.
+
+6. Customize the LCNT-INFO directory as necessary.
+Navigate to the LCNT-INFO directory.
+Delete the README file.
+Run the command: grep ^ *
+This will create a list of the existing LCNT-INFO files and their entries.
+As a bare minimum edit these files:
+  description
+  mainTitle
+  shortTitle
+
+7. Navigate back to the base directory (e.g. new_directory) and run
+the lcntBaseConfig command presented. This will get the initial
+template for the new document. The previously created blank document
+will be backed up; this can now be deleted.
+
+From this point processing of the document can proceed as usual.
+**
+
+*      ================
+* [[elisp:(org-cycle)][| ]]   Dispositions  ::       *Dispositions Setup -- Impressive, Voice-Over and Screencast*  [[file:/libre/ByStar/InitialTemplates/activeDocs/blee/screencasting/fullUsagePanel-en.org][ScreenCast Panel]]  [[elisp:(org-cycle)][| ]]
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  Html Output   :: [[elisp:(delete-other-windows)][|1]]   [[elisp:(org-cycle)][| *= HTML Generation Capabilities and Deficiencies: =* | ]]   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**
+**   tex4ht Capability:  In LaTeX (Not XeLaTeX) is able to handle all
+     formats including both article and presentation from both beamer source.
+**      When Beamer is used, use tex4ht and no persian.
+**   tex4ht Deficiency: No Persian supported. No XeLaTeX. No Bidi.
+**   hevea Capabilities: Works well with XeLaTeX and Persian
+**   hevea Deficiencies: Does not work with Beamer
+**   So, When you need to include persian and you also want html output,
+     do not use beamer's both modes. Do Article and Presentation
+     separately.
+**   When there are figures, tex4ht image generation is fully automated.
+     hevea needs more figuring and documentation.  NOTYET.
+**
+*      ================
+*  [[elisp:(beginning-of-buffer)][|^]]  Conversions  :: [[elisp:(delete-other-windows)][|1]]    [[elisp:(org-cycle)][| *= Converting To And From LaTeX --pandoc NOTYET: =* | ]]   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+**
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  *To LaTeX* [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Word-To-LaTeX [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Subject    :: Convert To Html Then gnuhtml2latex [[elisp:(org-cycle)][| ]]
+       - From libreoffice do an export to html
+       - indent the result with xmlindent
+       - Convert to latex with gnuhtml2latex -H
+       - Edit the result.
+****  [[elisp:(org-cycle)][| ]]  Subject    :: lcntProc.sh -i word2latex fileBase [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: Excel-To-LaTeX [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Subject    :: With Gnumeric  [[elisp:(org-cycle)][| ]]
+       - apt-get install gnumeric
+       - Open the .xls
+       - Go to tools export and select other .tex
+       - Save the .tex table file.
+**  [[elisp:(org-cycle)][| ]]  Subject      ::  *From LaTeX* [[elisp:(org-cycle)][| ]]
+***  [[elisp:(org-cycle)][| ]]  Subject     :: LaTeX-To-Word [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Subject    :: lcntProc.sh -i latex2word fileBase [[elisp:(org-cycle)][| ]]
+**
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Panel Maintenance (Notes, Status, Evolution): =* | ]]  |
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Notes, Ideas, Tasks, Agenda: =/ | ]]  |
+** TODO Build Gen -- Use artSrcFile/... to decide if we need to create the buildSpec
+** TODO [#A] Capture All Template files
+   SCHEDULED: <2019-07-25 Thu>
+** TODO lgrind needs to be added to genesis install.
+** TODO /usr/share/texmf/tex/latex/lgrind/lgrind.sty --
+** TODO In /lcnt/lgpc/neda/permanent/software/openCPlatform/tgrindBuild.sh absorb it into lcntProc.sh and add postClean Hook
+** TODO Based on LCNT-INFO/activation, Make all of lgcc be tagged "private"
+** AUTO BUILD Remaining Problems:
+*** /lcnt/lgpc/bystar/permanent/usage/persoArabicScriptFaEn/heveaHtml-articleFaEn/index.htm
+**  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| /= Bug Reports, Development Team: =/ | ]]  |
+***  Bug Report                            ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Developers                            ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net
+
+*  [[elisp:(beginning-of-buffer)][Top]] ################ [[elisp:(delete-other-windows)][(1)]]
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerOrgParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:lcntDevelopment
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END

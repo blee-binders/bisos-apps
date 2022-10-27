@@ -1,0 +1,42 @@
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= LCNT Facilities -- Scripts Overview: =* | ]]   |
+** 
+**  ICM-Lib  ::  [[elisp:(lsip-local-run-command "lcnLcntBuildLib.sh")][lcnLcntBuildLib.sh]]       [[elisp:(blee:visit-as-content-list "lcnLcntBuildLib.sh")][Visit Content]]          || Generate and read-in LCNT/Builds FVs   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]] |
+** 
+**  ICM-Lib  ::  [[elisp:(lsip-local-run-command "lcnLcntExportLib.sh")][lcnLcntExportLib.sh]]       [[elisp:(blee:visit-as-content-list "lcnLcntExportLib.sh")][Visit Content]]         || Generate and read-in LCNT/Exports FVs  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]] |
+** 
+**  lcnLcntLib.sh        -- Common Stuff to be used among lcnLcnt scripts.
+** 
+**  lcnLcntGens.sh       -- Generate LcntFiles.  Use as the starting point
+                          to generate LCNT-INFO directory structure for new
+                          Lcnt document.
+** 
+**  seedLcntProc.sh/     -- Used to generate lcntProc.sh which is reside in
+**  lcntProc.sh             every directory where XXXX-INFO exist.
+                          The lcntProc.sh runs all the build of the documents
+                          as well as publish them all at once recursively.
+
+			  lcntProc also produce lcntNu list by running dirsRecurse
+			    lcntProc.sh   -i lcntNuUpdate
+			  in /lcnt directory and generate output in 
+			  /lcnt/outputs/all/lists/nuBaseDir
+** 		
+**  lcnLcntSelect.sh     -- Generate a list of lcnt numbers based on a specific
+                          selection, i.e.
+                             - author
+                             - primary author
+                             - publisher
+                             - publication site
+			  lcnLcntSelect use the /lcnt/outputs/all/lists/nuBaseDir
+			  file to create a new list based on the selection.
+			  The output is in the form of
+			  LCNT Numbers: /directory/source
+			  Example:
+			  PLPC-110201: /lcnt/lgpc/neda/permanent/marketing/NedaConsulting
+** 
+** lcnLcntOutputs.sh    -- Generate results based on the LCNT-INFO for various
+                          purposes, e.g. Bibliography in HTML format, list
+                          of lcnt numbers, etc.  The outputs can be either
+                          stdout or to a specific outFile.
+** 
+** lcnLcntUpload.sh     -- Upload all necessary files to the remote destinations
+			  including accessPage publish.

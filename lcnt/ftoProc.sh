@@ -57,8 +57,20 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
-jekyll
+lcntTemplates
+lcntScreencasting
+lcntBPOs
+hardware
+lcntAuthorship
+bookPrintPublishing
 _nodeBase_
+lcntDevelopment
+productionComponents
+publicationComponents
+lcntModel
+lcntFoundations
+writersWorkbench
+lcntProc
 "
 # }}} DBLOCK-nodesList
 ####+END:

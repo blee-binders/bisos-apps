@@ -1,0 +1,595 @@
+* B|
+####+BEGIN: bxPanel:common/title-plus
+#+title: lcnt/lcntModel
+#+roam_tags: branch
+#+roam_key: bisos-apps/lcnt/lcntModel
+[[roam:bisos-apps/lcnt]]
+####+END
+####+BEGIN: blee:bxPanel:topPanelControls
+*  [[elisp:(org-cycle)][|#Control|]] :: [[elisp:(blee:bnsm:menu-back)][Back]] [[elisp:(toggle-read-only)][read/wr]] | [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Overview]]  [[elisp:(progn (org-shifttab) (org-content))][Content]] | [[elisp:(delete-other-windows)][(1)]] | [[elisp:(progn (save-buffer) (kill-buffer))][S&Q]] [[elisp:(save-buffer)][Save]] [[elisp:(kill-buffer)][Quit]] [[elisp:(bury-buffer)][Bury]]  [[elisp:(magit)][Magit]]  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(bap:magit:bisos:current-bpo-repos/visit)][BPO-Repos-Magit]] ||
+**  [[elisp:(blee:buf:re-major-mode)][Re-Major-Mode]] ||  [[elisp:(org-dblock-update-buffer-bx)][Update Buf Dblocks]] || [[elisp:(org-dblock-bx-blank-buffer)][Blank Buf Dblocks]] || [[elisp:(bx:panel:variablesShow)][bx:panel:variablesShow]]
+**  [[elisp:(blee:menu-sel:comeega:maintenance:popupMenu)][||Maintenance]]
+**  This File :: *= /bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntModel/_nodeBase_/fullUsagePanel-en.org =*
+*  [[elisp:(org-cycle)][|#Select|]]  :: (Results: [[elisp:(blee:bnsm:results-here)][Here]] | [[elisp:(blee:bnsm:results-split-below)][Below]] | [[elisp:(blee:bnsm:results-split-right)][Right]] | [[elisp:(blee:bnsm:results-other)][Other]] | [[elisp:(blee:bnsm:results-popup)][Popup]]) (Select:  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh -i currentsGetThenShow")][Show Currents]]  [[elisp:(lsip-local-run-command "lpCurrentsAdmin.sh")][lpCurrentsAdmin.sh]] ) [[elisp:(org-cycle)][| ]]
+**  #See:  (Window: [[elisp:(blee:bnsm:results-window-show)][?]] | [[elisp:(blee:bnsm:results-window-set 0)][0]] | [[elisp:(blee:bnsm:results-window-set 1)][1]] | [[elisp:(blee:bnsm:results-window-set 2)][2]] | [[elisp:(blee:bnsm:results-window-set 3)][3]] ) || [[elisp:(lsip-local-run-command-here "echo pushd dest")][echo pushd dir]] || [[elisp:(lsip-local-run-command-here "lsf")][lsf]] || [[elisp:(lsip-local-run-command-here "pwd")][pwd]] |
+**  [[elisp:(org-cycle)][|#Destinations|]] :: [[Evolution]] | [[Maintainers]]  [[elisp:(org-cycle)][| ]]
+**  #See:  [[elisp:(bx:bnsm:top:panel-blee)][Blee]] | [[elisp:(bx:bnsm:top:panel-listOfDocs)][All Docs]]  E|
+####+END
+####+BEGIN: blee:bxPanel:title :panelType "=bxPanel=" :title "auto" :subTitle "LCNT Model, Concepts And Terminolog"
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+*   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseTop-50.png][http://www.freeprotocols.org]]_ _   ~Node:: bisos-apps/lcnt -- lcntModel~   [[img-link:file:/bisos/blee/env/images/fpfByStarElipseBottom-50.png][http://www.by-star.net]]
+*                                        ~LCNT Model, Concepts And Terminolog~
+* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
+
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/bookPrintPublishing/_nodeBase_")][ =bookPrintPublishing= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/hardware/_nodeBase_")][ =hardware= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntAuthorship/_nodeBase_")][ =lcntAuthorship= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntBPOs/_nodeBase_")][ =lcntBPOs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntDevelopment/_nodeBase_")][ =lcntDevelopment= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntFoundations/_nodeBase_")][ =lcntFoundations= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntModel/_nodeBase_")][ =lcntModel= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntProc/_nodeBase_")][ =lcntProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntScreencasting/_nodeBase_")][ =lcntScreencasting= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntTemplates/_nodeBase_")][ =lcntTemplates= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/_nodeBase_")][ =productionComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/publicationComponents/_nodeBase_")][ =publicationComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/writersWorkbench/_nodeBase_")][ =writersWorkbench= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Scope of this panel is the over arching concepts and terminology of LCNT.
+** B|
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Model And Terminology: =* | ]]  |
+**
+** Terminology and Model:
+   ======================
+
+    LCNT  (Libre Content)
+	is content that is either any of or all of
+
+           - Libre Generated Published Content LGPC_
+           - Libre Generated Confidential Content LGCC_
+           - Libre Published External Content (Republished) LPXC_
+
+	LGC_ (Libre Generated Content)
+	   is either of
+
+           - Libre Published Content LGPC_
+           - Libre Generated Confidential Content LGCC_
+
+	LPC_ (Libre Published Content)
+	   is either of
+
+           - Libre Generated Published Content LGPC_
+           - Libre Published External Content (Republished) LPXC_
+
+
+
+	Libre Generated Content -- LGC_
+
+	    Is content (documents, video, music, ...) that is
+	      - Produced using Libre Tools
+
+	    LGC_
+              can be LGPC_: optionally be published using Libre Publication Services
+              or
+	      can be LGCC_: Private and Limited in distribution
+
+	Production/Generation vs Publication
+
+	   Production is the processing of taking source
+           (e.g. latex sources) and producing output
+	   (e.g. pdf, html)
+
+	   Publication is about taking the files and putting
+           them on the web.
+
+	Libre Published Content  (LPC)
+                (PUBLIC)
+	    Permanent    -- Similar to RFCs
+	    Draft        -- Similar to Draft-RFCs
+	    Record       -- For Example a Presentation at a Conference
+	    Repub        -- Republish documents that do not belong to neda
+
+	Libre Generated Confidential Content (LGCC)
+		(PRIVATE)
+	    Permanent
+	    Draft
+	    Record
+
+	Libre Generated Public Content (LGPC)
+		(PUBLIC)
+	    Permanent
+	    Draft
+	    Record
+
+
+        Libre Generation/Production Tools
+	    lcntProc.sh
+
+	Libre Publication Tools
+	    mmaCntntPkgs.sh -- OBSOLETED
+            ...
+
+
+	LCNT-INFO Directory
+	    Pieces of information to allow for overlap
+            information between Production and Publication
+	    and lots of automation.
+
+	    See README (readmeOut) in lcnLcntLib.sh
+	    for description and purpose of each file.
+
+
+	Production Environment
+	    /lcnt/lgpc/fpf/permanent/LibreServices/LS-general
+
+	Produced Repository
+	    /content/generated/doc.free/fpf/PLPC/100001/current
+
+	    Used by mail distribution tools, ...
+
+	Publication Environment
+	    http://www.libreservices.org/content/generated/doc.free/fpf/PLPC/100001/current
+
+
+     For Republication
+     -----------------
+	REPUB-INFO Directory
+	    Pieces of information to allow for
+	    re-use of LCNT tools.
+
+      Intra Information Repository
+      ----------------------------
+
+	/info/externalLibre
+                Libre -- Material that can be freely copied
+
+        /info/externalPublic
+		Material that is publicly available, but that
+                is perhaps copyrighted.
+
+        /info/externalLimited
+	        Material that is available to some but not to the
+                public.
+
+	/info/externalConfidential
+		Material available under non-disclosure.
+
+
+     For Software
+     ------------
+
+	Production Environment
+	    /lcnt/sw/neda/leap/emsd/EMSD-MulPub
+	    /lcnt/sw/neda/leap/emsd/EMSD-MulPub/LCNT-INFO
+	    /lcnt/sw/neda/leap/emsd/EMSD-MulPub/src
+	    /lcnt/sw/neda/leap/emsd/EMSD-MulPub/bin
+
+	Produced Repository
+	    /content/generated/sw.free/neda/leap/emsd/EMSD-MulPub
+
+	Publication Environment
+	    http://www.libreservices.org/content/generated/sw.free/neda/leap/emsd/EMSD-MulPub
+
+	Access Page Environment
+	    http://www.libreservices.org/SW/EMSD-MulPub
+
+
+     CONTENT TYPES -- PRODUCED and/or PUBLISHABLE
+     ============================================
+
+          - pdf
+	  - ps
+	  - html
+
+	  - .tar
+	  - .tar.gz
+	  - .deb
+
+	  - (video notyet)
+
+
+      CONTENT TYPES -- RAW PROCESSABLE
+      ================================
+
+	These are formats that are inputs to lcntProc
+
+          - .tex
+	  - .ttytex
+	  - .odp
+
+	  - (video notyet)
+
+
+       REGISTRIES and NUMBER ASSIGNMENTS
+       =================================
+
+         GLOBAL REGISTRIES
+	 -----------------
+           - /lcnt/REGISTRY/
+	   - /lcnt/REGISTRY/author/
+	   - /lcnt/REGISTRY/organization/
+	   - /lcnt/REGISTRY/sources
+	   - /lcnt/REGISTRY/repub   ## Partially deligated, partially central
+	   - /lcnt/REGISTRY/sw      ## Flat Name Space, therefore global
+
+	 DELIGATED REGISTRIES
+         --------------------
+
+            - /lcnt/lgpc/neda/SOURCE-INFO/permanent.reg
+            - /lcnt/lgpc/neda/SOURCE-INFO/draf.reg
+            - /lcnt/lgpc/neda/SOURCE-INFO/record.reg
+
+            - /lcnt/lgpc/mohsen/SOURCE-INFO/permanent.reg
+            - /lcnt/lgpc/mohsen/SOURCE-INFO/draf.reg
+            - /lcnt/lgpc/mohsen/SOURCE-INFO/record.reg
+
+
+		# ToBe Obsoleted
+           - /m1/lcnt/lgpc/LGPC-INFO/sourcesReg.sh
+	   - /m1/lcnt/lpxc/nu.lpxc
+
+	ACCESS PAGE TYPES
+        =================
+
+	    - PLPC
+	    - RECORDS
+	    - DRAFT
+	    - REPUB
+		# Needs Design Work
+	    - SW
+		# Needs Design Work (Man pages, Data Sheet)
+
+	 LCNT.NU LIST
+	 ============
+
+	    Format:  lcntTag baseDir
+
+	 LCNT.NU Sift and Processors
+	 ===========================
+	    lcnLcntSelect.sh
+	    lcnLcntOutputs.sh
+**
+*  [[elisp:(beginning-of-buffer)][|^]] #################### [[elisp:(delete-other-windows)][|1]]
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= LCNT-INFO Fields Description: =* | ]]  <<lcntInfo-fvDesc>>  |
+**
+** [2019-07-22 Mon 14:52] Taken from lcnLcntLib.sh readmeOutput
+**
+** LCNT-INFO  FileVariable (FV)  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
+
+# Last Updated: Thu Jul 19 13:35:22 PDT 2007
+
+Read lcnLcntRoadmap.sh Below is just a summary
+
+These informations are used for lcntProcs.sh and
+can be divided into 4 major areas:
+  - Content General Info
+  - Content Processor Info
+  - Content Publication Info
+  - Content Specific Info
+
+
+Content General Info
+--------------------
+author1                Author information as listed in the
+(primary author)       /lcnt/REGISTRY/author
+		       It can also be a custom author info
+		       which in this case whatever written
+		       in this file, will be used AS-IS
+		       for Cover Page and Access Page.
+author2..author(n)     All the author author will have the same
+		       format as author1.  A document can has
+		       many authors.
+lcntNu:                As in cover page
+			 For document type:
+			    When Permanent assigned
+			    When Record, date based
+			    When draft, date based
+			    When Private, assigned
+			    When Repub, assigned but not necessarily
+			       in numbers form
+			 For sw type:
+			    assigned but not in number form.
+			    Instead it's module name.
+
+articleForm:           oneOf: article, book, artBook (Parts become Chapters), memo, mailing
+                       Based on this, the article.ttytex template is chosen to be
+		       article or book or memo.
+		       For artBook, at build time with dblocks, article class can become
+		       book class and Parts become chapters.
+
+lcntName:              is a short string that is used as name of this lcnt.
+                       Initially it is set to "$( FN_nonDirsPart $(pwd))".
+		       in Builds/buildSpec/buildName is set to lcntName.
+
+date                   Document Date
+description            As will appear on access page
+mainTitle              As in cover page
+shortTitle             As on every page of the book formal
+subTitle               As in cover page
+subSubTitle            As in cover page
+organization           As in cover page
+contentOrigin          Owner of the doument: neda, fpf, mohsen
+		       Publication Url e.g.  generated/doc.free/neda/lcnt
+version                As in cover page
+docGroup               One of ByStar, LEAP, LibreServices
+accessPageInclusion    one of: html
+                       If this file exist, the accessPage will include the INLINE html
+
+Content Processor Info
+----------------------
+lcntQualifier           One of: current
+			    /neda/lcnt/603/current
+			    /neda/Records/0611091/SeattleUniversity/
+
+type                   document, sw, video, ...
+contentSrcFormat       One of: ttytex, odp
+pubCategory            One of: Permanent, Records, Draft, Private
+		       In combination with lcntQualifier produces publication
+                       URL.
+
+
+Content Publication Info
+------------------------
+primaryUrl:            As in cover page
+		       Primary Publication Location
+pubDestUrls            List of sites, the doc will be exported to
+
+
+Content Specific Info
+---------------------
+docSrcList             prefix of (main) main.ttytex or main.odp
+
+swDocs                 List of Reference Documentations available for the
+		       software in the form of PLPC number.
+
+swManPages             List of manual pages in the form of PLPC number.
+swDataSheets           List of data sheets in the form of PLPC number.
+
+publishable1
+publishable2
+
+
+
+For the purpose of publication, we generate files:
+------------------------------------------------------
+destPath1/destPath2/destPath3/destPath4/destPath5/destPath6
+
+which correspond to the following directory tree in the content dir:
+/content/generated/doc.free/neda/PLPC/110102/current
+        /    1    /    2   /  3 /  4 /   5  /   6
+
+For lgpc doc: destination path are based on LCNT-INFO
+		       /lcnt/lgpc/neda/permanent/engineering/nedaLibreGenesis
+		       /content/generated/doc.free/neda/PLPC/110102/current
+
+For republish doc: destination path are based location
+(below example is for republication which we don't have to generate pdf/ps/html)
+		       /info/externalLimited           /technology/press/ieee/vcThwatrsInnovation
+                       /content/republished/doc.limited/technology/press/ieee/vcThwatrsInnovation
+
+For republish doc: destination path are based location
+(below example is for republication which we need to generate pdf/ps/html from ttytex)
+		       /lcnt/lgpc/mohsen/repub/externalPublic/politics/iran/cia/mosadegh
+		       /content/republished/doc.public       /politics/iran/cia/mosadegh
+
+For sw: destination path are based location
+		       /lcnt/sw                  /neda/leap/emsd/EMSD-MulPub
+		       /content/generated/sw.free/neda/leap/emsd/EMSD-MulPub
+
+**
+** For LCNT-INFO/Builds See /libre/ByStar/InitialTemplates/activeDocs/blee/lcntPublications/lcntBuilds/fullUsagePanel-en.org:: Builds Overview
+**
+** For LCNT-INFO/Exports See /libre/ByStar/InitialTemplates/activeDocs/blee/lcntPublications/lcntBuilds/fullUsagePanel-en.org:: Exports Overview
+**
+*  [[elisp:(beginning-of-buffer)][|^]] #################### [[elisp:(delete-other-windows)][|1]]
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= Model Of seedLcntProc.sh: =* | ]]  <<seedLcntProc.sh>>  |
+**
+** Taken From seedLcntProc.sh -i describe in [2019-07-20 Sat 19:30]
+
+   Layers Structure:
+   -----------------
+
+   *  bystarLcntProc.sh  (bystarUid, lcntNu)
+
+   **      lcntProc.sh (bystar, in lcntRawHome) -- seedLcntProc.sh
+
+   ***          lcnLcntOutput.sh (lcntRawHome) -- notyet, currently lcnt-nu
+   ***          bystarLcntUpload.sh  (bystar, lcntRawHome) or (destUrls, lcntRawHome)
+
+   ****              lcnLcntInputProc.sh -- previously opTexNedaBuild.sh -- (lcntRawHome, files)
+   ****              bystarPlone3Commas.sh  (bystar)
+
+
+    Citeria For Inclusion in the seed -- instead of invokation of lcnLcntXXX
+    ------------------------------------------------------------------------
+
+       Generally more appropriate to do things in lcnLcntXxx.sh
+       Do here only if:
+
+       - Need for recursion -- lcntNuOut, fullBuild
+       - Processing of rawCntnHome
+
+    ---- Recursable for DataBase ----
+    ${G_myName} ${extraInfo}  -i dirsRecurse lcntNuOut
+
+    ---- Local Utilities ----
+
+    fullClean         -- Restores LcntDir to CVS state
+    fullRefresh       -- Updates data and utilities in LcntDir to latest model/templates
+    fullBuild         -- Builds/Process all formats
+    localContentPrep  -- Generate accessPage and .bib + Copy results of fullBuild to /content
+    fullUpdate        -- fullBuild + localContentPrep
+
+    ---- Publish / Upload / External / Remote ----
+
+    plone3PublishDestUrls NOTYET, destUrl=all or bystarUid=
+
+    (bystar) plone3ContentPublish     -- Upload from /content
+    (bystar) plone3AccessPagePublish  -- Create the /PLPC/nu
+    (bystar) plone3Publish            -- plone3ContentPublish + plone3AccessPagePublish
+
+    (bystar) plone3FullPublish        -- fullUpdate + plone3Publish
+
+    --- Developers Local Utilities ----
+    opDo lcnLcntOutputs.sh -n showRun -i accessPageGen "${plpdCategory}-${plpdNu}"
+    opDo lcnLcntOutputs.sh -n showRun -i inListDotBibOut "${plpdCategory}-${plpdNu}"
+**
+*  [[elisp:(beginning-of-buffer)][|^]] #################### [[elisp:(delete-other-windows)][|1]]
+*  [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]     [[elisp:(org-cycle)][| *= 2012 LCNT-PLAN: =* | ]]  |
+**
+** TODO Ideas
+MODEL:
+
+     What is now "/content" to be renamed as
+     "/hss/rr"    -- Halaal Software and Services / Ready Room
+
+     lcnLcntRrPrep.sh  To get stuff from lcnLcntUpload.sh
+
+NOTYET:
+    - GENERALIZE the concept of Publishable1, Publishable2
+	Make it apply to both REPUB and SW
+
+    - Break lcntProc.sh into 3 phases:
+
+	1) Processor
+	    Run latex/ooffice/compiler
+
+	2) Publish
+	    Move publishables/destDirs to target sites.
+
+	3) Create Access Page and publish access page.
+** Current Generation
+--------------------
+
+*** Acesss Page Title Is Messed Up
+
+*** TODO: Access Page Generation Ideas:
+    In addtition to
+    Primary URL
+    This URL
+    Federated Publications:
+    Last Updated: This Access Page was produced on July  8 2012 12:33
+
+** Next Generation
+----------------
+
+**  Numbering Plan
+
+    numberingAuthority.authorityNu.assignedNu.revNu
+                      .autonomousPublisher.
+    bystar.sa-20000.33.
+    11-20000-33-2.1
+    /11/20000/33/2.1
+
+*** ALP  -- Autonomous Libre Permanent Digital Poly-Existential
+
+*** ALD  -- Autonomous Libre Draft Digital Poly-Existential
+
+*** ALR  -- Autonomous Libre Re-Published Digital Poly-Existential
+
+*** ALT  -- Autonomous Libre Transcript/Recorded Digital Poly-Existential
+
+**  Registered  Libre Digital Poly-Existential (RLDPE)  -- Hierarchy for bycontent
+
+*** /apldp/apldpType/pubType/nuAuth/authNu/assignedNu/rev
+
+***  apldpType="doc|image|video|audio|sw"
+
+***  pubType="perm|draft|repub|record"
+
+*** Examples:
+
+****  /apldp/sw/perm/11/20000/34/1/xx.tar  -- (same as bxdp)
+
+****  /apldp/doc/repub/11/20000/201105021/
+
+****  /apldp/audio/perm/12/53421/album/song/
+
+****  /apldp/video/perm/11/20000/
+
+** Autonomously Published Libre Digital Poly-Existential (APLDPE) -- same as bxn
+
+***  Examples:
+
+****   /apldpe/11/20000/105  would point to  /aldp/doc/perm/11/20000/105/
+
+****   /apldpe/11/20000/00001/1.0  permanently published
+****   /apldpe/11/20000/30001/1.0  draft
+****   /apldpe/11/20000/60001      repub
+****   /apldpe/11/20000/201005071  record
+
+** BXDI - BXDP  - BXN
+
+***  BXDI  is new name of LCNT - BX Digital Information
+***  BXDP is base of BXDI in file system
+***  BXN is alias to BXDP based on registered system
+
+** BXN  ByStar Number (For Autonomously Published Libre Digital Poly-Existential)
+
+*** Examplse
+
+**** http://SITE/bxn/11/20000/00001/1.0  -- Points To BXDP -- /bxdp/doc/perm/11/20000/1/cur
+
+**** http://mohsen.banan.byname/bxn/11/20000/1
+
+** BXDP ByStar Digital Path -- Base of Published Content
+
+*** Examples
+
+**** http:///bxdp/doc/perm/11/20000/1/cur
+
+**** file://hss/rr/bxdp/doc/perm/11/20000/1/cur  -- rr is "ready room" to replace /content
+
+**** /hss  Root of Everything  for Halaal Software and Services --  /hss/var /hss/rr /hss/etc /hss/tmp
+**
+
+####+BEGIN: blee:bxPanel:separator :outLevel 1
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+####+END
+####+BEGIN: blee:bxPanel:evolution
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
+*                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *Maintenance:* | ]]  [[elisp:(blee:menu-sel:agenda:popupMenu)][||Agenda]]  <<Evolution>>  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :title "Notes, Ideas, Tasks, Agenda" :anchor "Tasks"
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Notes, Ideas, Tasks, Agenda:/ |]] <<Tasks>>   [[elisp:(org-shifttab)][<)]] E|
+####+END
+*** TODO Some Idea
+####+BEGIN: blee:bxPanel:evolutionMaintainers
+** [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolutionMaintainers)][dbf]]
+** [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(org-cycle)][| /Bug Reports, Development Team:/ | ]]  <<Maintainers>>
+***  Problem Report                       ::   [[elisp:(find-file "")][Send debbug Email]]
+***  Maintainers                          ::   [[bbdb:Mohsen.*Banan]]  :: http://mohsen.1.banan.byname.net  E|
+####+END
+* B|
+####+BEGIN: blee:bxPanel:footerPanelControls
+* [[elisp:(show-all)][(>]] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+* /Footer Controls/ ::  [[elisp:(blee:bnsm:menu-back)][Back]]  [[elisp:(toggle-read-only)][toggle-read-only]]  [[elisp:(show-all)][Show-All]]  [[elisp:(org-shifttab)][Cycle Glob Vis]]  [[elisp:(delete-other-windows)][1 Win]]  [[elisp:(save-buffer)][Save]]   [[elisp:(kill-buffer)][Quit]]  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:footerOrgParams
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerOrgParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Org-Mode Local Params: =* | ]]
+#+STARTUP: overview
+#+STARTUP: lognotestate
+#+STARTUP: inlineimages
+#+SEQ_TODO: TODO WAITING DELEGATED | DONE DEFERRED CANCELLED
+#+TAGS: @desk(d) @home(h) @work(w) @withInternet(i) @road(r) call(c) errand(e)
+#+CATEGORY: N:lcntModel
+####+END
+####+BEGIN: blee:bxPanel:footerEmacsParams :primMode "org-mode"
+* [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:footerEmacsParams)][dbf]]
+* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(org-cycle)][| *= Emacs Local Params: =* | ]]
+# Local Variables:
+# eval: (setq-local ~selectedSubject "noSubject")
+# eval: (setq-local ~primaryMajorMode 'org-mode)
+# eval: (setq-local ~blee:panelUpdater nil)
+# eval: (setq-local ~blee:dblockEnabler nil)
+# eval: (setq-local ~blee:dblockController "interactive")
+# eval: (img-link-overlays)
+# eval: (set-fill-column 115)
+# eval: (blee:fill-column-indicator/enable)
+# eval: (bx:load-file:ifOneExists "./panelActions.el")
+# End:
+
+####+END
