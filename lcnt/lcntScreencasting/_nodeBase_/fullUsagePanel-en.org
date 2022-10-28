@@ -57,7 +57,7 @@
 ####+END
 * +
 * 1) Prepare Pure Slides
-* 1.1) Prepare text for naration as slide comments [[MmSlidesPrep]]
+* 1.1) Prepare text for naration as slide comments --  [[MmSlidesPrep]]
 * 2) Reveal-Slide: Adding Voice-Over to Reveal-Slide
 * 3) Beamer-Slide: Adding Voice-Over to Beamer-Slide
 * 4) Beamer-Slide: Video Recording of Slide+Voice+visual-augmentation (with pdfpc)
