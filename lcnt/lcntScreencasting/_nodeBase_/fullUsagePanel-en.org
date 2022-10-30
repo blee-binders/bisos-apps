@@ -72,6 +72,8 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *MM Slides Preparation:* |]] <<MmSlidesPrep>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** INTERIM: Verify that LCNT-INFO/Builds/enabledList contains: presPdf pres-reveal presArt-8.5x11 presArt-html
+** echo html LCNT-INFO/Builds/presArt-html/results
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Audio Directory Setup" :anchor "" :extraInfo "./audio"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
