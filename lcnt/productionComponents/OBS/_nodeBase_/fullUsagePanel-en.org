@@ -33,9 +33,40 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-**
+** +
 ** Overview Comes Here.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "ICMs And Related Introductions" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _ICMs And Related Introductions_: |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:panel:icm:bash:intro :outLevel 2 :sep nil :folding? t :label "ShIcm" :icmName "lcaObsStudioBinsPrep.sh" :comment "Custom Src BinsPrep" :afterComment ""
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /ShIcm/ |]] :: [[elisp:(lsip-local-run-command "lcaObsStudioBinsPrep.sh -i examples")][lcaObsStudioBinsPrep.sh]]  [[elisp:(lsip-local-run-command "lcaObsStudioBinsPrep.sh -i visit")][visit]]  [[elisp:(lsip-local-run-command "lcaObsStudioBinsPrep.sh -i describe")][describe]] *|*  =Custom Src BinsPrep= *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "BinsPrep" :icmName "lcaObsStudioBinsPrep.sh -i fullUpdate" :comment "Source BinsPrep" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /BinsPrep/ |]] :: [[elisp:(lsip-local-run-command "lcaObsStudioBinsPrep.sh -i fullUpdate")][lcaObsStudioBinsPrep.sh -i fullUpdate]] *|*  =Source BinsPrep= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+** Builds from sources and produces results in /usr/local/bin/synergy
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep t :folding? t :label "Gui Launch" :icmName "obs &" :comment "For both client and server." :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /Gui Launch/ |]] :: [[elisp:(lsip-local-run-command "synergy &")][synergy &]] *|*  =For both client and server.= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: bxPanel:realms:user|extend
+* [[elisp:(show-all)][(>]]                                [[elisp:(org-cycle)][| *━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━* |]]
+** No extention found at: /bxo/r3/iso/piu_mbFullUsage/realmPanels/desktop/keyboard/synergy/general.org
+*                                   *━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━*                          [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: bxPanel:realms:site|extend
+* [[elisp:(show-all)][(>]]                                [[elisp:(org-cycle)][| /━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━/ |]]
+** Missing selectedRealmBaseDir /bxo/usg/bystar/bpos/realms/site/0
+ [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: bxPanel:realms:platform|extend
+* [[elisp:(show-all)][(>]]                                [[elisp:(org-cycle)][| =━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━= |]]
+** Missing selectedRealmBaseDir /bxo/usg/bystar/bpos/realms/platform/0
+ [[elisp:(org-shifttab)][<)]] E|
+####+END
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
