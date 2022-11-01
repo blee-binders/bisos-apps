@@ -99,6 +99,12 @@
 ####+END
 ** +
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Camera Capture" :anchor "" :extraInfo "OBS Setup"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Camera Capture:* |]]  OBS Setup  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Screen Captures" :anchor "" :extraInfo "OBS Setup"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Screen Captures:* |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -108,12 +114,6 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Narrated Slides Augmentation" :anchor "" :extraInfo "OBS Setup"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Narrated Slides Augmentation:* |]]  OBS Setup  [[elisp:(org-shifttab)][<)]] E|
-####+END
-** +
-** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Camera Capture" :anchor "" :extraInfo "OBS Setup"
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Camera Capture:* |]]  OBS Setup  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** B|
