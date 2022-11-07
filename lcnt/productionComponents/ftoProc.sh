@@ -59,12 +59,18 @@ _CommentEnd_
 nodesList="
 XeLaTeX
 HeVeA
+kdenlive
+pdfpc
 vlc
 _nodeBase_
 OBS
+ffmpeg
+bystarTeX
 Audacity
+mpv
 Gimp
 LibreOfficeDraw
+subed
 "
 # }}} DBLOCK-nodesList
 ####+END:

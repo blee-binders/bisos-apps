@@ -70,7 +70,9 @@ publicationComponents
 lcntModel
 lcntFoundations
 writersWorkbench
+heveaTexLibs
 lcntProc
+dblocksAndSnippets
 "
 # }}} DBLOCK-nodesList
 ####+END:
