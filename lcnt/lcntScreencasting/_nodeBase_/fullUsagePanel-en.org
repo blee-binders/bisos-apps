@@ -66,6 +66,26 @@
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "OBS Video Capture Panel" :destDesc "auto" :dest "/bisos/git/auth/bxRepos/blee-binders/desktop/multimedia/video-capture/_nodeBase_"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/desktop/multimedia/video-capture/_nodeBase_")][@ ~video-capture~ @]]   ::  <<OBS Video Capture Panel>> [[elisp:(org-cycle)][| *=* |]] [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Control Of 4 Outputs And Derived Slide" :anchor "" :extraInfo "htmlonly, latexonly, articleMode, presentationMode."
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Control Of 4 Outputs And Derived Slide:* |]]  htmlonly, latexonly, articleMode, presentationMode.  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** The 4 outputs are: beamerPdf, artPdf, reveal, artHtml
+
+|------------------+----------------+------------------+---------------------------------|
+| artOrPres        | htmlOnly       | latexonly        | common                          |
+|------------------+----------------+------------------+---------------------------------|
+| presentationMode | reveal         | beamerPdf        | beamerPdf + reveal              |
+| articleMode      | artHtml        | artPdt           | artHtml+artPdf                  |
+| common           | artHtml+reveal | beamerPdf+artPdf | beamerPdf+artPdf+reveal+artHtml |
+|------------------+----------------+------------------+---------------------------------|
+
+** Derived Image Slide:  BeamerImage In Reveal, artHtml, BeamerPdf, artPdt
+** Derived Image Slide:  Produces two frames. A closed frame for BeamerImage In Reveal. An open frame for rest.
+** Derived Video Slide:  BeamerImageVideo In Reveal, artHtml, BeamerPdf, artPdt
+** Derived Video Slide:  Produces two frames. A closed frame for BeamerVideo In Reveal. An open frame for rest.
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Initialize MultiMedia Env With lcntProc.sh  -i mmUnitePrep" :anchor "" :extraInfo "adds mmUnite.sh"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Initialize MultiMedia Env With lcntProc.sh  -i mmUnitePrep:* |]]  adds mmUnite.sh  [[elisp:(org-shifttab)][<)]] E|
@@ -194,9 +214,9 @@
 ** +
 ** Used for youtube. Typically the beamer cover page.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS MyPy Package" :anchor "" :extraInfo "Crossrefs slide numbers with names."
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "BISOS PyPI Package" :anchor "" :extraInfo "Crossrefs slide numbers with names."
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS MyPy Package:* |]]  Crossrefs slide numbers with names.  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *BISOS PyPI Package:* |]]  Crossrefs slide numbers with names.  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** TODO Create a sub-panel or perhaps in components instead -- /bisos/venv/py3/dev-bisos3/bin/beamerExternalExtensions.py
 ** TODO move beamerPdfPages to bisos.lcnt
