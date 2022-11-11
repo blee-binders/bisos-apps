@@ -42,6 +42,9 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Tutorials And References:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 * https://sites.pitt.edu/~poole/libreofficeTutorials/libreofficeLesson3.pdf
+* https://wiki.documentfoundation.org/Faq/Draw/101
+* https://wiki.documentfoundation.org/Faq/Draw
+* B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

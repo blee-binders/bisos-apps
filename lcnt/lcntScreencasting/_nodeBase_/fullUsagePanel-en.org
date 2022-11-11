@@ -66,20 +66,24 @@
 ####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep nil :outLevel 2 :model "auto" :foldDesc "OBS Video Capture Panel" :destDesc "auto" :dest "/bisos/git/auth/bxRepos/blee-binders/desktop/multimedia/video-capture/_nodeBase_"
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/desktop/multimedia/video-capture/_nodeBase_")][@ ~video-capture~ @]]   ::  <<OBS Video Capture Panel>> [[elisp:(org-cycle)][| *=* |]] [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Control Of 4 Outputs And Derived Slide" :anchor "" :extraInfo "htmlonly, latexonly, articleMode, presentationMode."
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "4 Outputs Control Table + Derived" :anchor "" :extraInfo "htmlonly/latexonly/articleMode/presentationMode."
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Control Of 4 Outputs And Derived Slide:* |]]  htmlonly, latexonly, articleMode, presentationMode.  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *4 Outputs Control Table + Derived:* |]]  htmlonly/latexonly/articleMode/presentationMode.  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** The 4 outputs are: beamerPdf, artPdf, reveal, artHtml
 
 |------------------+----------------+------------------+---------------------------------|
 | artOrPres        | htmlOnly       | latexonly        | common                          |
+|                  | (no LaTeX)     | (no HeVeA)       | (both LaTeX and HeVeA)           |
 |------------------+----------------+------------------+---------------------------------|
 | presentationMode | reveal         | beamerPdf        | beamerPdf + reveal              |
 | articleMode      | artHtml        | artPdt           | artHtml+artPdf                  |
 | common           | artHtml+reveal | beamerPdf+artPdf | beamerPdf+artPdf+reveal+artHtml |
 |------------------+----------------+------------------+---------------------------------|
+
+** presentationMode and articleMode are part of bystarTeX
+** latexonly and htmlonly are part of HeVeA
 
 ** Derived Image Slide:  BeamerImage In Reveal, artHtml, BeamerPdf, artPdt
 ** Derived Image Slide:  Produces two frames. A closed frame for BeamerImage In Reveal. An open frame for rest.
