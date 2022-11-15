@@ -34,8 +34,15 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-**
-** Overview Comes Here.
+** +
+** Scope of this panel is all things Gimp related.
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Gimp FAQs and tutorials" :anchor "" :extraInfo ""
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Gimp FAQs and tutorials:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Go to image dropdown and make sure it is RGB
+** TODO
 ** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
