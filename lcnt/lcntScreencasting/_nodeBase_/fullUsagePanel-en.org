@@ -51,7 +51,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Notes:* |]]  Info to be captured -- And TODOs  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** TODO Capture all the interims in lcntProc.sh
+** DONE Capture all the interims in lcntProc.sh
 ** TODO capture beamerPdfPages.cs in bisos.lcnt --- uses pdftk
 ** TODO Add pdftk to production components --- PDF Toolkit
 ** Capture this -- https://www.wjst.de/blog/sciencesurf/2019/11/how-to-include-a-pdf-in-reveal-js/
@@ -86,8 +86,7 @@
 |------------------+----------------+------------------+---------------------------------|
 
 ** presentationMode and articleMode are part of bystarTeX
-** latexonly and htmlonly are part of HeVeA
-
+** latexonly, latexxx (ignored by HeVeA) and htmlonly are part of HeVeA
 ** Derived Image Slide:  BeamerImage In Reveal, artHtml, BeamerPdf, artPdt
 ** Derived Image Slide:  Produces two frames. A closed frame for BeamerImage In Reveal. An open frame for rest.
 ** Derived Video Slide:  BeamerImageVideo In Reveal, artHtml, BeamerPdf, artPdt

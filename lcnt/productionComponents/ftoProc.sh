@@ -57,6 +57,8 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+emacs-gif-screencast
+bisosTeX
 XeLaTeX
 HeVeA
 kdenlive
@@ -65,10 +67,11 @@ vlc
 _nodeBase_
 OBS
 ffmpeg
-bystarTeX
 Audacity
 mpv
+bisos.lcnt
 Gimp
+pdftk
 LibreOfficeDraw
 subed
 "
