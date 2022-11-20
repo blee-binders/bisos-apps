@@ -162,36 +162,33 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *OBS Common Setup:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** After Installing OBS:
-** --------------
-** OBS -- File -- Settings -- Output
-** In Recoridng:
-** --- Recroding Path = ./
-** --- Recording Format = mp4
-** -------------
-** Start obs in lcnt/video/ directory
+** Go to OBS Panel
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Camera Capture" :anchor "" :extraInfo "OBS Setup"
+d####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Camera Capture" :anchor "" :extraInfo "OBS"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Camera Capture:* |]]  OBS Setup  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Camera Capture:* |]]  OBS  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Start obs in the lcnt/video directory
 ** Create or Use:  CameraCapture Scene
 ** CameraCapture Scene = Camera + Yeti Mic
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Narrated Slides Video Capture And Augmentation" :anchor "" :extraInfo "OBS Setup"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Narrated Slides Video Capture And Augmentation" :anchor "" :extraInfo "OBS+pdfpc -- After VoiceOver"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Narrated Slides Video Capture And Augmentation:* |]]  OBS Setup  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Narrated Slides Video Capture And Augmentation:* |]]  OBS+pdfpc -- After VoiceOver  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** This is best done in a 3 Screens Setup.
+** PDFPC will have two screens
+** On the third screen, you run obs and blee (for audio starts)
 ** -------  Start obs in the lcnt/video directory  ------
+** Start
 ** Create or Use:  ScreenCapture Scene
 ** ScreenCapture Scene = Scree + Audio Output
 ** ------ Audio Recording ---------
 ** Record the audio as in [[voiceOver]] producing "screenAudio"
 ** ------ Prepare slide for video augmentation -----
-** run "pdfpc ./presentation.pdf"
+** run "pdfpc ./presentation.pdf" Or goto ./disposition.gened/slideName/slide.pdf
 ** Go to the relevant slide.
 ** Type "t" to get flash light and pointer
 ** ------ Start Recording -----
@@ -202,7 +199,8 @@
 ** ------ Stop Recording -----
 ** ------ If needed trim video -----
 ** Eg ignore the first 4 seconds and everything after minute 2
-** ffmpeg -i inVideo.mp4 -ss 00:00:04 -to 00:02:00 -c copy result.mp4
+** ffmpeg -i slideName.mp4 -ss 00:00:04 -to 00:02:00 -c copy derived-slideName.mp4
+** If you are happy with derived-slideName.mp4, then delete slideName.mp4
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Emacs Gif Screencasting" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
