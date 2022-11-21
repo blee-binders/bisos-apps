@@ -46,6 +46,17 @@
 * Repeat for end section with mark at the very end.
 * Reencode for output.
 * B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Use Of kdenlive To Locate Begin And Points" :anchor "beginEndPoints" :extraInfo "Howto"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Use Of kdenlive To Locate Begin And Points:* |]] <<beginEndPoints>> Howto  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** How To use kdenlive To Determin Begin and End Seconds For Trimming With ffmpeg
+** Create a project, add video to project, drag video to timeline, The middle one,  click on it to select
+** Locate the audio start point, jot down the begining second
+** On the right move stretcher to see end. Based on audio decide end point.
+** Use the begin and end points, with ffmpeg trimmer.
+** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
