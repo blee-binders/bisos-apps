@@ -77,7 +77,7 @@ Sacha: <2022-11-07 Mon>  I just posted some notes on how I reflow and edit subti
 ** +
 ** Reflowing is the process of converting the Narration-Text to Subtitle lines.
 First, let's start with reflowing. We like to have one line of
-captions about 50 characters long so that they'll display nicely in
+captions about M-x set-fill-column 50 characters long so that they'll display nicely in
 the stream.
 ** Reflowing is eventually captured in the VTT files.
 ** B|

@@ -97,24 +97,25 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Initialize MultiMedia Env With lcntProc.sh  -i mmUnitePrep:* |]]  adds mmUnite.sh  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-* +
-* lcntProc.sh  -i mmUnitePrep  -- which brings over mmUnite.sh. See [[Panel]] for details.
+** +
+** lcntProc.sh  -i mmUnitePrep  -- which brings over mmUnite.sh. See [[Panel]] for details.
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Layered MultiMedia Preparation" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Layered MultiMedia Preparation:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-* +
-* 1) Prepare Pure Slides
-* 1.1) Prepare text for naration as slide comments --  [[MmSlidesPrep]]
-* 2) Reveal-Slide: /whenEssentials/ Adding Voice-Over to Reveal-Slide
-* 3) Beamer-Slide: Adding Voice-Over to Beamer-Slide
-* 4) Beamer-Slide: /whenDerived/ Video Recording of Slide+Voice+visual-augmentation (with pdfpc)
-* 5) Screen Captures With OBS
-* 6) Camera Recording With OBS --- perhaps with teleprompter
-* 7) Prepare Integrated Slides --- Which incorporates videos as conditional-latex
-* 8) Full Video Recording Of Reveal end-to-end play
-* 9) Addition of closed caption
-* -
+** +
+** 1) Prepare Pure Slides
+** 1.1) Prepare text for naration as slide comments --  [[MmSlidesPrep]]
+** 2) Slide: Adding Voice-Overt To Slide
+** 3) Reveal-Slide: Decide if you want it as derivedImage, derivedVideo, or Reveal-Frame
+** 4) derivedVideo:Video Recording of Slide+Voice+visual-augmentation (with pdfpc)
+** 5) Screen Captures With OBS
+** 6) Camera Recording With OBS --- perhaps with teleprompter
+** 7) Prepare Integrated Slides --- Which incorporates videos as conditional-latex
+** 8) Full Video Recording Of Reveal end-to-end play
+** 9) Addition of closed caption
+** -
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "MM Slides Preparation" :anchor "MmSlidesPrep" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *MM Slides Preparation:* |]] <<MmSlidesPrep>>   [[elisp:(org-shifttab)][<)]] E|
@@ -158,9 +159,9 @@
 ####+END
 ** +
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "OBS Common Setup" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "OBS Common Setup" :anchor "" :extraInfo "Link to Panel"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *OBS Common Setup:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *OBS Common Setup:* |]]  Link to Panel  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Go to OBS Panel
@@ -236,23 +237,12 @@ d####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Camera Captu
 ####+END
 ** +
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Subtitle -- Closed Caption" :anchor "" :extraInfo ""
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Subtitle -- Closed Caption" :anchor "" :extraInfo "link to panel"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Subtitle -- Closed Caption:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Subtitle -- Closed Caption:* |]]  link to panel  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** TODO install and experiment with subed
-** TODO install mpv
-** TODO https://github.com/jasonwebb/revealjs-subtitles
-** TODO Capture  https://media.emacsconf.org/2022/backstage/editing-captions.html
-Sacha: <2022-11-07 Mon>  I just posted some notes on how I reflow and edit subtitles:
- https://media.emacsconf.org/2022/backstage/editing-captions.html
-<2022-11-07 Mon> Also Downloaded in ./editing-captions.html
-** TODO Install https://github.com/readbeyond/aeneas/
-    break up the text file into the
-    lines that you want to have as captions and then use
-    https://github.com/readbeyond/aeneas/ to get the timestamps.
-** TODO incorporate subtitles into video --- capture with ffmpg
+** See  [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntScreencasting/subTitles/_nodeBase_")][ =subTitles= ]] for details.
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Compression And Formats" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/

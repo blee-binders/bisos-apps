@@ -32,20 +32,99 @@
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/_nodeBase_")][ =productionComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview https://mpv.io/" :anchor "Panel"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview https://mpv.io/:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Overview Comes Here.
+** Scope of this pannel is the mpv (Media Player Video) application
 ** B|
 * +
-* To use kdenlive for trimming a video:
-* Create a project, add video to project, drag video to timeline, click on it to select
-* Leave mark at the begining, set point to where you want to cut,
-* Use currentVideo-> cut, go to the cut section and delete it.
-* Repeat for end section with mark at the very end.
-* Reencode for output.
 * B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Configuration File" :anchor "config" :extraInfo "config file"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Configuration File:* |]] <<config>> config file  [[elisp:(org-shifttab)][<)]] E|
+####+END
+
+The default position of subtitles tends to hide important details like
+the mode line or minibuffer. If you use =mpv= to view videos, you can
+adjust the position of subtitles with the "r" and "R" keyboard
+shortcuts, which run =add sub-pos -1= and =add sub-pos +1= respectively.
+
+Alternatively, you can configure your MPV to resize videos and show
+subtitles underneath. On Linux, you can create or edit
+=~/.config/mpv/mpv.conf=. On Windows, if compiled with MinGW, MPV will
+look for your configuration in =%APPDATA%\mpv\mpv.conf=. You can
+override the directory that contains mpv.conf by setting the =MPV_HOME=
+environment variable on either system.
+[[https://mpv.io/manual/stable/#configuration-files]] has more details
+on the format and location of the config file.
+
+For regular use, you might prefer to watch horizontally-centered videos
+with centered subtitles underneath. Here's the =mpv.conf= for that.
+
+#+BEGIN_EXAMPLE
+  # Positioning
+  video-zoom=-0.15
+  video-align-x=1
+  video-align-y=-1
+  sub-use-margins=yes
+  sub-scale-by-window=yes
+  sub-pos=103
+  sub-margin-x=110
+  sub-margin-y=60
+  sub-align-x=center
+  # Style
+  sub-back-color=0.0
+  sub-color="1/0.82/0"
+  sub-blur=0.2
+  sub-scale=0.9
+  sub-font-size=30
+  sub-border-size=0
+  sub-border-color=0/1
+  sub-shadow-color=0/1
+  sub-shadow-offset=1.2
+  sub-ass-force-style=Kerning=yes
+  sub-ass-line-spacing=0
+#+END_EXAMPLE
+
+When we broadcast videos for EmacsConf 2022, we place them on the top
+right so that there's room underneath to display a conference logo and a
+talk URL, and we align the text left so that it doesn't feel like it's
+shifting around a lot. If you want to do the same, here's the
+configuration:
+
+#+BEGIN_EXAMPLE
+  # Positioning
+  video-zoom=-0.15
+  video-align-x=1
+  video-align-y=-1
+  sub-use-margins=yes
+  sub-scale-by-window=yes
+  sub-pos=103
+  sub-margin-x=110
+  sub-margin-y=60
+  sub-align-x=left
+  # Style
+  sub-back-color=0.0
+  sub-color="1/0.82/0"
+  sub-blur=0.2
+  sub-scale=0.9
+  sub-font-size=30
+  sub-border-size=0
+  sub-border-color=0/1
+  sub-shadow-color=0/1
+  sub-shadow-offset=1.2
+  sub-ass-force-style=Kerning=yes
+  sub-ass-line-spacing=0
+#+END_EXAMPLE
+
+If you would like to specify the font to use, you can include a line
+like:
+
+#+BEGIN_EXAMPLE
+  sub-font="Clear Sans Bold"
+#+END_EXAMPLE
+
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
