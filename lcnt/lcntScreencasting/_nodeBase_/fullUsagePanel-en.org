@@ -77,14 +77,14 @@
 ** +
 ** The 4 outputs are: beamerPdf, artPdf, reveal, artHtml
 
-|------------------+----------------+------------------+---------------------------------|
-| artOrPres        | htmlOnly       | latexonly        | common                          |
-|                  | (no LaTeX)     | (no HeVeA)       | (both LaTeX and HeVeA)           |
-|------------------+----------------+------------------+---------------------------------|
-| presentationMode | reveal         | beamerPdf        | beamerPdf + reveal              |
-| articleMode      | artHtml        | artPdt           | artHtml+artPdf                  |
-| common           | artHtml+reveal | beamerPdf+artPdf | beamerPdf+artPdf+reveal+artHtml |
-|------------------+----------------+------------------+---------------------------------|
+|------------------+----------------+---------------------+---------------------------------|
+| artOrPres        | htmlOnly       | latexonly/verblatex | common                          |
+|                  | (no LaTeX)     | (no HeVeA)          | (both LaTeX and HeVeA)          |
+|------------------+----------------+---------------------+---------------------------------|
+| presentationMode | reveal         | beamerPdf           | beamerPdf + reveal              |
+| articleMode      | artHtml        | artPdt              | artHtml+artPdf                  |
+| common           | artHtml+reveal | beamerPdf+artPdf    | beamerPdf+artPdf+reveal+artHtml |
+|------------------+----------------+---------------------+---------------------------------|
 
 ** presentationMode and articleMode are part of bystarTeX
 ** latexonly, latexxx (ignored by HeVeA) and htmlonly are part of HeVeA
