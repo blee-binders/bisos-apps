@@ -58,7 +58,9 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 lcntTemplates
+lcntArtFeatures
 lcntScreencasting
+lcntArtTypes
 lcntBPOs
 hardware
 lcntAuthorship

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-11-07 Mon 07:35 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Editing captions</title>
+<meta name="author" content="Sacha Chua &lt;sacha@sachachua.com&gt;" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+
+        <style>
+        /* From: https://endlessparentheses.com/public/css/endless.css */
+        /* See also: https://meta.superuser.com/questions/4788/css-for-the-new-kbd-style */
+        kbd
+        {
+          -moz-border-radius: 6px;
+          -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+          -webkit-border-radius: 6px;
+          -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+          background-color: #f7f7f7;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+          box-shadow: 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+          color: #333;
+          display: inline-block;
+          font-family: 'Droid Sans Mono', monospace;
+          font-size: 80%;
+          font-weight: normal;
+          line-height: inherit;
+          margin: 0 .1em;
+          padding: .08em .4em;
+          text-shadow: 0 1px 0 #fff;
+          word-spacing: -4px;
+
+          box-shadow: 2px 2px 2px #222; /* MA: An extra I've added. */
+        }
+        </style>
+        <link rel="stylesheet" type="text/css" href="https://alhassy.github.io/org-special-block-extras/tooltipster/dist/css/tooltipster.bundle.min.css"/>
+
+        <link rel="stylesheet" type="text/css" href="https://alhassy.github.io/org-special-block-extras/tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-punk.min.css" />
+
+        <script type="text/javascript">
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape('%3Cscript src="https://code.jquery.com/jquery-1.10.0.min.js"%3E%3C/script%3E'));
+            }
+        </script>
+
+         <script type="text/javascript"            src="https://alhassy.github.io/org-special-block-extras/tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+
+          <script>
+                 $(document).ready(function() {
+                     $('.tooltip').tooltipster({
+                         theme: 'tooltipster-punk',
+                         contentAsHTML: true,
+                         animation: 'grow',
+                         delay: [100,500],
+                         // trigger: 'click'
+                         trigger: 'custom',
+                         triggerOpen: {
+                             mouseenter: true
+                         },
+                         triggerClose: {
+                             originClick: true,
+                             scroll: true
+                         }
+         });
+                 });
+             </script>
+
+        <style>
+           abbr {color: red;}
+
+           .tooltip { border-bottom: 1px dotted #000;
+                      color:red;
+                      text-decoration: none;}
+        </style>
+</head>
+<body>
+<div id="preamble" class="status">
+<a name="top" id="top"></a>
+</div>
+<div id="content" class="content">
+<h1 class="title">Editing captions</h1>
+<p>
+I want to quickly demonstrate how I reflow and edit captions. I don't
+have sound on these recordings because I forgot to have it capture the
+system audio. Watching me type probably won't be all that interesting,
+but they're there anyway. =)
+</p>
+
+<div id="outline-container-orge83e7e4" class="outline-2">
+<h2 id="orge83e7e4">Reflowing the text</h2>
+<div class="outline-text-2" id="text-orge83e7e4">
+<p>
+First, let's start with reflowing. We like to have one line of
+captions about 50 characters long so that they'll display nicely in
+the stream. You probably don't need to do this step if you're working
+with the VTT files in the backstage area, since I try to reflow things
+before people edit them, but I thought I'd demonstrate it in case
+people are curious.
+</p>
+
+<p>
+I start with the text file that <a href="https://github.com/openai/whisper">OpenAI Whisper</a> generates. I set my
+<code>fill-column</code> to 50 and use <code>display-fill-column-indicator-mode</code> to give
+myself a goal column. A little over is fine too. Then I use
+emacsconf-reflow from the <a href="https://git.emacsconf.org/emacsconf-el/">emacsconf-el</a> repository to quickly split up
+the text into captions by looking for where I want to add newlines and
+then typing the word or words. I type in ' to join lines. Sometimes,
+if it splits at the wrong one, I just undo it and edit it normally.
+</p>
+
+<p>
+It took me about 4 minutes to reflow John Wiegley's 5-minute presentation.
+</p>
+
+<video src="reflowing.webm" controls></video>
+</div>
+</div>
+
+<div id="outline-container-org12e724e" class="outline-2">
+<h2 id="org12e724e">Alignment</h2>
+<div class="outline-text-2" id="text-org12e724e">
+<p>
+The next step is to align it with <a href="https://github.com/readbeyond/aeneas">aeneas</a>. This takes each line of text
+and figures out the start and end timestamps for it. I've just added
+<code>subed-align</code> to the <a href="https://github.com/sachac/subed">subed</a> package, but you can also call aeneas
+manually by following its instructions.
+</p>
+
+<video src="alignment.webm" controls></video>
+</div>
+</div>
+
+<div id="outline-container-org54869c9" class="outline-2">
+<h2 id="org54869c9">Editing the VTT</h2>
+<div class="outline-text-2" id="text-org54869c9">
+<p>
+The last step is to edit these subtitles. VTT files are plain text, so
+you can edit them with regular <code>text-mode</code> if you want to. I like to
+use subed because then the video playback is synchronized with my
+editing, which makes it easier to figure out technical words. subed
+tries to load the video based on the filename, but if it can't find
+it, I can use <code>C-c C-v</code> (<code>subed-mpv-find-video</code>) to play a video file
+or <code>C-c C-u</code> to play a video at a URL.
+</p>
+
+<p>
+I look for misrecognized words and use <code>C-s</code> (<code>isearch-forward</code>) to
+jump to them. I also like to change things to follow Emacs keybinding
+conventions. I sometimes spell out acronyms on first use or add extra
+information in brackets. The captions will be used in a transcript as
+well, so I like to add punctuation, remove some filler words, and try
+to make it read better.
+</p>
+
+<p>
+Sometimes I want to tweak how the captions are split. I use <code>M-j</code> (<code>subed-jump-to-current-subtitle</code>) to jump to the caption if I'm not already on it, listen for the right spot, and maybe use <code>M-SPC</code> to toggle playback. I use <code>M-.</code> (<code>subed-split-subtitle</code>) to split a caption at the current MPV playing position and <code>M-m</code> (<code>subed-merge-with-next</code>) to merge a subtitle with the next one. Times don't need to be very precise.
+</p>
+
+<p>
+It took me about 5 minutes to edit the 5-minute talk.
+</p>
+
+<video src="editing.webm" controls></video>
+
+<p>
+It usually takes me between 1x to 4x the video time to edit captions,
+but I don't usually listen to everything all the way through, so there
+are probably still a few errors. I e-mail captions to the speakers for
+review in order to help catch things. So that's how I edit the
+captions for EmacsConf. Hope that helps!
+</p>
+
+<p>
+<a href="mailto:sacha@sachachua.com">sacha@sachachua.com</a>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+
+       <style type="text/css">
+       .back-to-top {
+           position: fixed;
+           bottom: 2em;
+           right: 0px;
+           text-decoration: none;
+           color: #000000;
+           background-color: rgba(235, 235, 235, 0.80);
+           font-size: 12px;
+           padding: 1em;
+           display: none;
+       }
+
+       .back-to-top:hover {
+           background-color: rgba(135, 135, 135, 0.50);
+       }
+       </style>
+
+       <div class="back-to-top">
+       <a href="#top">Back to top</a> | <a href="mailto:sacha@sachachua.com">E-mail me</a>
+       </div>
+
+       <script type="text/javascript">
+           var offset = 220;
+           var duration = 500;
+           jQuery(window).scroll(function() {
+               if (jQuery(this).scrollTop() > offset) {
+                   jQuery('.back-to-top').fadeIn(duration);
+               } else {
+                   jQuery('.back-to-top').fadeOut(duration);
+               }
+           });
+       </script>
+</div>
+</body>
+</html>

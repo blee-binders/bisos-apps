@@ -56,7 +56,7 @@ Sacha: <2022-11-07 Mon>  I just posted some notes on how I reflow and edit subti
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Obtaining Narration-Text" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Obtaining Narration Text:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Obtaining Narration-Text:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Narration-Text may be obtained in a variety of ways
@@ -72,7 +72,7 @@ Sacha: <2022-11-07 Mon>  I just posted some notes on how I reflow and edit subti
 ***  I start with the text file that <a href="https://github.com/openai/whisper">OpenAI Whisper</a> generates.
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Reflowing ---  Narration-Text To canonical Input" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Reflowing The Text ---  Narration-Text To canonical Input:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Reflowing ---  Narration-Text To canonical Input:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Reflowing is the process of converting the Narration-Text to Subtitle lines.
