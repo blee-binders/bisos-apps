@@ -33,15 +33,25 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Overview Comes Here.
+** Scope of this panel is all things realted to bibtex and biblatex
 ** B|
-* +
-* mmUniteAudio.sh -h -v -n showRun -i frameNamesPrepare  # creates .wav if missing
-* -i nonFrameWavFile   # Should list files in the dir that don't match frame names
-* mmUniteAudio.sh -h -v -n showRun -i fullUpdate # converts to mp3 and creates length FPs
-* -i lengthSum  # should add all length files
-* mmUniteAudio.sh -h -v -n showRun -i fullClean  # deletes everything that is regenaratable
-* -
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Bib Entries management" :anchor "" :extraInfo "bib tools and utilities"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Bib Entries management:* |]]  bib tools and utilities  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** sudo apt-get install bibutils
+** sudo apt-get install cb2bib
+** For Usage Of:ris2bib cite.ris cite.bib
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "LaTeX bib usage" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *LaTeX bib usage:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** biblatex is used exclusively. Mutiple bibs can be printed.
+** B|
+
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
