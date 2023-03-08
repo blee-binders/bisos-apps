@@ -38,6 +38,7 @@
 ** B|
 * +
 * Automated Indexing :: xterm -font 10x20 -e imbrowse articleEnFa.words
+* Python based automated indexing --- https://github.com/feup-infolab/latex-index-tools
 * B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
