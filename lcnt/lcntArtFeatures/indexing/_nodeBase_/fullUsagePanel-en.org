@@ -38,8 +38,18 @@
 ** B|
 * +
 * Automated Indexing :: xterm -font 10x20 -e imbrowse articleEnFa.words
-* Python based automated indexing --- https://github.com/feup-infolab/latex-index-tools
 * B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "LaTeX Index Tools" :anchor "" :extraInfo "https://github.com/feup-infolab/latex-index-tools"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *LaTeX Index Tools:* |]]  https://github.com/feup-infolab/latex-index-tools  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Installed okay in 2023.
+** The stop words come from a  postgress file. You need to install postgress.
+** In the second phase -e is mandatory. That does not make sense.
+** After reviewing the output, you can copy over the inputs.
+** Was used for plpc-120033 with okay results.
+** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
