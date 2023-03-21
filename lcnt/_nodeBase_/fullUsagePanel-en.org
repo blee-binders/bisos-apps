@@ -53,6 +53,15 @@
 [[elisp:(find-file "/lcnt/lgpc/bystar/permanent/facilities/contentGenAndPublication/Results/c-180038-contentGenAndPublication-pres.pdf")][Pdf Here]] || [[elisp:(find-file-other-window "/lcnt/lgpc/bystar/permanent/facilities/contentGenAndPublication/Results/c-180038-contentGenAndPublication-pres.pdf")][Pdf Other]] || [[elisp:(lsip-local-run-command "acroread -openInNewInstance /lcnt/lgpc/bystar/permanent/facilities/contentGenAndPublication/Results/c-180038-contentGenAndPublication-pres.pdf &")][Pdf Acroread]] ||  http://www.by-star.net/PLPC/180038
  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "To Be Captured" :anchor "" :extraInfo "Epub"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _To Be Captured_: |]]  Epub  [[elisp:(org-shifttab)][<)]] E|
+####+END
+* +
+* KDP Book in LaTeX --- Epub Conversion -- Calibre ---
+*  http://theroadchoseme.com/how-i-self-published-a-professional-paperback-and-ebook-using-latex-and-pandoc
+* https://github.com/rkaravia/tex2ebook
+* B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Primary LCNT Panels Hierarchy" :anchor "" :extraInfo "Layer By Layer"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Primary LCNT Panels Hierarchy_: |]]  Layer By Layer  [[elisp:(org-shifttab)][<)]] E|
