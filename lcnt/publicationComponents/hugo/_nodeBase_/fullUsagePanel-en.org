@@ -76,12 +76,18 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *How-TOs:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** +_
-
-
+** +
+** https://techviewleo.com/install-hugo-and-host-website-on-debian/
+** For Themes, follow these instructions:  https://learn.netlify.app/en/basics/installation/
 ** B|
 ####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "ICM-Run" :icmName "hugo version" :comment "" :afterComment ""
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ICM-Run/ :: [[elisp:(lsip-local-run-command "hugo version")][hugo version]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "ICM-Run" :icmName "hugo --help" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ICM-Run/ :: [[elisp:(lsip-local-run-command "hugo --help")][hugo --help]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:bash:cmnd :outLevel 1 :sep nil :folding? nil :label "ICM-Run" :icmName "hugo new site hugo.example.com" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /ICM-Run/ :: [[elisp:(lsip-local-run-command "hugo new site hugo.example.com")][hugo new site hugo.example.com]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 
 ####+BEGIN: blee:bxPanel:separator :outLevel 1

@@ -26,8 +26,8 @@
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/Audacity/_nodeBase_")][ =Audacity= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/Gimp/_nodeBase_")][ =Gimp= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/HeVeA/_nodeBase_")][ =HeVeA= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/LibreOfficeDraw/_nodeBase_")][ =LibreOfficeDraw= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/OBS/_nodeBase_")][ =OBS= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/XeLaTeX/_nodeBase_")][ =XeLaTeX= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/vlc/_nodeBase_")][ =vlc= ]] *|*
-*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/_nodeBase_")][ =productionComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/XeLaTeX/_nodeBase_")][ =XeLaTeX= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/bisos.lcnt/_nodeBase_")][ =bisos.lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/pdfpc/_nodeBase_")][ =pdfpc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/vlc/_nodeBase_")][ =vlc= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/_nodeBase_")][ =productionComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
@@ -36,6 +36,40 @@
 **
 ** Overview Comes Here.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Passport Photos" :anchor "" :extraInfo "How To"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Passport Photos:* |]]  How To  [[elisp:(org-shifttab)][<)]] E|
+####+END
+https://passport.today/gimp-passport-photos/
+
+U.S. passport photo in GIMP: making 2×2 inches images
+So how can you actually edit your U.S. passport photo using GIMP? Follow the steps below:
+
+1) You will need to open your GIMP program and upload your already taken U.S. passport photo.
+
+2) Open the section called “Toolbox” and select a tool called “Rectangular Select” with which you should crop a
+   small rectangle around your face and shoulders – make sure that you take into account your whole head, along
+   with your hair.
+
+3) Go to the left hand-panel, and in the section “Size”, put in these measurements: width – 510px, height – 510px.
+   Later click on “Fixed Aspect Ratio”, and using the mouse, select the photo like you did before – the face should
+   take around 70-80% of the picture.
+
+4) Crop your photo using the “Image” section in the menu bar, where you can put in “Crop to Selection.”
+
+5) Go to the section “Image”, and this time select the “Scale Image” tool. Put in 1089px for the width and the same
+   for the height. Make sure to copy the picture.
+
+6) Open a new window in the program and choose the width and height to 1120px There you should paste the copied
+   picture from the previous point.
+
+7) Click on the white border and from the menu bar choose “Filters” -> “Map” -> “Tile” and tile the picture to the
+   new size.
+
+8) Disconnect the symbol that looks like a chain by clicking on it. This time you will need to select the size to:
+   width – 3256px, height – 2184px. This should show you 8 images in total. Save them as a JPG to your computer.
+
+
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

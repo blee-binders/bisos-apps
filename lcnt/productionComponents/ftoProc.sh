@@ -57,14 +57,16 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+_nodeBase_
+Audacity
+bisos.lcnt
+OBS
+Gimp
+pdfpc
+LibreOfficeDraw
+vlc
 XeLaTeX
 HeVeA
-vlc
-_nodeBase_
-OBS
-Audacity
-Gimp
-LibreOfficeDraw
 "
 # }}} DBLOCK-nodesList
 ####+END:
