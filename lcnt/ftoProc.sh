@@ -58,7 +58,9 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 lcntTemplates
+lcntArtFeatures
 lcntScreencasting
+lcntArtTypes
 lcntBPOs
 hardware
 lcntAuthorship
@@ -70,7 +72,9 @@ publicationComponents
 lcntModel
 lcntFoundations
 writersWorkbench
+heveaTexLibs
 lcntProc
+dblocksAndSnippets
 "
 # }}} DBLOCK-nodesList
 ####+END:

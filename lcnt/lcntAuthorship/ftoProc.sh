@@ -58,6 +58,8 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 _nodeBase_
+grammerAndSpelling
+chatGptRewrite
 "
 # }}} DBLOCK-nodesList
 ####+END:

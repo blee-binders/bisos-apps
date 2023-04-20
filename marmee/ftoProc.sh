@@ -62,8 +62,9 @@ dsnProc
 _nodeBase_
 mailCreds
 daemonization
-inComingMail
+offlineimap
 pyApi
+notmuch
 config
 outGoingMail
 "

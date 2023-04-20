@@ -26,9 +26,10 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/bookPrintPublishing/_nodeBase_")][ =bookPrintPublishing= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/hardware/_nodeBase_")][ =hardware= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntAuthorship/_nodeBase_")][ =lcntAuthorship= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntBPOs/_nodeBase_")][ =lcntBPOs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntDevelopment/_nodeBase_")][ =lcntDevelopment= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntFoundations/_nodeBase_")][ =lcntFoundations= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntModel/_nodeBase_")][ =lcntModel= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntProc/_nodeBase_")][ =lcntProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntScreencasting/_nodeBase_")][ =lcntScreencasting= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntTemplates/_nodeBase_")][ =lcntTemplates= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/_nodeBase_")][ =productionComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/publicationComponents/_nodeBase_")][ =publicationComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/writersWorkbench/_nodeBase_")][ =writersWorkbench= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/bookPrintPublishing/_nodeBase_")][ =bookPrintPublishing= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/dblocksAndSnippets/_nodeBase_")][ =dblocksAndSnippets= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/hardware/_nodeBase_")][ =hardware= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/heveaTexLibs/_nodeBase_")][ =heveaTexLibs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntArtFeatures/_nodeBase_")][ =lcntArtFeatures= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntArtTypes/_nodeBase_")][ =lcntArtTypes= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntAuthorship/_nodeBase_")][ =lcntAuthorship= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntBPOs/_nodeBase_")][ =lcntBPOs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntDevelopment/_nodeBase_")][ =lcntDevelopment= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntFoundations/_nodeBase_")][ =lcntFoundations= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntModel/_nodeBase_")][ =lcntModel= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntProc/_nodeBase_")][ =lcntProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntScreencasting/_nodeBase_")][ =lcntScreencasting= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/lcntTemplates/_nodeBase_")][ =lcntTemplates= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/_nodeBase_")][ =productionComponents= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/publicationComponents/_nodeBase_")][ =publicationComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/writersWorkbench/_nodeBase_")][ =writersWorkbench= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -36,7 +37,7 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Overview Comes Here.
+** Scope of this buffer is all invoved in initial and evolutionary preparation of documents.
 ** B|
 *      ================
 *  [[elisp:(beginning-of-buffer)][|^]]  Find          :: [[elisp:(delete-other-windows)][|1]]   [[elisp:(org-cycle)][| *= Locate A New Do1cument: =* | ]]   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
@@ -85,6 +86,7 @@
 *** Tricks For Sizes NOTYET
 ** Save
 ** Export as PDF  -- With figProc.sh -v -n showRun -i odgToPdf polySonSquare.odg
+** All of below can be done with:  figProc.sh -v -n showRun -i odgFullProc bystarEcosystemAnatomy.odg
 ** figProc.sh -v -n showRun -i srcConvert bystarEcosystemAnatomy.odg
 ** figProc.sh -v -n showRun -i genFigTex bystarEcosystemAnatomy
 ** figProc.sh -v -n showRun -i genStartFigInfoFiles bystarEcosystemAnatomy
@@ -132,22 +134,33 @@
 ****       Save --
 **
 *      ================
-*  [[elisp:(beginning-of-buffer)][|^]]  New Doc Base  :: [[elisp:(delete-other-windows)][|1]]   [[elisp:(org-cycle)][| *= Creating a New Lcnt Document Base: =* | ]]   [[elisp:(org-cycle)][| ]] [[elisp:(org-show-subtree)][|=]] [[elisp:(show-children 10)][|V]] [[elisp:(bx:orgm:indirectBufOther)][|>]] [[elisp:(bx:orgm:indirectBufMain)][|I]] [[elisp:(beginning-of-buffer)][|^]] [[elisp:(org-top-overview)][|O]] [[elisp:(progn (org-shifttab) (org-content))][|C]] [[elisp:(delete-other-windows)][|1]]  |
-**
-**      ############  /Preparations/
-**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Make Sure That Central Registry Is Up To Date* [[elisp:(org-cycle)][| ]]
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "New Doc Base" :anchor "" :extraInfo "/Creating a New Lcnt Document Base/"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *New Doc Base:* |]]  /Creating a New Lcnt Document Base/  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Preparations" :anchor "newDocBase" :extraInfo "Make Sure That Central Registry Is Up To Date"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Preparations:/ |]] <<newDocBase>> Make Sure That Central Registry Is Up To Date  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ***   cd /lcnt/lgpc/bystar/SOURCE-INFO/
 ***   cvs update
-**      ============
-**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Select Document Location/Language/Format* |  [[elisp:(org-cycle)][| ]]
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Preparations" :anchor "" :extraInfo "Select Document Location/Language/Format"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Preparations:/ |]]  Select Document Location/Language/Format  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ***  [[elisp:(org-cycle)][| ]] - Decide on where the document will reside in the /lcnt hierarchy.
        lgpc,lgcc -- permananet/records/repub
 ***  [[elisp:(org-cycle)][| ]] - Decide on what languages you want to include in
        this doc, en, en+fa,
 ***  [[elisp:(org-cycle)][| ]] - Decide on  what formats art+pres you want.
-**      ############  /Permanent/
-**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Create A New BxLaTeX Permanent Document* [[elisp:(org-cycle)][| ]]
-***    ========
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Permanent" :anchor "" :extraInfo "Create A New BxLaTeX Permanent Document"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Permanent:/ |]]  Create A New BxLaTeX Permanent Document  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 3 :sep t :title "Create Base Directory" :anchor "" :extraInfo "Perhaps with Language Tag"
+*** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+*** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| ==Create Base Directory:== |]]  Perhaps with Language Tag  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ***    When choosing a directory name, make sure that
        languages tag EnFa, En, FaEn, Fa is included in the
        directory name. This a policy/convention and not demanded.
@@ -155,7 +168,11 @@
 ***    mkdir /lcnt/lgpc/mohsen/permanent/essays/HalaalSoftwareAndServicesFa/
 ***    cd /lcnt/lgpc/mohsen/permanent/essays/HalaalSoftwareAndServicesFa/
 ***    ========
-***    Run lcnLcntGens.sh to Auto Assign A New Number and Create Initial Templates With That Number
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 3 :sep t :title "Run Basic LcntGens" :anchor "" :extraInfo "specify srcForms and srcLangs"
+*** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+*** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| ==Run Basic LcntGens:== |]]  specify srcForms and srcLangs  [[elisp:(org-shifttab)][<)]] E|
+####+END
+****    Run lcnLcntGens.sh to Auto Assign A New Number and Create Initial Templates With That Number
 ****    lcnLcntGens.sh  # Prefer en+fa over en
 ****    lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms="art+pres" -p srcLangs="fa+en" -i baseFullStart
 ****    lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms="art" -p srcLangs="en" -i baseFullStart
@@ -163,25 +180,55 @@
 ****   ====
 ****   NOTYET, baseFullStart  should CVS Checkin the assigned number
 ****   Or Hand Assign A Number and Create Initial Templates With That Number
-***    ========
-***    Edit/Input Parameters For That Document
-****   (server-start)
-****     lcntProc.sh  -i editLcntInfo mainTitle shortTitle subTitle subSubTitle description
-***    ========
-***    Expand Dynamic Blocks (dblocks) Based on Specified Parameters
-****     lcntProc.sh  -i dblockUpdateFile articleFaEn.ttytex presentationFaEn.ttytex artPresBodyFaEn.tex
-****     lcntProc.sh  -i dblockUpdateFile articleEn.ttytex presentationEn.ttytex artPresBodyEn.tex
-***    ========
-***    Veify the Build - Then Edit and Build
-****     lcntProc.sh  -i  fullBuild
-**      ============
-**  [[elisp:(org-cycle)][| ]]  Existing Doc ::  *Create A New (Existing pdf/html) Permanent or Record Document*  [[elisp:(org-cycle)][| ]]
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 3 :sep t :title "Run BuildInfoGens" :anchor "" :extraInfo "To complete Initial Base"
+*** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+*** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| ==Run BuildInfoGens:== |]]  To complete Initial Base  [[elisp:(org-shifttab)][<)]] E|
+####+END
+**** +
+**** lcnLcntGens.sh -n showRun -p cntntRawHome=. -i lcntBuildInfoGens
+**** lcnLcntGens.sh -n showRun -p cntntRawHome=. -i lcntExportInfoGens
+**** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 3 :sep t :title "Select curBuild" :anchor "" :extraInfo "And do a dryRun"
+*** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+*** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| ==Select curBuild:== |]]  And do a dryRun  [[elisp:(org-shifttab)][<)]] E|
+####+END
+**** +
+**** lcntProc.sh build              # build, build+view, build+release
+**** lcntProc.sh -v -n showRun -i lcntBuildSetCur ./LCNT-INFO/Builds/art-8.5x11
+**** lcntProc.sh -h -v -n showRun -p extent="build+view" -i lcntBuild cur  # Runs dblock
+**** lcntProc.sh -h -v -n showRun  -i fullClean
+**** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 3 :sep t :title "Edit/Input Title Info (Document Params)" :anchor "" :extraInfo "Updates in LCNT-INFO"
+*** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+*** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| ==Edit/Input Title Info (Document Params):== |]]  Updates in LCNT-INFO  [[elisp:(org-shifttab)][<)]] E|
+####+END
+**** +
+**** lcntProc.sh  -i editLcntInfo mainTitle shortTitle subTitle subSubTitle description
+**** =======
+**** Expand Dynamic Blocks (dblocks) Based on Specified Parameters
+**** lcntProc.sh  -i dblockUpdateFile articleFaEn.ttytex presentationFaEn.ttytex artPresBodyFaEn.tex
+**** lcntProc.sh  -i dblockUpdateFile articleEn.ttytex presentationEn.ttytex artPresBodyEn.tex
+**** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 3 :sep t :title "Verify Initial Build" :anchor "" :extraInfo "Then Write The Document"
+*** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+*** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| ==Verify Initial Build:== |]]  Then Write The Document  [[elisp:(org-shifttab)][<)]] E|
+####+END
+**** +
+**** Setup the enabled list  --- NOTYET
+**** lcntProc.sh -h -v -n showRun -p extent="build+view" -i lcntBuild all  # Using enabled list
+**** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Existing Doc" :anchor "" :extraInfo "Create A New (Existing pdf/html) Permanent or Record Document"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Existing Doc:/ |]]  Create A New (Existing pdf/html) Permanent or Record Document  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ***    mkdir /lcnt/lgpc/mohsen/record/presentations/mobileMsgLandscape1999
 ***    cd /lcnt/lgpc/mohsen/record/presentations/mobileMsgLandscape1999
 ***    cp ~/contentFile.pdf .
 ***    lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms="pdf"  -i baseFullStart  contentFile.pdf
-**      ############  /RePub/
-**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Create A New Republished Document -- (Existing pdf/html) Content* |  [[elisp:(org-cycle)][| ]]
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "RePub" :anchor "" :extraInfo "Create A New Republished Document -- (Existing pdf/html) Content"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /RePub:/ |]]  Create A New Republished Document -- (Existing pdf/html) Content  [[elisp:(org-shifttab)][<)]] E|
+####+END
 *** mkdir 4 levels matching
 *** Put content in dir (touch a file of copy content there or run the wget.sh pointing to source of doc)
 *** If a new ttytex document -- touch articleEnFa.ttytex
@@ -206,9 +253,10 @@
       lcntProc.sh -v -n showRun -p bystarUid=ea-59055 -i plone3FullPublish
 
 *** BUGS: for .html republication -- lcntNu does not show up and publishable1 Does not show up
-
-**      ============
-**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Create A New Republished Document -- lcnt BxLaTeX-Doc* |  [[elisp:(org-cycle)][| ]]
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "RePub" :anchor "" :extraInfo "Create A New Republished Document -- lcnt BxLaTeX-Doc"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /RePub:/ |]]  Create A New Republished Document -- lcnt BxLaTeX-Doc  [[elisp:(org-shifttab)][<)]] E|
+####+END
 *** mkdir 4 levels matching
 *** Put content in dir (touch a file of copy content there or run the wget.sh pointing to source of doc)
 
@@ -219,8 +267,10 @@
 
 *** lcnLcntGens.sh -p cntntRawHome=. -p srcForms="art" -p srcLangs="en+fa" -i lcntBaseConfigMulti
 *** The document is now ready for customization in the ./LCNT-INFO Directory
-**      ############
-**  [[elisp:(org-cycle)][| ]]  Subject      ::  *Add The New Document Base To CVS Tree and objTree* |  [[elisp:(org-cycle)][| ]]
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Git" :anchor "" :extraInfo "Add The New Document Base To CVS Tree and objTree"
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Git:/ |]]  Add The New Document Base To CVS Tree and objTree  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ***   - cd to the parent directory and weave in the new document in its lcntProc.sh
 ***   - Run a cleanTree from that parent directory
 ***   - Run cvs-update from that parent directory

@@ -26,8 +26,15 @@
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/Audacity/_nodeBase_")][ =Audacity= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/Gimp/_nodeBase_")][ =Gimp= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/HeVeA/_nodeBase_")][ =HeVeA= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/LibreOfficeDraw/_nodeBase_")][ =LibreOfficeDraw= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/OBS/_nodeBase_")][ =OBS= ]] *|*
+<<<<<<< HEAD
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/XeLaTeX/_nodeBase_")][ =XeLaTeX= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/bisos.lcnt/_nodeBase_")][ =bisos.lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/pdfpc/_nodeBase_")][ =pdfpc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/vlc/_nodeBase_")][ =vlc= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/_nodeBase_")][ =productionComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|*
+=======
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/XeLaTeX/_nodeBase_")][ =XeLaTeX= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/bisos.lcnt/_nodeBase_")][ =bisos.lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/bisosTeX/_nodeBase_")][ =bisosTeX= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/emacs-gif-screencast/_nodeBase_")][ =emacs-gif-screencast= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/ffmpeg/_nodeBase_")][ =ffmpeg= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/kdenlive/_nodeBase_")][ =kdenlive= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/mpv/_nodeBase_")][ =mpv= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/pdfpc/_nodeBase_")][ =pdfpc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/pdftk/_nodeBase_")][ =pdftk= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/subed/_nodeBase_")][ =subed= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/vlc/_nodeBase_")][ =vlc= ]] *|*
+*   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/productionComponents/_nodeBase_")][ =productionComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
+>>>>>>> b20d2a633eb9a33146a315dc865d64633c1afcae
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
@@ -54,10 +61,150 @@
 ****  [[elisp:(org-cycle)][| ]]  Audacity           ::   Exit without saving
 
 ####+END
+*  [[elisp:(org-cycle)][| ]]  Audio Mic          ::   Microphone Setup (Blue-Yeti)  |  [[elisp:(org-cycle)][| ]]
+**  [[elisp:(org-cycle)][| ]]  Audio        ::   Blue Yeti Setup (Micro-Phone) [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Blue Yeti    ::   Pattern    : Set To Cardio (heart like symbol) [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Blue Yeti    ::   Gain       : Set to 9 o'clock  -- 3/4 up [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Blue Yeti    ::   Volume     : Controls the optional head phone [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Blue Yeti    ::   Mute       : Not-Mute=Solid-red  Mute=Blinking-red [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Blue Yeti    ::   P-Filter   : Not Yet [[elisp:(org-cycle)][| ]]
+****  [[elisp:(org-cycle)][| ]]  Blue Yeti    ::   Position   : About one foot away -- Vertical [[elisp:(org-cycle)][| ]]
 
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Noise Reduction" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Noise Reduction:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Taken from EmacsConf-2022 Backstage
+
+Mastering the prerec’s audio-track
+:PROPERTIES:
+:CUSTOM_ID: mastering
+:END:
+
+Mastering is the process of preparing an audio-track for a purpose.  For
+us, the purpose is quite simple: maximize the intelligibility of the
+speaker and minimize the noise.
+
+We can get great results with Audacity for the vast majority of
+audio-tracks.  Sometimes, however, some audio-tracks have intractable
+noise-profile that require the use of model-based denoising filters that
+can applied with ffmpeg.
+
+We’ll start with the average Audacity workflow, and we’ll move on to the
+model-based filters after.
+
+** Audacity workflow
+When we process a prerec, we extract the audio of the original upload
+and add it to the backstage. You should be able to find it under the
+name --original.$audio_format or --main.$audio_format. If it’s not
+there, it’s easy to extract the audio from the original video, but
+we’d prefer if you warned core-organizers about it because it’s not
+normal.
+
+We’ve simplified the process down to these steps:
+
+1. Open the audio file in Audacity.
+
+   You might want to increase the size of the waveform by pulling on the
+   bottom of the bottom of the track.
+
+   [[https://media.emacsconf.org/misc/audacity-demo-noise-reduction.webm][audacity-demo-noise-reduction.webm]]
+
+2. Find a moment of quiet in the video, and select it.
+
+   We ask our speakers to include 5 seconds of quiet at the beginning or
+   end of their prerecs, but even if they don’t, it’s relatively.
+
+3. Effects → Noise Reduction → Get Noise Profile
+
+4. Select → All
+
+5. Effects → Noise Reduction → OK
+
+   You can select a spoken portion of the track before applying the
+   effect and preview it to test your settings.  The default are usually
+   enough (Noise reduction (dB): 12, Sensitivity: 6.00, Frequency smoothing
+   (bands): 3).
+
+   [[https://media.emacsconf.org/misc/audacity-demo-noise-reduction.webm][audacity-demo-noise-reduction.webm]]
+
+6. Tools → Apply Macro → Alpha
+
+   Before you can apply the Alpha macro, you need to save its content to
+   disk and import it via Tools → Macro Manager → Import.
+
+#+begin_src txt :eval no :tangle audacity-macro-alpha.txt
+Reverb:Delay="20" DryGain="5" HfDamping="99" Reverberance="15" RoomSize="70" StereoWidth="25" ToneHigh="0" ToneLow="100" WetGain="-13" WetOnly="0"
+Amplify:Ratio="1"
+FilterCurve:f0="79.621641" f1="101.02321" FilterLength="8191" InterpolateLin="0" InterpolationMethod="B-spline" v0="5.9148936" v1="0.042552948"
+Normalize:ApplyGain="1" PeakLevel="-3" RemoveDcOffset="1" StereoIndependent="1"
+Compressor:AttackTime="0.1" NoiseFloor="-50" Normalize="1" Ratio="2" ReleaseTime="1" Threshold="-30" UsePeak="0"
+#+end_src
+
+7. Export → Export Audio… → Opus Files (.opus format)
+
+   Use the following settings:
+
+   [[https://media.emacsconf.org/misc/audacity-export-settings.png][audacity-export-settings.png]]
+
+   #+begin_quote
+   Bit Rate: 64 kbps
+   VBR Mode: On
+   Compression: 10
+   Application: Audio
+   Frame Duration: 20 ms
+   Cutoff: Disabled
+   #+end_quote
+
+
+** Model-based denoising filter
+If you can’t manage to get a good result with Audacity, chances are it’s
+because there’s too much noise in the video, even after profile-based
+denoising.  This usually happens when the noise-pattern of an
+audio-track evolves over the video, or if has an aperiodic quality.  For
+those, we’re going to need a bigger boat.
+
+Model-based denoising means using an AI-generated model to remove the
+audio frequencies that are usually associated to noise and preserve
+those that aren’t.  A different context (e.g. noisy room with statics,
+noisy room with people chatting, etc.) means a different model; for us,
+this means a model that minimizes background noise and maximizes clear
+voices (the speakers’).
+
+This is the model we’ve been using:
+
+[[https://media.emacsconf.org/misc/audio-denoiser-model-mp.rnnn][audio-denoiser-model-mp.rnnn]] (download link)
+
+Source: [[https://github.com/GregorR/rnnoise-models][rnnoise-models]], Model: [[https://raw.githubusercontent.com/GregorR/rnnoise-models/master/marathon-prescription-2018-08-29/mp.rnnn][marathon-prescription]]
+
+You should always apply the filter on the original’s audio, as opposed
+to an Audacity-processed audio.  This is to ensure that we have the most
+information about the signal, which means we can have gather the most
+information about the noise-profile.
+
+Following is the ffmpeg incantation to use to apply the filter-model.
+Make sure to modify the ~DENOISER~ variable and adapt input/output.
+
+#+begin_src sh :tangle audio-denoiser.sh :eval no
+DENOISER="/path/to/audio-denoiser-model-mp.rnnn"
+input="original.opus"
+output="denoised.opus"
+ffmpeg -i "$input" -af "arnndn=m=$DENOISER" "$output"
+#+end_src
+
+There’s no need to customize the libopus export information; the default
+is more than enough for human-speech.
+
+When you’re done with this step, you can then process the outputted
+audio-track with Audacity, skipping the denoising steps (1 to 5).
+
+** Questions?
+If you’ve got any question on the process, you canget in touch with me (zaeph)!
+
 ####+BEGIN: blee:bxPanel:evolution
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_

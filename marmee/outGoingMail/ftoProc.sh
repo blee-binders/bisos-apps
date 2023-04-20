@@ -59,7 +59,7 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 _nodeBase_
-outerRim-qmail
+marmee-qmail
 "
 # }}} DBLOCK-nodesList
 ####+END:

@@ -16,7 +16,7 @@ SEED="
 *  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedBleePanelProc.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/outGoingMail/bx822-qmail-remote/bleePanelProc.sh
+*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/outGoingMail/qmail-remote.cs/bleePanelProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
     /bisos/core/bsip/bin/seedBleePanelProc.sh -l $0 "$@"

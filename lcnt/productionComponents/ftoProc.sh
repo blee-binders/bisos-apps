@@ -57,6 +57,7 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+<<<<<<< HEAD
 _nodeBase_
 Audacity
 bisos.lcnt
@@ -67,6 +68,25 @@ LibreOfficeDraw
 vlc
 XeLaTeX
 HeVeA
+=======
+emacs-gif-screencast
+bisosTeX
+XeLaTeX
+HeVeA
+kdenlive
+pdfpc
+vlc
+_nodeBase_
+OBS
+ffmpeg
+Audacity
+mpv
+bisos.lcnt
+Gimp
+pdftk
+LibreOfficeDraw
+subed
+>>>>>>> b20d2a633eb9a33146a315dc865d64633c1afcae
 "
 # }}} DBLOCK-nodesList
 ####+END:

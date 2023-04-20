@@ -27,8 +27,8 @@
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
 *   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/config/aasMarmeeManage.cs")][aasMarmeeManage.cs]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/config/_nodeBase_")][ =config= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/daemonization/_nodeBase_")][ =daemonization= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/dsnProc/_nodeBase_")][ =dsnProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/inComingMail/_nodeBase_")][ =inComingMail= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/install/_nodeBase_")][ =install= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/mailCreds/_nodeBase_")][ =mailCreds= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/outGoingMail/_nodeBase_")][ =outGoingMail= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/pyApi/_nodeBase_")][ =pyApi= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/config/_nodeBase_")][ =config= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/daemonization/_nodeBase_")][ =daemonization= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/dsnProc/_nodeBase_")][ =dsnProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/install/_nodeBase_")][ =install= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/mailCreds/_nodeBase_")][ =mailCreds= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/notmuch/_nodeBase_")][ =notmuch= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/offlineimap/_nodeBase_")][ =offlineimap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/outGoingMail/_nodeBase_")][ =outGoingMail= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/pyApi/_nodeBase_")][ =pyApi= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/_nodeBase_")][ =marmee= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -37,6 +37,40 @@
 ####+END
 ** +
 ** Scope of this panel is initial and re-configuration of marmee.
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Qmail Alias Maildrop To Marmee Maildir" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Qmail Alias Maildrop To Marmee Maildir:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** marmeeQmail.cs
+#######  *RunEnv Maildir Utilities*  ##########
+marmeeQmail.cs --bpoId="piu_mbFullUsage" --envRelPath="aas/marmee/qmail/alias"  -i envMaildirCreate main
+marmeeQmail.cs --bpoId="piu_mbFullUsage" --envRelPath="aas/marmee/qmail/alias"  -i envMaildirsPublicMake
+#######  *Mail Drop Utilities*  ##########
+marmeeQmail.cs --bpoId="piu_mbFullUsage" --envRelPath="aas/marmee/qmail/alias"  -i maildropToRunEnvFromOrAcctAddrs main alias postmaster
+#######  *BxQmail Account And Addrs Utilities*  ##########
+marmeeQmail.cs --qmailAcct="alias" --qmailAddr="postmaster"  -i qmailAcctAddr_maildropUpdate postmaster
+#######  *Here qmail Config Utilities*  ##########
+marmeeQmail.cs --aasMarmeeBase="/bxo/iso/piu_mbFullUsage/aas/marmee"  -i marmeeQmailAcctUpdate alias
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Adding AAS-MARMEE Account" :anchor "" :extraInfo "gmail example"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Adding AAS-MARMEE Account:* |]]  gmail example  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Assuming that marmee.example1@gmail.com Exists on Google:
+** aasMarmeeManage.cs --bpoId="cur" --envRelPath="aas/marmee/gmail/marmee.example1"  -i bpoRunEnvBasesUpdate
+** ======
+** Put credentials.json in ~bpoId/aas/marmee/gmail/marmee.example1/control/mail/credentials.json
+** ======
+** _marmeeGmailOauth2.cs --bpoId="cur" --envRelPath="aas/marmee/gmail/marmee.example1"  -i refreshToken
+*** Credentials are now set in control/mail/credsFp/googleCreds_client_secret/value.gpg
+** ======
+** marmeeOfflineimap.cs --bpoId="cur" --envRelPath="aas/marmee/gmail/marmee.example1"  -i offlineimapRcUpdate
+*** Creates the imaprc file
+** marmeeOfflineimap.cs --bpoId="cur" --envRelPath="aas/marmee/gmail/marmee.example1"  -i offlineimapRun
+*** Retreives the messages
 ** B|
 ####+BEGIN: blee:bxPanel:evolution
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:evolution)][dbf]]

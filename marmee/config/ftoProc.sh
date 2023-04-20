@@ -41,6 +41,7 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
+aasMarmeeManage.cs
 "
 # }}} DBLOCK-leavesList
 ####+END:

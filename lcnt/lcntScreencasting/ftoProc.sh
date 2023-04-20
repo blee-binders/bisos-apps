@@ -57,7 +57,11 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:nodesList :types ""
 # {{{ DBLOCK-nodesList
 nodesList="
+mmUniteVideo
+mmUniteAudio
 _nodeBase_
+subTitles
+mmUnite
 "
 # }}} DBLOCK-nodesList
 ####+END:
