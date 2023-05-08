@@ -41,7 +41,9 @@ _CommentEnd_
 ####+BEGIN: bx:dblock:ploneProc:bash:leavesList :types ""
 # {{{ DBLOCK-leavesList
 leavesList="
-qmail-remote.cs
+qmail-inject-bisos.cs
+marmeeQmail.cs
+qmail-remote-bisos.cs
 "
 # }}} DBLOCK-leavesList
 ####+END:
