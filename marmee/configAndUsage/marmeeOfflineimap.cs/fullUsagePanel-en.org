@@ -35,20 +35,13 @@
 ** +
 ** Scope of this panel is aasMarmeeManage.cs CS, its usage and its -niche.
 ** B|
-####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep t :folding? nil :label "CS+Niche" :icmName "aasMarmeeManage.cs" :comment "Setup FileParams, all of Marmee" :afterComment "niche-able"
+####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep t :folding? nil :label "CS+Niche" :icmName "marmeeOfflineimap.cs" :comment "" :afterComment ""
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /CS+Niche/ :: [[elisp:(lsip-local-run-command "aasMarmeeManage.cs -i examples")][aasMarmeeManage.cs]]  [[elisp:(lsip-local-run-command "aasMarmeeManage.cs -i visit")][visit]]  [[elisp:(lsip-local-run-command "aasMarmeeManage.cs -i describe")][describe]] *|*  =Setup FileParams, all of Marmee= *|*  niche-able [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /CS+Niche/ :: [[elisp:(lsip-local-run-command "marmeeOfflineimap.cs -i examples")][marmeeOfflineimap.cs]]  [[elisp:(lsip-local-run-command "marmeeOfflineimap.cs -i visit")][visit]]  [[elisp:(lsip-local-run-command "marmeeOfflineimap.cs -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep nil :folding? nil :label "CS" :icmName "aasMarmeeManage.cs --bpoId=cur --envRelPath=cur -i marmeeAasMail_fps list" :comment "MailFPs" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /CS/ :: [[elisp:(lsip-local-run-command "aasMarmeeManage.cs --bpoId=cur --envRelPath=cur -i marmeeAasMail_fps list")][aasMarmeeManage.cs --bpoId=cur --envRelPath=cur -i marmeeAasMail_fps list]] *|*  =MailFPs= *|*    [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep nil :folding? nil :label "CS" :icmName "marmeeOfflineimap.cs --bpoId=cur --envRelPath=cur -i offlineimapRun" :comment "" :afterComment ""
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /CS/ :: [[elisp:(lsip-local-run-command "marmeeOfflineimap.cs --bpoId=cur --envRelPath=cur -i offlineimapRun")][marmeeOfflineimap.cs --bpoId=cur --envRelPath=cur -i offlineimapRun]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
-####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep nil :folding? nil :label "CS" :icmName "aasMarmeeManage.cs --bpoId=cur --envRelPath=cur -i marmeeAasIn_fps list" :comment "InFPs" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /CS/ :: [[elisp:(lsip-local-run-command "aasMarmeeManage.cs --bpoId=cur --envRelPath=cur -i marmeeAasIn_fps list")][aasMarmeeManage.cs --bpoId=cur --envRelPath=cur -i marmeeAasIn_fps list]] *|*  =InFPs= *|*    [[elisp:(org-shifttab)][<)]] E|
-####+END:
-####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep nil :folding? nil :label "CS" :icmName "aasMarmeeManage.cs --bpoId=cur --envRelPath=cur -i marmeeAasOutMail_fps list" :comment "OutFPs" :afterComment ""
-* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /CS/ :: [[elisp:(lsip-local-run-command "aasMarmeeManage.cs --bpoId=cur --envRelPath=cur -i marmeeAasOutMail_fps list")][aasMarmeeManage.cs --bpoId=cur --envRelPath=cur -i marmeeAasOutMail_fps list]] *|*  =OutFPs= *|*    [[elisp:(org-shifttab)][<)]] E|
-####+END:
-* -i getNicheName --- NOTYET
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

@@ -44,23 +44,33 @@
 ** +
 ** https://github.com/gongzhitaao/GnusSolution
 ** http://roland.entierement.nu/blog/2010/09/08/gnus-dovecot-offlineimap-search-a-howto.html
+** http://wayback.archive.org/web/20160305042051/http://roland.entierement.nu/blog/2010/09/08/gnus-dovecot-offlineimap-search-a-howto.html
 ** https://ericabrahamsen.net/tech/2014/oct/gnus-dovecot-lucene.html
 ** https://lists.gnu.org/archive/html/info-gnus-english/2012-06/msg00036.html
 ** https://www.youtube.com/watch?v=hbCXqDT1iNI  --- Gmail Setup
+** https://github.com/dabrahams/dotemacs/blob/master/elhome/settings/gnus-settings.el
+** https://www.gnu.org/software/emacs/manual/html_mono/gnus.html#Setting-up-nnir
+'(nnmaildir "My Mail"
+   (directory "/home/user/.mail")
+   (gnus-search-engine gnus-search-notmuch
+     (config-file "/home/user/.mail/.notmuch_config")))
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Developement Roadmap And Tasks" :anchor "anchor" :extraInfo "TODOs"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Developement Roadmap And Tasks:* |]] <<anchor>> TODOs  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** TODO offlineimap, delete local folder --- UID validity problem
+** TODO offlineimap, delete local folder --- UID validity problem -- With muiltiple accounts
 SCHEDULED: <2022-12-16 Fri>
 *** +
 *** in marmeeOfflineimap.py add a delete folders.
 *** -
-** TODO offlineimap RC file Uses MyAcct. That does not permit parallel runs
+** TODO offlineimap RC file Uses MyAcct. That does not permit parallel runs -- Avoids UID validity problem
 ** TODO Experiment with notmuch module. It is mostly there. 3 hours of work.
 SCHEDULED: <2022-12-16 Fri>
+** TODO notmuch -- Experiment with command line searches
+** TODO notmuch -- Make notmuch.cs use linux.configFile -- Delivered to it as a string to store in class
+** TODO Blee- Panels -- Have them cross link
 ** TODO Seperate out inject and qmail-remote -- Use 822-bus to communicate credentials
 ** TODO Create bisos.systemd and sysdTaskInstall on a per account basis
 ** TODO Log properly through out

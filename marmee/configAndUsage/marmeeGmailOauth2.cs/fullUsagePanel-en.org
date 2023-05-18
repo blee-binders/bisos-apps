@@ -43,6 +43,13 @@
 * [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /CS/ :: [[elisp:(lsip-local-run-command "marmeeGmailOauth2.cs --bpoId=cur --envRelPath=cur -i refreshToken")][marmeeGmailOauth2.cs --bpoId=cur --envRelPath=cur -i refreshToken]] *|*  =MailFPs= *|*    [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 * -i getNicheName --- NOTYET
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Automate Web Login For OAuth" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Automate Web Login For OAuth:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** https://support.smartbear.com/readyapi/docs/requests/auth/types/oauth2/automate/google-sample.html
+** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

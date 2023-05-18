@@ -44,6 +44,10 @@
 ** +
 ** https://wiki.archlinux.org/title/systemd/User
 ** https://wiki.archlinux.org/title/OfflineIMAP
+** https://github.com/OfflineIMAP/offlineimap/tree/master/contrib/systemd
+** ----
+** https://github.com/pobot-pybot/pybot-systemd
+** https://github.com/justin8/python-systemd-unit
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Design Overview" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -55,6 +59,8 @@
 ** Run marmeeDaemon.py from systemd --user
 ** Figure out ways of using TIMER or not
 ** Figure out logging
+** -----
+**
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Top Level Commands" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
