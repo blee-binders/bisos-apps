@@ -39,13 +39,24 @@
 ** +
 ** List Of Publsihers that don't impose on your copyright.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Both Amazon KDP And IngramSpark" :anchor "" :extraInfo ""
+####+BEGIN: bxPanel:realms:user|extend
+* [[elisp:(show-all)][(>]]                                [[elisp:(org-cycle)][| *━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━* |]]
+** Extended By: /bxo/r3/iso/piu_mbFullUsage/realmPanels/bisos-apps/lcnt/bookPrintPublishing/_nodeBase_/general.org :*
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Both Amazon KDP And IngramSpark:* |]]    [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Mohsen's PLPC Self-Publication Extensions_: |]]  ~User Panel Extension~  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PLPC-120033:* |]]  ~User Panel Extension~  [[elisp:(org-shifttab)][<)]] E|
+** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Amazon KDP -- Rel 1.04:/ |]]  June 2, 2023  [[elisp:(org-shifttab)][<)]] E|
+*** +
+*** Set Release number to 1.05
+*** B|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *PLPC-120074:* |]]  ~User Panel Extension~  [[elisp:(org-shifttab)][<)]] E|
+*                                   *━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━*                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** +
-** https://oldmatemedia.com/guides/publish-kdp-and-ingramspark/
-** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Registrations" :anchor "" :extraInfo "ISBNs, LLCN"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Registrations_: |]]  ISBNs, LLCN  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Obtaining ISBNs" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Obtaining ISBNs:* |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -56,12 +67,25 @@
 ** https://www.myidentifiers.com/
 ** https://www.myidentifiers.com/myid_sign_in?destination=
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Obtaining LLCN" :anchor "" :extraInfo "Library of Congress Control Number"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Obtaining LCCNs" :anchor "" :extraInfo "Library of Congress Control Number"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Obtaining LLCN:* |]]  Library of Congress Control Number  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Obtaining LCCNs:* |]]  Library of Congress Control Number  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-**  llcn.loc.gov
+** https://www.loc.gov/publish/cip/about/process.html
+** https://www.loc.gov/publish/prepubbooklink/author-self-publisher-user-guide/PPBL_Author_Pub_guide.pdf
+** Login  https://locexternal.servicenowservices.com/auth
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "On Demand Printing" :anchor "" :extraInfo "Self Publishers"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _On Demand Printing_: |]]  Self Publishers  [[elisp:(org-shifttab)][<)]] E|
+####+END
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Both Amazon KDP And IngramSpark" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Both Amazon KDP And IngramSpark:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** https://oldmatemedia.com/guides/publish-kdp-and-ingramspark/
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Amazon KDP" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -81,6 +105,10 @@
 ** +
 ** https://myaccount.ingramspark.com   --- Login
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Previous considerations" :anchor "" :extraInfo "Old"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Previous considerations_: |]]  Old  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "The Bookpatch" :anchor "thebookpatch" :extraInfo "http://www.thebookpatch.com"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *The Bookpatch:* |]] <<thebookpatch>> http://www.thebookpatch.com  [[elisp:(org-shifttab)][<)]] E|
