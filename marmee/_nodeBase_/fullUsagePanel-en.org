@@ -26,8 +26,9 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
 
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/config/_nodeBase_")][ =config= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/daemonization/_nodeBase_")][ =daemonization= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/development/_nodeBase_")][ =development= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/dsnProc/_nodeBase_")][ =dsnProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/install/_nodeBase_")][ =install= ]] *|*
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/mailCreds/_nodeBase_")][ =mailCreds= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/notmuch/_nodeBase_")][ =notmuch= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/offlineimap/_nodeBase_")][ =offlineimap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/outGoingMail/_nodeBase_")][ =outGoingMail= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/pyApi/_nodeBase_")][ =pyApi= ]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/Gnus/_nodeBase_")][ =Gnus= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/aasMarmee/_nodeBase_")][ =aasMarmee= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/configAndUsage/_nodeBase_")][ =configAndUsage= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/daemonization/_nodeBase_")][ =daemonization= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/development/_nodeBase_")][ =development= ]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/dovecot/_nodeBase_")][ =dovecot= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/dsnProc/_nodeBase_")][ =dsnProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/install/_nodeBase_")][ =install= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/mailCreds/_nodeBase_")][ =mailCreds= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/notmuch/_nodeBase_")][ =notmuch= ]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/offlineimap/_nodeBase_")][ =offlineimap= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/outGoingMail/_nodeBase_")][ =outGoingMail= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/pyMailApi/_nodeBase_")][ =pyMailApi= ]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marme-2.7/_nodeBase_")][ =marme-2.7= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/_nodeBase_")][ =marmee= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/remoteAccess/_nodeBase_")][ =remoteAccess= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/roInvofier/_nodeBase_")][ =roInvofier= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
@@ -48,7 +49,9 @@ MARMEE Is broken into various functional areas.
 |                                  | marmeeNotmuch.cs         | Mail Searching                        |
 |----------------------------------+--------------------------+---------------------------------------|
 | Outgoing Mail                    |                          | Outer Rim Qmail                       |
-|                                  | qmail-remote.cs          | Plugin Replcement                     |
+|                                  | marmeeQmail.cs           | Maildrops ~alias in aas/qmail         |
+|                                  | qmail-inject-bisos.cs    | Plugin Replcement                     |
+|                                  | qmail-remote-bisos.cs    | Plugin Replcement                     |
 |                                  | marmeeSend.cs            | FOr testing and Py Mail distribution  |
 |----------------------------------+--------------------------+---------------------------------------|
 | Mail Credentials                 | marmeeGmailOauth2.cs     | Used for incomming and outgoing       |
@@ -66,13 +69,16 @@ MARMEE Is broken into various functional areas.
 | Mail Composition & Distro (mcdt) |                          |                                       |
 |----------------------------------+--------------------------+---------------------------------------|
 
-
 ** +
 ** We are assuming that BISOS and private BPOs (or BSOs) are available.
 ** First focus is Gmail In and Out with Marmee.
 ** Within a fullUsage BPO, marmee service instances are created.
 ** B|
 * +
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "OLD Marmee2.7 Panel ICMS" :anchor "" :extraInfo "Obsolete -- But To Be Absorbed"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _OLD Marmee2.7 Panel ICMS_: |]]  Obsolete -- But To Be Absorbed  [[elisp:(org-shifttab)][<)]] E|
+####+END
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "MARMEE CS-s" :anchor "" :extraInfo "MARMEE Run Scripts"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *MARMEE CS-s:* |]]  MARMEE Run Scripts  [[elisp:(org-shifttab)][<)]] E|
@@ -96,7 +102,7 @@ MARMEE Is broken into various functional areas.
 ** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /cs/ |]] :: [[elisp:(lsip-local-run-command "inMailDsnProc.py -i examples")][inMailDsnProc.py]]  [[elisp:(lsip-local-run-command "inMailDsnProc.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "inMailDsnProc.py -i describe")][describe]] *|*  =Act on DSNs= *|*  To Be Sorted Out. [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ####+BEGIN: blee:panel:icm:py:intro :outLevel 2 :sep nil :folding? t :label "cs" :icmName "inMailNotmuch.py" :comment "Mail Search Engine" :afterComment "rename marmee:in:notmuch.cs"
-** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /cs/ |]] :: [[elisp:(lsip-local-run-command "inMailNotmuch.py -i examples")][inMailNotmuch.py]]  [[elisp:(lsip-local-run-command "inMailNotmuch.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "inMailNotmuch.py -i describe")][describe]] *|*  =Act on DSNs= *|*  rename marmee:in:notmuch.cs [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  [[elisp:(org-cycle)][| /cs/ |]] :: [[elisp:(lsip-local-run-command "inMailNotmuch.py -i examples")][inMailNotmuch.py]]  [[elisp:(lsip-local-run-command "inMailNotmuch.py -i visit")][visit]]  [[elisp:(lsip-local-run-command "inMailNotmuch.py -i describe")][describe]] *|*  =Mail Search Engine= *|*  rename marmee:in:notmuch.cs [[elisp:(org-shifttab)][<)]] E|
 ####+END:
 ** ==================
 ####+BEGIN: blee:panel:icm:py:intro :outLevel 2 :sep nil :folding? t :label "cs" :icmName "inMailRetrieve.py" :comment "Ovelaps marmeeInMailRetrieve.cs marmeeSaiInMail.cs" :afterComment "rename marmee:in:retrieve.cs"

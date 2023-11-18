@@ -58,6 +58,7 @@ _CommentEnd_
 # {{{ DBLOCK-nodesList
 nodesList="
 _nodeBase_
+releasing
 "
 # }}} DBLOCK-nodesList
 ####+END:

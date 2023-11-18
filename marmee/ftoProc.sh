@@ -60,13 +60,17 @@ nodesList="
 install
 dsnProc
 _nodeBase_
+Gnus
 mailCreds
 daemonization
+development
 offlineimap
-pyApi
+aasMarmee
+configAndUsage
 notmuch
-config
+pyMailApi
 outGoingMail
+dovecot
 "
 # }}} DBLOCK-nodesList
 ####+END:

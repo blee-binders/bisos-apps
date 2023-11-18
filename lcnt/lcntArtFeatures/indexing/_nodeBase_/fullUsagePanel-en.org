@@ -50,6 +50,18 @@
 ** After reviewing the output, you can copy over the inputs.
 ** Was used for plpc-120033 with okay results.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Use Of LaTeX Index Tools" :anchor "" :extraInfo "extract_concepts.py and index_concepts.py"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Use Of LaTeX Index Tools:* |]]  extract_concepts.py and index_concepts.py  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** vis_indexExtractConcepts: extract_concepts.py -i articleEnFa.ttytex -o index_concepts.csv -ml 1 -n 500 -m rake -s
+** Perhaps edit index_concepts.csv
+** Create a indexInput directory to hold all the files that will be edited
+** Run vis_indexApplyConcepts with -o /tmp/output_dir
+** Take the files that you want from /tmp/output_dir
+** See lcntProc.sh of plpc-120033 as an example
+** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
