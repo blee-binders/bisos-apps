@@ -57,6 +57,7 @@ MARMEE Is broken into various functional areas.
 | Mail Credentials                 | marmeeGmailOauth2.cs     | Used for incomming and outgoing       |
 |----------------------------------+--------------------------+---------------------------------------|
 | Marmee Daemons                   | marmeeRuns.cs            | Periodic polling and updates          |
+|                                  | marmeeDaemonSysd.c       | Start/user systemd                    |
 |----------------------------------+--------------------------+---------------------------------------|
 | Mail Traking (DSN )              | marmeeDsnProc.cs         | Acts on Delivery Status Notifications |
 |                                  | marmeeTracking.cs        | Records outgoing states               |

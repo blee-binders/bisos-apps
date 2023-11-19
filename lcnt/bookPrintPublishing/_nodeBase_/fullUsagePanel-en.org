@@ -109,20 +109,13 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Previous considerations_: |]]  Old  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "The Bookpatch" :anchor "thebookpatch" :extraInfo "http://www.thebookpatch.com"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *The Bookpatch:* |]] <<thebookpatch>> http://www.thebookpatch.com  [[elisp:(org-shifttab)][<)]] E|
 ####+END
-** 2019 Info
-*** Fill in after first contact.
-** E|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Behta Nashr -- انتشارات بهتا پژوهش" :anchor "behtanashr" :extraInfo "http://www.behtanashr.ir"
-* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Behta Nashr -- انتشارات بهتا پژوهش:* |]] <<behtanashr>> http://www.behtanashr.ir  [[elisp:(org-shifttab)][<)]] E|
-####+END
-** ۲۰۱۹
-*** behtapajoohesh@yahoo.com  behtapajoohesh@gmail.com
-** E|
+** 2019 Info Recommended by AH
+** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END

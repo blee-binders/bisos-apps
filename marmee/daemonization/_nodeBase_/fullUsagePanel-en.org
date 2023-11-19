@@ -31,8 +31,8 @@
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/marmee/_nodeBase_")][ =marmee= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/git/auth/bxRepos/blee-binders/_nodeBase_")][ =blee-binders= ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel" :extraInfo "marmeeDaemonSysd.cs"
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>> marmeeDaemonSysd.cs  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Scope of this panel is deamonization of marmee aas services
@@ -70,7 +70,18 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Systemd control:* |]]    [[elisp:(org-shifttab)][<)]] E|
 ####+END
-
+####+BEGIN: blee:panel:icm:py:intro :outLevel 1 :sep t :folding? nil :label "PyCS-Intro" :icmName "marmeeDaemonSysd.cs" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /PyCS-Intro/ :: [[elisp:(lsip-local-run-command "marmeeDaemonSysd.cs -i examples")][marmeeDaemonSysd.cs]]  [[elisp:(lsip-local-run-command "marmeeDaemonSysd.cs -i visit")][visit]]  [[elisp:(lsip-local-run-command "marmeeDaemonSysd.cs -i describe")][describe]] *|*  == *|*   [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep t :folding? nil :label "PyCS" :icmName "marmeeDaemonSysd.cs --cls=sysdUnitMarmee  -i sysdUserUnit status" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /PyCS/ :: [[elisp:(lsip-local-run-command "marmeeDaemonSysd.cs --cls=sysdUnitMarmee  -i sysdUserUnit status")][marmeeDaemonSysd.cs --cls=sysdUnitMarmee  -i sysdUserUnit status]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
+####+BEGIN: blee:panel:icm:py:cmnd :outLevel 1 :sep t :folding? nil :label "PyCS" :icmName "marmeeDaemonSysd.cs --cls=sysdUnitMarmee  -i sysdUserUnit journalLogs" :comment "" :afterComment ""
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]]  /PyCS/ :: [[elisp:(lsip-local-run-command "marmeeDaemonSysd.cs --cls=sysdUnitMarmee  -i sysdUserUnit journalLogs")][marmeeDaemonSysd.cs --cls=sysdUnitMarmee  -i sysdUserUnit journalLogs]] *|*  == *|*    [[elisp:(org-shifttab)][<)]] E|
+####+END:
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
