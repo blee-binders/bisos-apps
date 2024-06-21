@@ -26,7 +26,7 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntMiscTypes/busCards/_nodeBase_")][ =busCards= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntMiscTypes/envLab/_nodeBase_")][ =envLab= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntMiscTypes/busCards/_nodeBase_")][ =busCards= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntMiscTypes/envLab/_nodeBase_")][ =envLab= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntMiscTypes/poster/_nodeBase_")][ =poster= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-apps/lcnt/lcntMiscTypes/_nodeBase_")][ =lcntMiscTypes= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
