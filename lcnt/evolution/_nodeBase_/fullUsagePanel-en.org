@@ -78,6 +78,16 @@
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _To Be Captureed_: |]]  TODOs and Pointers  [[elisp:(org-shifttab)][<)]] E|
 ####+END
+** +
+** TODO
+** WAITING [#C] Absorb latex-lsp
+** Latex, Mailings Imporvements  -- Change ttytex bxtexor matex or maintex
+*** apt-get install lacheck
+*** apt-get install chktex
+*** In Control part of mailings.ttytex have an embeded  pdf viewer as well.
+*** Get rid of the extra mailingEnXXX  in the template -- mailingEnFa.oldTtytex
+
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Special Effects " :anchor "" :extraInfo "Zoom and Pan"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Special Effects :* |]]  Zoom and Pan  [[elisp:(org-shifttab)][<)]] E|
