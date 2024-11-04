@@ -80,37 +80,186 @@
 ** Goto the right Directory
 ** lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms="pres+art" -p srcLangs="en+fa" -i baseFullStart
 ** lcnLcntGens.sh -n showRun -p cntntRawHome=. -p srcForms="pres+art" -p lcntNu=00000 -p srcLangs="en+fa" -i baseFullStart
-** lcnLcntGens.sh -n showRun -p cntntRawHome=. -i lcntBuildInfoGens
-** lcnLcntGens.sh -n showRun -p cntntRawHome=. -i lcntExportInfoGens
+** lcnLcntGens.sh -n showRun -p cntntRawHome=. -i lcntBuildInfoGens  # Obsoleted by lcntInfoFullRenew
+** lcnLcntGens.sh -n showRun -p cntntRawHome=. -i lcntExportInfoGens # Obsoleted by lcntInfoFullRenew
+** lcnLcntGens.sh -n showRun -p cntntRawHome=. -i lcntInfoFullRenew  # Obsoletes lcntBuildInfoGens + lcntExportInfoGens
 ** lcntProc.sh -v -n showRun -i lcntBuildSetCur ./LCNT-INFO/Builds/pres-reveal
 ** lcntProc.sh -h -v -n showRun  -i fullClean
 ** lcntProc.sh -h -v -n showRun -p extent="build+view" -i lcntBuild cur  # Runs dblock
 ** lcntProc.sh -h -v -n showRun -p extent="build+view" -i lcntBuild all  # Runs dblock
 ** Setup the enabled list: LCNT-INFO/Builds/enabledList = "presPdf pres-reveal presArt-8.5x11 presArt-html"
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "4 Outputs Control Table + Derived" :anchor "" :extraInfo "htmlonly/latexonly/articleMode/presentationMode."
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Table::  Conditional Commands and Their Origin" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *4 Outputs Control Table + Derived:* |]]  htmlonly/latexonly/articleMode/presentationMode.  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Table::  Conditional Commands and Their Origin:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Who defines the commands and what triggers them and what they do
+|--------------------------+------------------------+--------------------------+---------------------------------|
+| Command                  | Origin   \usepackage{} | Trigger Condition        | Comment                         |
+|--------------------------+------------------------+--------------------------+---------------------------------|
+| \begin{presentationMode} | bystarpresentation     | presentationEnFa.ttytex  | See outputs control table       |
+| \begin{articleMode}      |                        |                          | artHtml+artPdf                  |
+|--------------------------+------------------------+--------------------------+---------------------------------|
+| \begin{htmlonly}         | \usepackage{hevea}     | HaVeA vs LaTeX execution | HEVEA processes. LaTeX  Ignores |
+| \begin{verblatex}        | \usepackage{hevea}     | HaVeA vs LaTeX execution | HEVEA looks for \end{verblatex} |
+| \begin{latexonly}        | \usepackage{hevea}     | HaVeA vs LaTeX execution | HEVEA \end{env} are processed   |
+| \begin{rawhtml}          | \usepackage{hevea}     | HaVeA vs LaTeX execution | hev echos verbatim, tex ignores |
+|--------------------------+------------------------+--------------------------+---------------------------------|
+| \pnote{ text }           | bystarpresentation     | Always                   | Used inside of \begin{frame}    |
+|--------------------------+------------------------+--------------------------+---------------------------------|
+
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Table:: 4 Outputs Control Table - Used in derivedImage" :anchor "" :extraInfo "articleMode/presentationMode."
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Table:: 4 Outputs Control Table - Used in derivedImage:* |]]  articleMode/presentationMode.  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** The 4 outputs are: beamerPdf, artPdf, reveal, artHtml
+** The 4 controls are: htmlonly (hevea), verblatex (hevea), articleMode (bxTex), presentationMode (bxTex)
+** The above 4 controls are used in dblocks to create the above 4 outputs
+|--------------------------+----------------+---------------------+---------------------------------|
+| artOrPres                | htmlOnly       | latexonly/verblatex | common                          |
+|                          | (no LaTeX)     | (no HeVeA)          | (both LaTeX and HeVeA)          |
+|--------------------------+----------------+---------------------+---------------------------------|
+| presentationMode         | reveal         | beamerPdf           | beamerPdf + reveal              |
+| articleMode              | artHtml        | artPdt              | artHtml+artPdf                  |
+| common (not above Modes) | artHtml+reveal | beamerPdf+artPdf    | beamerPdf+artPdf+reveal+artHtml |
+|--------------------------+----------------+---------------------+---------------------------------|
 
-|------------------+----------------+---------------------+---------------------------------|
-| artOrPres        | htmlOnly       | latexonly/verblatex | common                          |
-|                  | (no LaTeX)     | (no HeVeA)          | (both LaTeX and HeVeA)          |
-|------------------+----------------+---------------------+---------------------------------|
-| presentationMode | reveal         | beamerPdf           | beamerPdf + reveal              |
-| articleMode      | artHtml        | artPdt              | artHtml+artPdf                  |
-| common           | artHtml+reveal | beamerPdf+artPdf    | beamerPdf+artPdf+reveal+artHtml |
-|------------------+----------------+---------------------+---------------------------------|
-
+**
 ** presentationMode and articleMode are part of bystarTeX
 ** latexonly, latexxx (ignored by HeVeA) and htmlonly are part of HeVeA
+** common means neither presentationMode nor articleMode has been specified
 ** Derived Image Slide:  BeamerImage In Reveal, artHtml, BeamerPdf, artPdt
 ** Derived Image Slide:  Produces two frames. A closed frame for BeamerImage In Reveal. An open frame for rest.
 ** Derived Video Slide:  BeamerImageVideo In Reveal, artHtml, BeamerPdf, artPdt
 ** Derived Video Slide:  Produces two frames. A closed frame for BeamerVideo In Reveal. An open frame for rest.
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Table:: Frame DBLOCKs" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Table:: Frame DBLOCKs:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Types and how and when to use them
+
+|--------------------+--------------------------------------+------------------------------------------------|
+| Frame Types        | Dblock                               | Description                                    |
+|--------------------+--------------------------------------+------------------------------------------------|
+|--------------------+--------------------------------------+------------------------------------------------|
+| [[TitlePage]]          |                                      | In presentationEnFa.ttytex                     |
+|--------------------+--------------------------------------+------------------------------------------------|
+| [[frameBlank]]         | [[b:lcnt:pres:frame:begin/blank]]        | not title                                      |
+|--------------------+--------------------------------------+------------------------------------------------|
+| [[framePlain]]         | [[b:lcnt:pres:frame:begin/plain]]        | title+subTitle                                 |
+|--------------------+--------------------------------------+------------------------------------------------|
+| [[frameRegular]]       | [[b:lcnt:pres:frame:begin/regular]]      | title+subTitle+Guide                           |
+|--------------------+--------------------------------------+------------------------------------------------|
+| [[derivedImage]]       | [[b:lcnt:pres:frame/derivedImage]]       | tex: frame & rvl: brings beamer image          |
+|--------------------+--------------------------------------+------------------------------------------------|
+| [[derivedVideo]]       | [[b:lcnt:pres:frame/derivedVideo]]       | tex: frame & rvl: brings video of beamer image |
+|--------------------+--------------------------------------+------------------------------------------------|
+| [[insertDerivedImage]] | [[b:lcnt:pres:frame/insertDerivedImage]] | label: here, derivedLabel: inserted image      |
+|--------------------+--------------------------------------+------------------------------------------------|
+| [[insertDerivedVideo]] | [[b:lcnt:pres:frame/insertDerivedVideo]] | label: here, derivedLabel: inserted video      |
+|--------------------+--------------------------------------+------------------------------------------------|
+
+** Desescription
+** <<TitlePage>>
+*** +
+*** Driven with info of ./LCNT/
+*** Reveal: Derived-Beamer-Image
+*** BeamerPdf: LaTeX
+*** TODO dblock is not clean. Needs revisiting
+*** -
+** <<frameBlank>>
+*** +
+*** dblcok = <<b:lcnt:pres:frame:begin/blank>>  NOTYET-LinkComes Here
+*** dblock has no :title
+*** Reveal:  Untitled Frame
+*** BeamerPdf: UnTitled Frame
+*** -
+** <<framePlain>>
+*** +
+*** dblcok = <<b:lcnt:pres:frame:begin/plain>>  NOTYET-LinkComes Here
+*** Reveal:  Titled Frame
+*** BeamerPdf: Titled Frame -- No Navigation
+*** -
+** <<frameRegular>>
+*** +
+*** dblcok = <<b:lcnt:pres:frame:begin/regular>>  NOTYET-LinkComes Here
+*** Reveal:  Titled Frame
+*** BeamerPdf: Titled Frame + Navigation
+*** -
+** <<derivedImage>>
+*** +
+*** dblcok = <<b:lcnt:pres:frame/derivedImage>>  NOTYET-LinkComes Here
+*** Reveal:  Titled Frame
+*** BeamerPdf: Titled Frame + Navigation
+*** -
+** <<derivedVideo>>
+*** +
+*** dblcok = <<b:lcnt:pres:frame/derivedVideo>>  NOTYET-LinkComes Here
+*** Reveal:  Titled Frame
+*** BeamerPdf: Titled Frame + Navigation
+*** -
+
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Table:: Body  DBLOCKs" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Table:: Body  DBLOCKs:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Types and how and when to use them
+
+|----------------+---------------------------------+--------------------------------------------------|
+| Body Types     | Dblock                          | Description                                      |
+|----------------+---------------------------------+--------------------------------------------------|
+|----------------+---------------------------------+--------------------------------------------------|
+| external-video | b:lcnt:pres:frame:body:mm/video | path of video file to be inserted in blank frame |
+|----------------+---------------------------------+--------------------------------------------------|
+| odg-image      | bx:dblock:lcnt:body:odg-artpres | path of image  file to be inserted in frame      |
+|----------------+---------------------------------+--------------------------------------------------|
+
+
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Table:: Common Slide Types" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Table:: Common Slide Types:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Types and how and when to use them
+
+|---------------------+------------------------------------------------------------------------|
+| Slide Type          | Description                                                            |
+|---------------------+------------------------------------------------------------------------|
+|---------------------+------------------------------------------------------------------------|
+| [[TitlePage]]           | In presentationEnFa.ttytex                                             |
+|---------------------+------------------------------------------------------------------------|
+| [[PartToc]]             | Part Table of Content                                                  |
+|---------------------+------------------------------------------------------------------------|
+| [[DerivedImage+Native]] | Use insertDerivedImage  label: frameNameInsert derivedLabel: frameName |
+|---------------------+------------------------------------------------------------------------|
+| [[DerivedVideo+Native]] | Use insertDerivedVideo  label: frameNameInsert derivedLabel: frameName |
+|                     |                                                                        |
+|---------------------+------------------------------------------------------------------------|
+** Desescription
+** <<TitlePage>>
+*** +
+*** Driven with info of ./LCNT/
+*** Reveal: Derived-Beamer-Image
+*** BeamerPdf: LaTeX
+*** TODO dblock is not clean. Needs revisiting
+*** -
+** <<PartToc>>
+*** +
+*** Driven with info of ./LCNT/
+*** Reveal: Derived-Beamer-Image
+*** BeamerPdf: LaTeX
+*** TODO dblock is not clean. Needs revisiting
+*** -
+
+** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Initialize MultiMedia Env With lcntProc.sh  -i mmUnitePrep" :anchor "" :extraInfo "adds mmUnite.sh"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Initialize MultiMedia Env With lcntProc.sh  -i mmUnitePrep:* |]]  adds mmUnite.sh  [[elisp:(org-shifttab)][<)]] E|
@@ -171,6 +320,16 @@
 ####+END
 ** +
 ** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Build - Clean - ReBuild" :anchor "" :extraInfo "Re-Build and Release Procedures"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Build - Clean - ReBuild_: |]]  Re-Build and Release Procedures  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** lcntProc.sh -h -v -n showRun  -i fullClean
+** lcntProc.sh -h -v -n showRun -i beamerDerivedFullBuild  # Updates disposition.gened 
+** Make sure that: LCNT-INFO/Builds/enabledList = "presPdf pres-reveal presArt-8.5x11 presArt-html"
+** lcntProc.sh -h -v -n showRun -p extent="build+view" -i lcntBuild all
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 0 :sep t :title "Screen Capture And Camera Recording" :anchor "" :extraInfo "OBS Setup"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_     [[elisp:(outline-show-subtree+toggle)][| _Screen Capture And Camera Recording_: |]]  OBS Setup  [[elisp:(org-shifttab)][<)]] E|
@@ -184,7 +343,7 @@
 ** +
 ** Go to OBS Panel
 ** B|
-d####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Camera Capture" :anchor "" :extraInfo "OBS"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Camera Capture" :anchor "" :extraInfo "OBS"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Camera Capture:* |]]  OBS  [[elisp:(org-shifttab)][<)]] E|
 ####+END
