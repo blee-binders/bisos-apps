@@ -27,6 +27,7 @@
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
 * +
 *   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntScreencasting/lcntAlbum/_nodeBase_")][ =lcntAlbum= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntScreencasting/mmUnite/_nodeBase_")][ =mmUnite= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntScreencasting/mmUniteAudio/_nodeBase_")][ =mmUniteAudio= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntScreencasting/mmUniteVideo/_nodeBase_")][ =mmUniteVideo= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntScreencasting/subTitles/_nodeBase_")][ =subTitles= ]] *|*
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntScreencasting/teleprompter/_nodeBase_")][ =teleprompter= ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/bookPrintPublishing/_nodeBase_")][ =bookPrintPublishing= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/dblocksAndSnippets/_nodeBase_")][ =dblocksAndSnippets= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/eBook/_nodeBase_")][ =eBook= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/evolution/_nodeBase_")][ =evolution= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/hardware/_nodeBase_")][ =hardware= ]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/heveaTexLibs/_nodeBase_")][ =heveaTexLibs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntArtFeatures/_nodeBase_")][ =lcntArtFeatures= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntArtTypes/_nodeBase_")][ =lcntArtTypes= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntAuthorship/_nodeBase_")][ =lcntAuthorship= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntBPOs/_nodeBase_")][ =lcntBPOs= ]] *|*
@@ -95,19 +96,19 @@
 ####+END
 ** +
 ** Who defines the commands and what triggers them and what they do
-|--------------------------+------------------------+--------------------------+---------------------------------|
-| Command                  | Origin   \usepackage{} | Trigger Condition        | Comment                         |
-|--------------------------+------------------------+--------------------------+---------------------------------|
-| \begin{presentationMode} | bystarpresentation     | presentationEnFa.ttytex  | See outputs control table       |
-| \begin{articleMode}      |                        |                          | artHtml+artPdf                  |
-|--------------------------+------------------------+--------------------------+---------------------------------|
-| \begin{htmlonly}         | \usepackage{hevea}     | HaVeA vs LaTeX execution | HEVEA processes. LaTeX  Ignores |
-| \begin{verblatex}        | \usepackage{hevea}     | HaVeA vs LaTeX execution | HEVEA looks for \end{verblatex} |
-| \begin{latexonly}        | \usepackage{hevea}     | HaVeA vs LaTeX execution | HEVEA \end{env} are processed   |
-| \begin{rawhtml}          | \usepackage{hevea}     | HaVeA vs LaTeX execution | hev echos verbatim, tex ignores |
-|--------------------------+------------------------+--------------------------+---------------------------------|
-| \pnote{ text }           | bystarpresentation     | Always                   | Used inside of \begin{frame}    |
-|--------------------------+------------------------+--------------------------+---------------------------------|
+|--------------------------+------------------------+-------------------+---------------------------------|
+| Command                  | Origin   \usepackage{} | Trigger Condition | Comment                         |
+|--------------------------+------------------------+-------------------+---------------------------------|
+| \begin{presentationMode} | bystarpresentation     | presentationEnFa  | See outputs control table       |
+| \begin{articleMode}      |                        |                   | artHtml+artPdf                  |
+|--------------------------+------------------------+-------------------+---------------------------------|
+| \begin{htmlonly}         | \usepackage{hevea}     | HaVeA  execution  | HEVEA processes. LaTeX  Ignores |
+| \begin{verblatex}        | \usepackage{hevea}     | LaTeX execution   | HEVEA looks for \end{verblatex} |
+| \begin{latexonly}        | \usepackage{hevea}     | LaTeX execution   | HEVEA \end{env} are processed   |
+| \begin{rawhtml}          | \usepackage{hevea}     | HaVeA execution   | hev echos verbatim, tex ignores |
+|--------------------------+------------------------+-------------------+---------------------------------|
+| \pnote{ text }           | bystarpresentation     | Always            | Used inside of \begin{frame}    |
+|--------------------------+------------------------+-------------------+---------------------------------|
 
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Table:: 4 Outputs Control Table - Used in derivedImage" :anchor "" :extraInfo "articleMode/presentationMode."
@@ -120,7 +121,7 @@
 ** The above 4 controls are used in dblocks to create the above 4 outputs
 |--------------------------+----------------+---------------------+---------------------------------|
 | artOrPres                | htmlOnly       | latexonly/verblatex | common                          |
-|                          | (no LaTeX)     | (no HeVeA)          | (both LaTeX and HeVeA)          |
+|                          | (HeVeA no TeX) | (LaTeX no HeVeA)    | (both LaTeX and HeVeA)          |
 |--------------------------+----------------+---------------------+---------------------------------|
 | presentationMode         | reveal         | beamerPdf           | beamerPdf + reveal              |
 | articleMode              | artHtml        | artPdt              | artHtml+artPdf                  |
@@ -262,7 +263,7 @@
 ** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Initialize MultiMedia Env With lcntProc.sh  -i mmUnitePrep" :anchor "" :extraInfo "adds mmUnite.sh"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Initialize MultiMedia Env With lcntProc.sh  -i mmUnitePrep:* |]]  adds mmUnite.sh  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Initializae MultiMedia Env With lcntProc.sh  -i mmUnitePrep:* |]]  adds mmUnite.sh  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** lcntProc.sh  -i mmUnitePrep  -- which brings over mmUnite.sh. See [[Panel]] for details.
@@ -285,7 +286,7 @@
 ** -
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "MM Slides Preparation" :anchor "MmSlidesPrep" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *MM Slides Preparation:* |]] <<MmSlidesPrep>>   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *MM Slides Prepaaration:* |]] <<MmSlidesPrep>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** INTERIM: Verify that LCNT-INFO/Builds/enabledList contains: presPdf pres-reveal presArt-8.5x11 presArt-html
@@ -343,14 +344,15 @@
 ** +
 ** Go to OBS Panel
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Camera Capture" :anchor "" :extraInfo "OBS"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Camera Actor Capture" :anchor "" :extraInfo "OBS"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Camera Capture:* |]]  OBS  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Camera Actor Capture:* |]]  OBS  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Start obs in the lcnt/video directory
 ** Create or Use:  CameraCapture Scene
 ** CameraCapture Scene = Camera + Yeti Mic
+** Tele-Prompter Setup
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Narrated Slides Video Capture And Augmentation" :anchor "" :extraInfo "OBS+pdfpc -- After VoiceOver"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
