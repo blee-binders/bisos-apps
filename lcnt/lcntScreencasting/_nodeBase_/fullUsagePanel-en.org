@@ -30,9 +30,9 @@
 *   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntScreencasting/teleprompter/_nodeBase_")][ =teleprompter= ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/bookPrintPublishing/_nodeBase_")][ =bookPrintPublishing= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/dblocksAndSnippets/_nodeBase_")][ =dblocksAndSnippets= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/eBook/_nodeBase_")][ =eBook= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/evolution/_nodeBase_")][ =evolution= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/hardware/_nodeBase_")][ =hardware= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/heveaTexLibs/_nodeBase_")][ =heveaTexLibs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntArtFeatures/_nodeBase_")][ =lcntArtFeatures= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntArtTypes/_nodeBase_")][ =lcntArtTypes= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntAuthorship/_nodeBase_")][ =lcntAuthorship= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntBPOs/_nodeBase_")][ =lcntBPOs= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntDevelopment/_nodeBase_")][ =lcntDevelopment= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntFoundations/_nodeBase_")][ =lcntFoundations= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntMiscTypes/_nodeBase_")][ =lcntMiscTypes= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntModel/_nodeBase_")][ =lcntModel= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntProc/_nodeBase_")][ =lcntProc= ]] *|*
-*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntScreencasting/_nodeBase_")][ =lcntScreencasting= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntTemplates/_nodeBase_")][ =lcntTemplates= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/productionComponents/_nodeBase_")][ =productionComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/publicationComponents/_nodeBase_")][ =publicationComponents= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/heveaTexLibs/_nodeBase_")][ =heveaTexLibs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntAlbums/_nodeBase_")][ =lcntAlbums= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntArtFeatures/_nodeBase_")][ =lcntArtFeatures= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntArtTypes/_nodeBase_")][ =lcntArtTypes= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntAuthorship/_nodeBase_")][ =lcntAuthorship= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntBPOs/_nodeBase_")][ =lcntBPOs= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntDevelopment/_nodeBase_")][ =lcntDevelopment= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntFoundations/_nodeBase_")][ =lcntFoundations= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntMiscTypes/_nodeBase_")][ =lcntMiscTypes= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntModel/_nodeBase_")][ =lcntModel= ]] *|*
+*   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntProc/_nodeBase_")][ =lcntProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntScreencasting/_nodeBase_")][ =lcntScreencasting= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/lcntTemplates/_nodeBase_")][ =lcntTemplates= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/productionComponents/_nodeBase_")][ =productionComponents= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/lcnt/publicationComponents/_nodeBase_")][ =publicationComponents= ]] *|*
 *   /Ancestors/  :: [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-apps/lcnt/_nodeBase_")][ =lcnt= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/bisos-apps/_nodeBase_")][ =bisos-apps= ]] *|* [[elisp:(blee:bnsm:panel-goto "//bisos/panels/_nodeBase_")][ = /<panels>/ = ]] *|* [[elisp:(dired "//bisos")][ ~bisos~ ]] *|*
 *                                   _━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━_                          [[elisp:(org-shifttab)][<)]] E|
 ####+END
@@ -49,11 +49,35 @@
 ** cp /bisos/apps/defaults/begin/templates/purposed/lcnt/bash/mmUniteAudio.sh ./audio/mmUniteAudio.sh -- so that
 ** mmUniteAudio.sh -h -v -n showRun -i fullUpdate -- and similarly for videos mmUniteVideo.sh
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Notes" :anchor "" :extraInfo "Info to be captured -- And TODOs"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Notes -- From pnotes to .vtt -- Videoed" :anchor "Notes" :extraInfo "Info to be captured -- And TODOs"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Notes:* |]]  Info to be captured -- And TODOs  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Notes -- From pnotes to .vtt -- Videoed:* |]] <<Notes>> Info to be captured -- And TODOs  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** --- <2024-12-07 Sat 19:53>  BEGIN ---
+** TODO Use Subed to do Chapters.vtt --- Capture in Panels
+** TODO Add wdiff to subed binsprep
+** (straight-use-package '(subed :type git  :local-repo "/bisos/git/bxRepos/forked/subed/subed"))
+
+** TODO Absorb subed and modernize package inclusion
+** Use similar to binsprep for lcntProc -- Do it mmUniteVideo.cs
+** https://github.com/openai/whisper/discussions/132
+** [[pdfpc-notes]] pnote is provided by  https://github.com/cebe/pdfpc-latex-notes
+** [[convertedImage]]  image+voiceOver = videoedImage (vidImg-name) -- videoedImage + caption = captionedImage (captImg-name)
+** ./LCNT-INFO/Builds/reveal +  ./LCNT-INFO/Builds/reveal-captioned
+** ./LCNT-INFO/Builds/reveal :: buildName:aboutBleeEmacsConf24-reveal -- whenNoCaptions
+** ./LCNT-INFO/Builds/reveal-captioned :: buildName:aboutBleeEmacsConf24-reveal-captioned -- whenNoCaptioned
+** pnotes modifications : Fix slideNumbers for .pdfpc
+** pnotes modifications : modify .sty and create bxpdfpcnotes.sty writes .caption with short lines
+** latexPnotes.cs: processes .pdfpc
+** With whenNotCaptioned, All videos are played as normal -- Captions not enabled
+** With whenCaptioned, All videos are played with Captions enabled
+** New dblock for videoedImage
+** LaTeX-pnotes --> file.pdfpc --> file.narration --aeneas--> file.vtt --> captioned.mp4
+** Verification: file.mp4 --whisper--> file.whisper # (file.whisper&file.narration) wdiff -- See Dec 6,2024 email
+** --- <2024-12-07 Sat 19:54>  END ---
+** Capture subed-wdiff-subtitle-text-with-file  in subed menus
+** Adopt Whisper
 ** TODO Similar to audioRecord, create actions and starting points for derived videos
 ** DONE Capture all the interims in lcntProc.sh
 ** TODO capture beamerPdfPages.cs in bisos.lcnt --- uses pdftk
@@ -276,7 +300,8 @@
 ** 1) Prepare Pure Slides
 ** 1.1) Prepare text for naration as slide comments --  [[MmSlidesPrep]]
 ** 2) Slide: Adding Voice-Overt To Slide
-** 3) Reveal-Slide: Decide if you want it as derivedImage, derivedVideo, or Reveal-Frame
+** 3) Reveal-Slide: Decide if you want it as derivedImage, derivedVideo, Reveal-Frame, or Frame+externalVideo
+** 3.1) For derivedVideo, start with derivedImage. Do the voiceOver. Then switch to derivedVideo.
 ** 4) derivedVideo:Video Recording of Slide+Voice+visual-augmentation (with pdfpc)
 ** 5) Screen Captures With OBS
 ** 6) Camera Recording With OBS --- perhaps with teleprompter
@@ -286,7 +311,7 @@
 ** -
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "MM Slides Preparation" :anchor "MmSlidesPrep" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *MM Slides Prepaaration:* |]] <<MmSlidesPrep>>   [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *MM Slides Preparation:* |]] <<MmSlidesPrep>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** INTERIM: Verify that LCNT-INFO/Builds/enabledList contains: presPdf pres-reveal presArt-8.5x11 presArt-html
@@ -337,16 +362,47 @@
 ####+END
 ** +
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "OBS Common Setup" :anchor "" :extraInfo "Link to Panel"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Table:: Video Types" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Table:: Video Types:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Types and how and when to use them
+
+|----------------+---------------------------------+---------------------------------------------------------|
+| Video Types    | Dblock                          | Description                                             |
+|----------------+---------------------------------+---------------------------------------------------------|
+|----------------+---------------------------------+---------------------------------------------------------|
+| external-video | b:lcnt:pres:frame:body:mm/video | Audio+Video of Video - path of video file               |
+|----------------+---------------------------------+---------------------------------------------------------|
+| derivedVideo   | b:lcnt:pres:frame/derivedVideo  | [[DerivedVideo]] - derivedImage+./audio/frame=./video/frame |
+|----------------+---------------------------------+---------------------------------------------------------|
+| narratedVideo  | b:lcnt:pres:frame/narratedVideo | [[NarratedVideo]] - ./audio/frame+video=./video/frame       |
+|----------------+---------------------------------+---------------------------------------------------------|
+**
+** external-video can be one of:
+|----------------------+----------------+------------------------------------|
+| external-video       | Link           | Description                        |
+|----------------------+----------------+------------------------------------|
+|----------------------+----------------+------------------------------------|
+| Camera Actor Capture | [[CameraActor]]    | OBS + Camera + Mic + TelePrompter  |
+|----------------------+----------------+------------------------------------|
+| Screen Capture       | [[Screen Capture]] | OBS + Frame + VoiceOver + KeyBoard |
+|                      |                |                                    |
+|----------------------+----------------+------------------------------------|
+
+
+
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "OBS Common Setup" :anchor "" :extraInfo "Link to Panel"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/￼
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *OBS Common Setup:* |]]  Link to Panel  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Go to OBS Panel
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Camera Actor Capture" :anchor "" :extraInfo "OBS"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Camera Actor Capture" :anchor "CameraActor" :extraInfo "OBS"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Camera Actor Capture:* |]]  OBS  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Camera Actor Capture:* |]] <<CameraActor>> OBS  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** Start obs in the lcnt/video directory
@@ -354,9 +410,16 @@
 ** CameraCapture Scene = Camera + Yeti Mic
 ** Tele-Prompter Setup
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Narrated Slides Video Capture And Augmentation" :anchor "" :extraInfo "OBS+pdfpc -- After VoiceOver"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Screen Capture" :anchor "ScreenCapture" :extraInfo "OBS"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Narrated Slides Video Capture And Augmentation:* |]]  OBS+pdfpc -- After VoiceOver  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Screen Capture:* |]] <<ScreenCapture>> OBS  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** Start obs in the lcnt/video directory
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Narrated Slide Video Capture & Augmentation" :anchor "DerivedVideo" :extraInfo "VoiceOver then OBS+pdfpc"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Narrated Slide Video Capture & Augmentation:* |]] <<DerivedVideo>> VoiceOver then OBS+pdfpc  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
 ** This is best done in a 3 Screens Setup.

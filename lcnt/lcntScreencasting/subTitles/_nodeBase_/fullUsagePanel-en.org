@@ -35,25 +35,14 @@
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** Overview Comes Here.
+** All things related to creation and edition of subtitles.
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Subtitle -- Closed Caption" :anchor "" :extraInfo "Tools BinsPrep"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "CSs -- Related to Subtitle -- Closed Caption " :anchor "" :extraInfo "Tools BinsPrep"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Subtitle -- Closed Caption:* |]]  Tools BinsPrep  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *CSs -- Related to Subtitle -- Closed Caption :* |]]  Tools BinsPrep  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
-** TODO install and experiment with subed
-** TODO install mpv
-** TODO https://github.com/jasonwebb/revealjs-subtitles
-** TODO Capture  https://media.emacsconf.org/2022/backstage/editing-captions.html
-Sacha: <2022-11-07 Mon>  I just posted some notes on how I reflow and edit subtitles:
- https://media.emacsconf.org/2022/backstage/editing-captions.html
-<2022-11-07 Mon> Also Downloaded in ./editing-captions.html
-** TODO Install https://github.com/readbeyond/aeneas/
-    break up the text file into the
-    lines that you want to have as captions and then use
-    https://github.com/readbeyond/aeneas/ to get the timestamps.
-** TODO incorporate subtitles into video --- capture with ffmpg
+**  /bisos/core/lcnt/bin/subed-binsPrep.cs
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Obtaining Narration-Text" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
@@ -61,11 +50,15 @@ Sacha: <2022-11-07 Mon>  I just posted some notes on how I reflow and edit subti
 ####+END
 ** +
 ** Narration-Text may be obtained in a variety of ways
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "LCNT pnotes Aggregation" :anchor "" :extraInfo ".pdfpc"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "LCNT pnotes Aggregation" :anchor "pdfpc-notes" :extraInfo ".pdfpc"
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /LCNT pnotes Aggregation:/ |]]  .pdfpc  [[elisp:(org-shifttab)][<)]] E|
+** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /LCNT pnotes Aggregation:/ |]] <<pdfpc-notes>> .pdfpc  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ***  Just take the presentationEnFa.pdfpc
+*** https://github.com/cebe/pdfpc-latex-notes
+*** https://github.com/ronwzl/pnotes
+*** Possible solution to fragile framenumber Bug -- https://github.com/josephwright/beamer/issues/450
+*** -B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 2 :sep t :title "Speech-To-Text Conversion" :anchor "" :extraInfo "OpenAI Whisper"
 ** /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 ** [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| /Speech-To-Text Conversion:/ |]]  OpenAI Whisper  [[elisp:(org-shifttab)][<)]] E|
@@ -120,11 +113,12 @@ to make it read better.
 Sometimes I want to tweak how the captions are split. I use <code>M-j</code> (<code>subed-jump-to-current-subtitle</code>) to jump to the caption if I'm not already on it, listen for the right spot, and maybe use <code>M-SPC</code> to toggle playback. I use <code>M-.</code> (<code>subed-split-subtitle</code>) to split a caption at the current MPV playing position and <code>M-m</code> (<code>subed-merge-with-next</code>) to merge a subtitle with the next one. Times don't need to be very precise.
 </p>
 ** B|
-####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Embed VTT File" :anchor "" :extraInfo "With ffmpeg --- mmUniteVideo.sh"
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Embed VTT File" :anchor "convertedImage" :extraInfo "With ffmpeg --- mmUniteVideo.sh"
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
-* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Embed VTT File:* |]]  With ffmpeg --- mmUniteVideo.sh  [[elisp:(org-shifttab)][<)]] E|
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Embed VTT File:* |]] <<convertedImage>> With ffmpeg --- mmUniteVideo.sh  [[elisp:(org-shifttab)][<)]] E|
 ####+END
 ** +
+** TODO incorporate subtitles into video --- capture with ffmpg
 ** mmUniteVideo.sh -h -v -n showRun -p captionFile=engCaptionFile.vtt -i addCaptionsFile inVideoFile.mp4 ~/Videos/captionedVideoFile.mp4 # 2 args
 ** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Quality Control" :anchor "" :extraInfo "Rpeat above 2 steps"
@@ -138,7 +132,14 @@ are probably still a few errors. I e-mail captions to the speakers for
 review in order to help catch things. So that's how I edit the
 captions for EmacsConf. Hope that helps!
 ** B|
-
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Adding subtitles to Each Reveal.js Video" :anchor "" :extraInfo ""
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Adding subtitles to Each Reveal.js Video:* |]]    [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** https://stackoverflow.com/questions/21052156/how-to-add-subtitles-to-a-video-in-html
+** ffmpeg -loop 1 -i image.jpg -i audio.mp3 -c:v libx264 -tune stillimage -c:a aac -b:a 192k -vf "scale='iw-mod(iw,2)':'ih-mod(ih,2)',format=yuv420p" -shortest -movflags +faststart out.mp4
+** B|
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "To Be Absorbed From Sacha" :anchor "" :extraInfo ""
 * /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *To Be Absorbed From Sacha:* |]]    [[elisp:(org-shifttab)][<)]] E|
@@ -146,6 +147,13 @@ captions for EmacsConf. Hope that helps!
 ** +
 <p>
 <a href="mailto:sacha@sachachua.com">sacha@sachachua.com</a>
+** B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "Related but Unused" :anchor "" :extraInfo "Links"
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Related but Unused:* |]]  Links  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** TODO https://github.com/jasonwebb/revealjs-subtitles   # Uses google's speach recognition with revealjs
 ** B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/

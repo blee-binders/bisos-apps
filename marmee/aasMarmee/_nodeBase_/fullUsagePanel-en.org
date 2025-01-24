@@ -24,9 +24,8 @@
 ####+END:
 ####+BEGIN: blee:bxPanel:terseTreeNavigator :panelsList "bxPanel"
 * [[elisp:(show-all)][(>]] [[elisp:(describe-function 'org-dblock-write:blee:bxPanel:terseTreeNavigator)][dbf]]
-* [[elisp:(show-all)][|n]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_   General Panels ::   [[img-link:file:/bisos/blee/env/images/bystarInside.jpg][http://www.by-star.net]] *|*  [[elisp:(find-file "/libre/ByStar/InitialTemplates/activeDocs/listOfDocs/fullUsagePanel-en.org")][BxDE Top Panel]] *|* [[elisp:(blee:bnsm:panel-goto "/libre/ByStar/InitialTemplates/activeDocs/planning/Main")][ByStar Planning]]
-
-*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/aasMarmee/byname/_nodeBase_")][ =byname= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/aasMarmee/gmail/_nodeBase_")][ =gmail= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/aasMarmee/outlook/_nodeBase_")][ =outlook= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/aasMarmee/qmail/_nodeBase_")][ =qmail= ]] *|*
+* +
+*   =Decedents=  :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/aasMarmee/byname/_nodeBase_")][ =byname= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/aasMarmee/gmail-google/_nodeBase_")][ =gmail-google= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/aasMarmee/outlook/_nodeBase_")][ =outlook= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/aasMarmee/qmail/_nodeBase_")][ =qmail= ]] *|*
 *                                        *━━━━━━━━━━━━━━━━━━━━━━━━*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/Gnus/_nodeBase_")][ =Gnus= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/aasMarmee/_nodeBase_")][ =aasMarmee= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/configAndUsage/_nodeBase_")][ =configAndUsage= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/daemonization/_nodeBase_")][ =daemonization= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/development/_nodeBase_")][ =development= ]] *|*
 *   *Siblings*   :: [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/dovecot/_nodeBase_")][ =dovecot= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/dsnProc/_nodeBase_")][ =dsnProc= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/install/_nodeBase_")][ =install= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/mailCreds/_nodeBase_")][ =mailCreds= ]] *|* [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/notmuch/_nodeBase_")][ =notmuch= ]] *|*
@@ -37,9 +36,21 @@
 ####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :title "Overview" :anchor "Panel"
 * [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *Overview:* |]] <<Panel>>   [[elisp:(org-shifttab)][<)]] E|
 ####+END
-**
-** Overview Comes Here.
-** B|
+** +
+** For now just qmail is used. byname, outlook and qmail are place holders.
+** -B|
+####+BEGIN: blee:bxPanel:linkWithTreeElem :agenda nil :sep t :outLevel 2 :model "auto" :foldDesc "Gmail Abstracted Accessible Service" :destDesc "auto" :dest "../gmail-google/_nodeBase_"
+* /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]] [[elisp:(blee:menu-sel:outline:popupMenu)][+-]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(blee:bnsm:panel-goto "/bisos/panels/bisos-apps/marmee/aasMarmee/gmail-google/_nodeBase_")][@ ~gmail-google~ @]]  [[elisp:(org-cycle)][| *=* |]] ::  <<Gmail Abstracted Accessible Service>> [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** -B|
+####+BEGIN: blee:bxPanel:foldingSection :outLevel 1 :sep t :title "ByName, Outlook and Qmail Are Place Holders" :anchor "" :extraInfo "Those Are Blank and Empty For Now."
+* /[[elisp:(beginning-of-buffer)][|^]]  [[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]] [[elisp:(delete-other-windows)][|1]]/
+* [[elisp:(show-all)][(>]]  _[[elisp:(blee:menu-sel:outline:popupMenu)][±]]_  _[[elisp:(blee:menu-sel:navigation:popupMenu)][Ξ]]_       [[elisp:(outline-show-subtree+toggle)][| *ByName, Outlook and Qmail Are Place Holders:* |]]  Those Are Blank and Empty For Now.  [[elisp:(org-shifttab)][<)]] E|
+####+END
+** +
+** -B|
 ####+BEGIN: blee:bxPanel:separator :outLevel 1
 * /[[elisp:(beginning-of-buffer)][|^]] [[elisp:(blee:menu-sel:navigation:popupMenu)][==]] [[elisp:(delete-other-windows)][|1]]/
 ####+END
